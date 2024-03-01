@@ -1,0 +1,138 @@
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Masters 2024 MSS-521.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Masters 2024 MSS-521.pdb
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.AudioDistribution.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.CrestronConnected.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.DM.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.EthernetCommunications.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.Fusion.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.Gateways.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.GeneralIO.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.Keypads.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.Lighting.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.Media.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.Remotes.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.Shades.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.Thermostats.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.ThreeSeriesCards.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.UC.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.UI.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpAutoUpdateInterface.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpCloudClientInterface.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpCryptographyInterface.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpCustomAttributesInterface.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpCWSHelperInterface.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpExchangeWebServices.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpHelperInterface.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpNewtonsoft.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpOnvifInterface.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpPro.exe
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpProgrammingInterfaces.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpReflectionInterface.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpSQLHelperInterface.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpTimerEventInterface.dll
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.AudioDistribution.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.CrestronConnected.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.DM.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.EthernetCommunications.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.Fusion.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.Gateways.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.GeneralIO.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.Keypads.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.Lighting.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.Media.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.Remotes.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.Shades.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.Thermostats.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.ThreeSeriesCards.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.UC.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\Crestron.SimplSharpPro.UI.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpAutoUpdateInterface.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpCloudClientInterface.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpCryptographyInterface.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpCustomAttributesInterface.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpCWSHelperInterface.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpExchangeWebServices.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpHelperInterface.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpNewtonsoft.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpOnvifInterface.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpPro.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpProgrammingInterfaces.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpReflectionInterface.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpSQLHelperInterface.xml
+E:\Masters 2024\Masters 2024 MSS-521\bin\Debug\SimplSharpTimerEventInterface.xml
+E:\Masters 2024\Masters 2024 MSS-521\obj\Debug\Masters 2024 MSS-521.csproj.AssemblyReference.cache
+E:\Masters 2024\Masters 2024 MSS-521\obj\Debug\Masters 2024 MSS-521.csproj.CoreCompileInputs.cache
+E:\Masters 2024\Masters 2024 MSS-521\obj\Debug\Masters 2024 MSS-521.csproj.CopyComplete
+E:\Masters 2024\Masters 2024 MSS-521\obj\Debug\Masters 2024 MSS-521.dll
+E:\Masters 2024\Masters 2024 MSS-521\obj\Debug\Masters 2024 MSS-521.pdb
+F:\Masters 2024\Masters 2024 MSS-521 prototype\obj\Debug\Masters 2024 MSS-521.csproj.AssemblyReference.cache
+F:\Masters 2024\Masters 2024 MSS-521 prototype\obj\Debug\Masters 2024 MSS-521.csproj.CoreCompileInputs.cache
+F:\Masters 2024\Masters 2024 MSS-521 prototype\obj\Debug\Masters 2024 MSS-521.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\obj\Debug\Masters 2024 MSS-521.pdb
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Masters 2024 MSS-521.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Masters 2024 MSS-521.pdb
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.AudioDistribution.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.CrestronConnected.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.DM.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.EthernetCommunications.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.Fusion.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.Gateways.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.GeneralIO.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.Keypads.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.Lighting.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.Media.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.Remotes.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.Shades.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.Thermostats.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.ThreeSeriesCards.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.UC.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.UI.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpAutoUpdateInterface.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpCloudClientInterface.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpCryptographyInterface.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpCustomAttributesInterface.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpCWSHelperInterface.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpExchangeWebServices.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpHelperInterface.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpNewtonsoft.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpOnvifInterface.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpPro.exe
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpProgrammingInterfaces.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpReflectionInterface.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpSQLHelperInterface.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpTimerEventInterface.dll
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.AudioDistribution.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.CrestronConnected.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.DM.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.EthernetCommunications.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.Fusion.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.Gateways.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.GeneralIO.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.Keypads.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.Lighting.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.Media.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.Remotes.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.Shades.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.Thermostats.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.ThreeSeriesCards.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.UC.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\Crestron.SimplSharpPro.UI.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpAutoUpdateInterface.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpCloudClientInterface.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpCryptographyInterface.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpCustomAttributesInterface.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpCWSHelperInterface.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpExchangeWebServices.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpHelperInterface.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpNewtonsoft.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpOnvifInterface.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpPro.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpProgrammingInterfaces.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpReflectionInterface.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpSQLHelperInterface.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\bin\Debug\SimplSharpTimerEventInterface.xml
+F:\Masters 2024\Masters 2024 MSS-521 prototype\obj\Debug\Masters 2024 MSS-521.csproj.CopyComplete

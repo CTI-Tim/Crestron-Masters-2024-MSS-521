@@ -1,0 +1,21 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "1.3001.21.0"
+Created = 2024-01-17 09:43:23.260338-05:00
+LastModifiedByAppHost = "1.3001.21.0"
+Modified = 2024-01-17 09:43:23.260333-05:00
+CreatedByProjectApp = "1.3001.21.0"
+LastModifiedByProjectApp = "1.3001.21.0"
+MinimumProjectApp = ""
+
+{AssetAttributes}
+
+[Attributes]
+Id = "6e1628ae-d46c-47fb-8690-191a31b81b83"
+Name = "SwirlBackground"
+SourceUri = "SwirlBackground.jpg"
+AspectRatio = "1.7972389991371873"
+AssetSourceType = "File"
+Username = ""
+Password = ""
+

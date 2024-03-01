@@ -1,0 +1,240 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "1.3001.21.0"
+Created = 2024-01-17 13:24:44.33553-05:00
+LastModifiedByAppHost = "1.3001.21.0"
+Modified = 2024-01-17 13:24:44.335528-05:00
+CreatedByProjectApp = "1.3001.21.0"
+LastModifiedByProjectApp = "1.3001.21.0"
+MinimumProjectApp = "1.2600.1"
+
+{Html}
+<div id="i45j4ehsbr" devicesvisited="[&quot;TSW-760&quot;]" defaultwidth="650px" defaultheight="600px" globalcontrolcontract="on" class="widget-container"><ch5-button type="default" halignlabel="center" valignlabel="middle" checkboxshow="false" checkboxposition="left" disabled="false" pageflipattributename="pageflip" clearlabel="false" ccid_imageicontype="iconclass" ccid_linksendreceive="True" iconurlfilltype="initial" customclass="ccid-custom" affectedbypreviewstate="True" shape="rounded-rectangle" customvstheme="custom" id="i2r0u356rgcaf" labelinnerhtml="Menu" pageflip="0" iconposition="first" previewstate="normal" orientation="horizontal" labelmode="simple" componentname="MenuButton" ccid_themecssset="true" devicesvisited="[&quot;TSW-760&quot;]" size="custom" selected="false" oldid="iwml5" sendeventontouch="Contract Enabled" pd-receivestateselected="Contract Enabled" assetid="0"></ch5-button><ch5-button type="default" halignlabel="center" valignlabel="middle" checkboxshow="false" checkboxposition="left" disabled="false" pageflipattributename="pageflip" clearlabel="true" ccid_imageicontype="imageasset" ccid_linksendreceive="True" iconurlfilltype="initial" customclass="ccid-custom" affectedbypreviewstate="True" shape="rounded-rectangle" customvstheme="custom" id="i5ohhew51evgk" pageflip="0" iconposition="first" previewstate="pressed" orientation="horizontal" labelmode="simple" componentname="PlayButton" ccid_themecssset="true" devicesvisited="[&quot;TSW-760&quot;]" size="custom" oldid="iwml5" assetid="d520b6e9-c525-45f5-8046-ae3f17c8b153" pressed="true" selected="false" sendeventontouch="Contract Enabled" pd-receivestateselected="Contract Enabled" labelinnerhtml=""></ch5-button><ch5-button type="default" halignlabel="center" valignlabel="middle" checkboxshow="false" checkboxposition="left" disabled="false" pageflipattributename="pageflip" clearlabel="false" ccid_imageicontype="iconclass" ccid_linksendreceive="True" iconurlfilltype="initial" customclass="ccid-custom" affectedbypreviewstate="True" shape="rounded-rectangle" customvstheme="custom" id="iwml5" labelinnerhtml="Back" pageflip="0" iconposition="first" previewstate="normal" orientation="horizontal" labelmode="simple" componentname="BackButton" ccid_themecssset="true" devicesvisited="[&quot;TSW-760&quot;]" size="custom" selected="false" sendeventontouch="Contract Enabled" pd-receivestateselected="Contract Enabled" assetid="0">
+              </ch5-button><ch5-dpad size="x-large" shape="plus" type="default" usecontractforcustomstyle="false" usecontractforcustomclass="false" usecontractforenable="false" usecontractforshow="false" customvstheme="custom" id="i6ff" componentname="Dpad" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" ccid_themecssset="true" sendeventonclickstart="Contract Enabled">
+              <ch5-dpad-button componentname="Up" key="up" iconclass="fas fa-caret-up" ccid_imageicontype="iconclass"></ch5-dpad-button><ch5-dpad-button componentname="Down" key="down" iconclass="fas fa-caret-down" ccid_imageicontype="iconclass"></ch5-dpad-button><ch5-dpad-button componentname="Left" key="left" iconclass="fas fa-caret-left" ccid_imageicontype="iconclass"></ch5-dpad-button><ch5-dpad-button componentname="Right" key="right" iconclass="fas fa-caret-right" ccid_imageicontype="iconclass"></ch5-dpad-button><ch5-dpad-button componentname="Center" key="center" iconclass="fas fa-circle" ccid_imageicontype="iconclass"></ch5-dpad-button></ch5-dpad><ch5-background scale="stretch" refreshrate="600" transitioneffect="ease" transitionduration="1s" assetid="0" id="ifj69yk15s" componentname="Background" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" backgroundcolor="rgba(0,0,0,0.17)" oldid="i8bypjwfj7">
+              </ch5-background></div>
+
+{Css}
+@media (orientation: landscape){#i45j4ehsbr{width:650px;height:600px;left:0;top:0;position:absolute;display:block;partial:undefined;}.widget-container{background-image:linear-gradient(45deg, #DAE2EA 25%, transparent 25%), linear-gradient(-45deg, #DAE2EA 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #DAE2EA 75%), linear-gradient(-45deg, transparent 75%, #DAE2EA 75%);background-size:20px 20px;background-position:0 0, 0 10px, 10px -10px, -10px 0px;z-index:0;}#ifj69yk15s{width:100%;height:100%;left:0px;top:0px;position:absolute;display:block;partial:undefined;z-index:-67;overflow:hidden;}#i6ff.ch5-dpad.ch5-dpad--type-default .ch5-dpad-child{dpadDefault_color:#ffffff;color:#ffffff;dpadDefault_background-color:#0099ff;background-color:#0099ff;}#i6ff.ch5-dpad.ch5-dpad--type-default .ch5-dpad-child.--pressed{dpadActiveDefault_color:#f0fff0;color:#f0fff0;dpadActiveDefault_background-color:#008ae6;background-color:#008ae6;}#i6ff.ch5-dpad .ch5-dpad-child.direction-btn span.dpad-btn-icon{z-index:1;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up:after{box-shadow:-10px 1px 0 0 #0099ff;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up:before{box-shadow:10px 1px 0 0 #0099ff;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down:after{box-shadow:10px -1px 0 0 #0099ff;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down:before{box-shadow:-10px -1px 0 0 #0099ff;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up[class*="--pressed"]:after{box-shadow:-10px 1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up[class*="--pressed"]:before{box-shadow:10px 1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down[class*="--pressed"]:after{box-shadow:10px -1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down[class*="--pressed"]:before{box-shadow:-10px -1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up:active:after{box-shadow:-10px 1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up:active:before{box-shadow:10px 1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down:active:after{box-shadow:10px -1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down:active:before{box-shadow:-10px -1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--type-default ch5-dpad-button:active{background-color:#008ae6;}#i6ff.ch5-dpad.ch5-dpad--type-default ch5-dpad-button[class*="--pressed"]{background-color:#008ae6;}#i6ff.ch5-dpad.ch5-dpad--type-default ch5-dpad-button{background-color:#0099ff;}#i6ff.ch5-dpad.ch5-dpad--shape-plus ch5-dpad-button.direction-btn{flex:calc(100%/3);height:calc(100%/3);}#i6ff.ch5-dpad.ch5-dpad--shape-plus ch5-dpad-button.direction-btn.left{margin-right:0;padding-right:16.5%;z-index:1;}#i6ff.ch5-dpad.ch5-dpad--shape-plus ch5-dpad-button.direction-btn.right{margin-left:0;padding-left:16.5%;z-index:1;}#i6ff.ch5-dpad ch5-dpad-button.center{width:calc(100%/3);height:calc(100%/3);z-index:2;}#i6ff.ch5-dpad ch5-dpad-button.down{z-index:0;}#i6ff.ch5-dpad.ch5-dpad--size-regular .dpad-container{width:150px;}#i6ff.ch5-dpad.ch5-dpad--type-default ch5-dpad-button:active span{color:#f0fff0;}#i6ff{pointer-events:all;display:block;width:200px;dpadDefault_color:#ffffff;dpadActiveDefault_color:#f0fff0;min-width:100px;min-height:100px;height:200px;left:225px;top:200px;position:absolute;z-index:48;dpadDefault_background-color:#0099ff;dpadActiveDefault_background-color:#008ae6;}#iwml5{pointer-events:all;width:133px;height:73px;font-family:Roboto;left:99px;top:474px;position:absolute;z-index:49;display:block;buttonDefaultLabel_font-size:32px;buttonDefaultPressedLabel_font-size:32px;}#iwml5 .ch5-button--default{border-style:solid;border-color:#0091ea;color:#ffffff;background-color:#0099ff;border-width:1px;}#iwml5 .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:32px;font-weight:400;buttonDefaultLabel_font-size:32px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;custom-font-size:32px;}#iwml5 .ch5-button-child{width:inherit;height:inherit;top:inherit;left:inherit;position:fixed;}#iwml5 .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;}#iwml5 .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#iwml5 .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:#207d0c;border-color:#00ea06;}#iwml5 .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:32px;font-weight:400;buttonDefaultPressedLabel_font-size:32px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;custom-font-size:32px;}#iwml5 .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;}#iwml5 .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#iwml5 .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#iwml5 .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;}#iwml5 .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;}#iwml5 .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#iwml5 .ch5-button--size-regular .cb-btn{width:133px;height:73px;}#iwml5-2 .ch5-button--default .ch5-button--label{font-family:Roboto;}#iwml5-2 .ch5-button-child{width:inherit;height:inherit;top:inherit;left:inherit;position:fixed;}#i5ohhew51evgk .ch5-button--default{border-style:solid;border-color:#0091ea;color:#ffffff;background-color:#0099ff;border-width:1px;}#i5ohhew51evgk .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:32px;font-weight:400;buttonDefaultLabel_font-size:32px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;custom-font-size:32px;}#i5ohhew51evgk .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;}#i5ohhew51evgk .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#i5ohhew51evgk .ccid-custom.ch5-button--default .ch5-button--img{buttonDefaultImage_width:88px;width:88px;buttonDefaultImage_height:40px;height:40px;}#i5ohhew51evgk .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:#207d0c;border-color:#00ea06;}#i5ohhew51evgk .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:32px;font-weight:400;buttonDefaultPressedLabel_font-size:32px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;custom-font-size:32px;}#i5ohhew51evgk .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;}#i5ohhew51evgk .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#i5ohhew51evgk .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{buttonDefaultPressedImage_width:88px;width:88px;buttonDefaultPressedImage_height:40px;height:40px;}#i5ohhew51evgk .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#i5ohhew51evgk .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;}#i5ohhew51evgk .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;}#i5ohhew51evgk .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#i5ohhew51evgk .ch5-button--size-regular .cb-btn{width:133px;height:73px;}#i2r0u356rgcaf{pointer-events:all;width:133px;height:73px;font-family:Roboto;left:417px;top:474px;position:absolute;z-index:55;display:block;buttonDefaultLabel_font-size:32px;buttonDefaultPressedLabel_font-size:32px;}#i2r0u356rgcaf .ch5-button--default{border-style:solid;border-color:#0091ea;color:#ffffff;background-color:#0099ff;border-width:1px;}#i2r0u356rgcaf .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:32px;font-weight:400;buttonDefaultLabel_font-size:32px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;custom-font-size:32px;}#i2r0u356rgcaf .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;}#i2r0u356rgcaf .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#i2r0u356rgcaf .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:#207d0c;border-color:#00ea06;}#i2r0u356rgcaf .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:32px;font-weight:400;buttonDefaultPressedLabel_font-size:32px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;custom-font-size:32px;}#i2r0u356rgcaf .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;}#i2r0u356rgcaf .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#i2r0u356rgcaf .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#i2r0u356rgcaf .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;}#i2r0u356rgcaf .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;}#i2r0u356rgcaf .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#i2r0u356rgcaf .ch5-button--size-regular .cb-btn{width:133px;height:73px;}#i5ohhew51evgk{pointer-events:all;width:133px;height:73px;font-family:Roboto;left:258px;top:474px;position:absolute;z-index:52;display:block;buttonDefaultLabel_font-size:32px;buttonDefaultPressedLabel_font-size:32px;buttonDefaultPressedImage_width:88px;buttonDefaultPressedImage_height:40px;}}@media (orientation: portrait){#i45j4ehsbr{width:650px;height:600px;left:0;top:0;position:absolute;display:block;partial:undefined;}.widget-container{background-image:linear-gradient(45deg, #DAE2EA 25%, transparent 25%), linear-gradient(-45deg, #DAE2EA 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #DAE2EA 75%), linear-gradient(-45deg, transparent 75%, #DAE2EA 75%);background-size:20px 20px;background-position:0 0, 0 10px, 10px -10px, -10px 0px;z-index:0;}#ifj69yk15s{width:100%;height:100%;left:0px;top:0px;position:absolute;display:block;partial:undefined;z-index:-66;overflow:hidden;}#i6ff.ch5-dpad.ch5-dpad--type-default .ch5-dpad-child{dpadDefault_color:#ffffff;color:#ffffff;dpadDefault_background-color:#0099ff;background-color:#0099ff;}#i6ff.ch5-dpad.ch5-dpad--type-default .ch5-dpad-child.--pressed{dpadActiveDefault_color:#f0fff0;color:#f0fff0;dpadActiveDefault_background-color:#008ae6;background-color:#008ae6;}#i6ff.ch5-dpad .ch5-dpad-child.direction-btn span.dpad-btn-icon{z-index:1;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up:after{box-shadow:-10px 1px 0 0 #0099ff;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up:before{box-shadow:10px 1px 0 0 #0099ff;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down:after{box-shadow:10px -1px 0 0 #0099ff;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down:before{box-shadow:-10px -1px 0 0 #0099ff;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up[class*="--pressed"]:after{box-shadow:-10px 1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up[class*="--pressed"]:before{box-shadow:10px 1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down[class*="--pressed"]:after{box-shadow:10px -1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down[class*="--pressed"]:before{box-shadow:-10px -1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up:active:after{box-shadow:-10px 1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up:active:before{box-shadow:10px 1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down:active:after{box-shadow:10px -1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down:active:before{box-shadow:-10px -1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--type-default ch5-dpad-button:active{background-color:#008ae6;}#i6ff.ch5-dpad.ch5-dpad--type-default ch5-dpad-button[class*="--pressed"]{background-color:#008ae6;}#i6ff.ch5-dpad.ch5-dpad--type-default ch5-dpad-button{background-color:#0099ff;}#i6ff.ch5-dpad.ch5-dpad--shape-plus ch5-dpad-button.direction-btn{flex:calc(100%/3);height:calc(100%/3);}#i6ff.ch5-dpad.ch5-dpad--shape-plus ch5-dpad-button.direction-btn.left{margin-right:0;padding-right:16.5%;z-index:1;}#i6ff.ch5-dpad.ch5-dpad--shape-plus ch5-dpad-button.direction-btn.right{margin-left:0;padding-left:16.5%;z-index:1;}#i6ff.ch5-dpad ch5-dpad-button.center{width:calc(100%/3);height:calc(100%/3);z-index:2;}#i6ff.ch5-dpad ch5-dpad-button.down{z-index:0;}#i6ff.ch5-dpad.ch5-dpad--size-regular .dpad-container{width:150px;}#i6ff.ch5-dpad.ch5-dpad--type-default ch5-dpad-button:active span{color:#f0fff0;}#i6ff{pointer-events:all;display:block;width:200px;dpadDefault_color:#ffffff;dpadActiveDefault_color:#f0fff0;min-width:100px;min-height:100px;height:200px;left:225px;top:200px;position:absolute;z-index:48;dpadDefault_background-color:#0099ff;dpadActiveDefault_background-color:#008ae6;}#iwml5{pointer-events:all;width:133px;height:73px;font-family:Roboto;left:99px;top:474px;position:absolute;z-index:49;display:block;buttonDefaultLabel_font-size:32px;buttonDefaultPressedLabel_font-size:32px;}#iwml5 .ch5-button--default{border-style:solid;border-color:#0091ea;color:#ffffff;background-color:#0099ff;border-width:1px;}#iwml5 .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:32px;font-weight:400;buttonDefaultLabel_font-size:32px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;custom-font-size:32px;}#iwml5 .ch5-button-child{width:inherit;height:inherit;top:inherit;left:inherit;position:fixed;}#iwml5 .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;}#iwml5 .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#iwml5 .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:#207d0c;border-color:#00ea06;}#iwml5 .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:32px;font-weight:400;buttonDefaultPressedLabel_font-size:32px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;custom-font-size:32px;}#iwml5 .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;}#iwml5 .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#iwml5 .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#iwml5 .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;}#iwml5 .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;}#iwml5 .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#iwml5 .ch5-button--size-regular .cb-btn{width:133px;height:73px;}#iwml5-2 .ch5-button--default .ch5-button--label{font-family:Roboto;}#iwml5-2 .ch5-button-child{width:inherit;height:inherit;top:inherit;left:inherit;position:fixed;}#i5ohhew51evgk .ch5-button--default{border-style:solid;border-color:#0091ea;color:#ffffff;background-color:#0099ff;border-width:1px;}#i5ohhew51evgk .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:32px;font-weight:400;buttonDefaultLabel_font-size:32px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;custom-font-size:32px;}#i5ohhew51evgk .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;}#i5ohhew51evgk .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#i5ohhew51evgk .ccid-custom.ch5-button--default .ch5-button--img{buttonDefaultImage_width:88px;width:88px;buttonDefaultImage_height:40px;height:40px;}#i5ohhew51evgk .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:#207d0c;border-color:#00ea06;}#i5ohhew51evgk .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:32px;font-weight:400;buttonDefaultPressedLabel_font-size:32px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;custom-font-size:32px;}#i5ohhew51evgk .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;}#i5ohhew51evgk .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#i5ohhew51evgk .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{buttonDefaultPressedImage_width:88px;width:88px;buttonDefaultPressedImage_height:40px;height:40px;}#i5ohhew51evgk .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#i5ohhew51evgk .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;}#i5ohhew51evgk .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;}#i5ohhew51evgk .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#i5ohhew51evgk .ch5-button--size-regular .cb-btn{width:133px;height:73px;}#i2r0u356rgcaf{pointer-events:all;width:133px;height:73px;font-family:Roboto;left:417px;top:474px;position:absolute;z-index:55;display:block;buttonDefaultLabel_font-size:32px;buttonDefaultPressedLabel_font-size:32px;}#i2r0u356rgcaf .ch5-button--default{border-style:solid;border-color:#0091ea;color:#ffffff;background-color:#0099ff;border-width:1px;}#i2r0u356rgcaf .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:32px;font-weight:400;buttonDefaultLabel_font-size:32px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;custom-font-size:32px;}#i2r0u356rgcaf .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;}#i2r0u356rgcaf .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#i2r0u356rgcaf .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:#207d0c;border-color:#00ea06;}#i2r0u356rgcaf .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:32px;font-weight:400;buttonDefaultPressedLabel_font-size:32px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;custom-font-size:32px;}#i2r0u356rgcaf .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;}#i2r0u356rgcaf .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#i2r0u356rgcaf .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#i2r0u356rgcaf .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;}#i2r0u356rgcaf .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;}#i2r0u356rgcaf .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#i2r0u356rgcaf .ch5-button--size-regular .cb-btn{width:133px;height:73px;}#i5ohhew51evgk{pointer-events:all;width:133px;height:73px;font-family:Roboto;left:258px;top:474px;position:absolute;z-index:52;display:block;buttonDefaultLabel_font-size:32px;buttonDefaultPressedLabel_font-size:32px;buttonDefaultPressedImage_width:88px;buttonDefaultPressedImage_height:40px;}}@media (orientation: landscape) and (max-width: 1263px){#i45j4ehsbr{width:650px;height:600px;left:0;top:0;position:absolute;display:block;partial:undefined;}#ifj69yk15s{width:100%;height:100%;left:0px;top:0px;position:absolute;display:block;partial:undefined;z-index:-65;overflow:hidden;}#i6ff.ch5-dpad.ch5-dpad--type-default .ch5-dpad-child{dpadDefault_color:#ffffff;color:#ffffff;dpadDefault_background-color:#0099ff;background-color:#0099ff;}#i6ff.ch5-dpad.ch5-dpad--type-default .ch5-dpad-child.--pressed{dpadActiveDefault_color:#f0fff0;color:#f0fff0;dpadActiveDefault_background-color:#008ae6;background-color:#008ae6;}#i6ff .dpad-container{width:inherit !important;height:inherit !important;min-width:100px;min-height:100px;}#i6ff.ch5-dpad.ch5-dpad--size-regular .dpad-container{width:150px;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up:after{box-shadow:-10px 1px 0 0 #0099ff;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up:before{box-shadow:10px 1px 0 0 #0099ff;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down:after{box-shadow:10px -1px 0 0 #0099ff;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down:before{box-shadow:-10px -1px 0 0 #0099ff;}#i6ff.ch5-dpad.ch5-dpad--type-default ch5-dpad-button[class*="--pressed"]{background-color:#008ae6;}#i6ff.ch5-dpad.ch5-dpad--type-default ch5-dpad-button:active{background-color:#008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up[class*="--pressed"]:after{box-shadow:-10px 1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up[class*="--pressed"]:before{box-shadow:10px 1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down[class*="--pressed"]:after{box-shadow:10px -1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down[class*="--pressed"]:before{box-shadow:-10px -1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up:active:after{box-shadow:-10px 1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.up:active:before{box-shadow:10px 1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down:active:after{box-shadow:10px -1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--shape-plus.ch5-dpad--type-default .direction-btn.down:active:before{box-shadow:-10px -1px 0 0 #008ae6;}#i6ff.ch5-dpad.ch5-dpad--type-default ch5-dpad-button:active span{color:#f0fff0;}#i6ff{pointer-events:all;display:block;width:200px;dpadDefault_color:#ffffff;dpadActiveDefault_color:#f0fff0;min-width:100px;min-height:100px;height:200px;left:225px;top:200px;position:absolute;z-index:48;dpadDefault_background-color:#0099ff;dpadActiveDefault_background-color:#008ae6;}#iwml5{pointer-events:all;width:133px;height:73px;font-family:Roboto;left:99px;top:474px;position:absolute;z-index:49;display:block;buttonDefaultLabel_font-size:32px;buttonDefaultPressedLabel_font-size:32px;}#iwml5 .ch5-button--default{border-style:solid;border-color:#0091ea;color:#ffffff;background-color:#0099ff;border-width:1px;}#iwml5 .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:32px;font-weight:400;buttonDefaultLabel_font-size:32px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;custom-font-size:32px;}#iwml5 .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;}#iwml5 .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#iwml5 .ccid-custom.ch5-button--default .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iwml5 .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:#207d0c;border-color:#00ea06;}#iwml5 .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:32px;font-weight:400;buttonDefaultPressedLabel_font-size:32px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;custom-font-size:32px;}#iwml5 .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;}#iwml5 .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#iwml5 .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iwml5 .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#iwml5 .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;}#iwml5 .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;}#iwml5 .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#iwml5 .ccid-custom.ch5-button--default.ch5-button--selected .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iwml5 .ch5-button--size-regular .cb-btn{width:133px;height:73px;}#iwml5-2 .ch5-button--default .ch5-button--label{font-family:Roboto;}#i5ohhew51evgk .ch5-button--default{border-style:solid;border-color:#0091ea;color:#ffffff;background-color:#0099ff;border-width:1px;}#i5ohhew51evgk .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:32px;font-weight:400;buttonDefaultLabel_font-size:32px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;custom-font-size:32px;}#i5ohhew51evgk .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;}#i5ohhew51evgk .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#i5ohhew51evgk .ccid-custom.ch5-button--default .ch5-button--img{width:88px;height:40px;buttonDefaultImage_width:88px;buttonDefaultImage_height:40px;}#i5ohhew51evgk .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:#207d0c;border-color:#00ea06;}#i5ohhew51evgk .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:32px;font-weight:400;buttonDefaultPressedLabel_font-size:32px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;custom-font-size:32px;}#i5ohhew51evgk .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;}#i5ohhew51evgk .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#i5ohhew51evgk .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{width:88px;height:40px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;buttonDefaultPressedImage_width:88px;buttonDefaultPressedImage_height:40px;}#i5ohhew51evgk .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#i5ohhew51evgk .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;}#i5ohhew51evgk .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;}#i5ohhew51evgk .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#i5ohhew51evgk .ccid-custom.ch5-button--default.ch5-button--selected .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#i5ohhew51evgk .ch5-button--size-regular .cb-btn{width:133px;height:73px;}#i2r0u356rgcaf{pointer-events:all;width:133px;height:73px;font-family:Roboto;left:417px;top:474px;position:absolute;z-index:55;display:block;buttonDefaultLabel_font-size:32px;buttonDefaultPressedLabel_font-size:32px;}#i2r0u356rgcaf .ch5-button--default{border-style:solid;border-color:#0091ea;color:#ffffff;background-color:#0099ff;border-width:1px;}#i2r0u356rgcaf .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:32px;font-weight:400;buttonDefaultLabel_font-size:32px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;custom-font-size:32px;}#i2r0u356rgcaf .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;}#i2r0u356rgcaf .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#i2r0u356rgcaf .ccid-custom.ch5-button--default .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#i2r0u356rgcaf .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:#207d0c;border-color:#00ea06;}#i2r0u356rgcaf .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:32px;font-weight:400;buttonDefaultPressedLabel_font-size:32px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;custom-font-size:32px;}#i2r0u356rgcaf .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;}#i2r0u356rgcaf .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#i2r0u356rgcaf .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#i2r0u356rgcaf .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#i2r0u356rgcaf .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;}#i2r0u356rgcaf .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;}#i2r0u356rgcaf .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#i2r0u356rgcaf .ccid-custom.ch5-button--default.ch5-button--selected .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#i2r0u356rgcaf .ch5-button--size-regular .cb-btn{width:133px;height:73px;}#i5ohhew51evgk{pointer-events:all;width:133px;height:73px;font-family:Roboto;left:258px;top:474px;position:absolute;z-index:52;display:block;buttonDefaultLabel_font-size:32px;buttonDefaultPressedLabel_font-size:32px;buttonDefaultPressedImage_width:88px;buttonDefaultPressedImage_height:40px;}}
+
+{PageAttributes}
+
+[Attributes]
+Name = "MediaControl"
+PageMode = "absolute"
+Id = "bed4d4b6-bc2a-4f68-9037-c7a37629dd7f"
+
+[[Elements]]
+Type = "widgetContainer"
+Classes = ["widget-container"]
+
+[[Elements.Components]]
+Type = "Ch5 Button"
+Editable = true
+
+[Elements.Components.Attributes]
+type = "default"
+halignlabel = "center"
+valignlabel = "middle"
+checkboxshow = "false"
+checkboxposition = "left"
+disabled = "false"
+pageFlipAttributeName = "pageflip"
+clearLabel = "false"
+ccid_imageIconType = "iconclass"
+ccid_linkSendReceive = "True"
+iconurlfilltype = "initial"
+customclass = "ccid-custom"
+affectedByPreviewState = "True"
+shape = "rounded-rectangle"
+customvstheme = "custom"
+id = "i2r0u356rgcaf"
+labelinnerhtml = "Menu"
+pageflip = "0"
+iconposition = "first"
+previewstate = "normal"
+orientation = "horizontal"
+labelmode = "simple"
+componentName = "MenuButton"
+ccid_themeCSSSet = "true"
+devicesVisited = "[\"TSW-760\"]"
+size = "custom"
+selected = "false"
+oldID = "iwml5"
+sendeventontouch = "Contract Enabled"
+pd-receivestateselected = "Contract Enabled"
+assetid = "0"
+[[Elements.Components]]
+Type = "Ch5 Button"
+Editable = true
+
+[Elements.Components.Attributes]
+type = "default"
+halignlabel = "center"
+valignlabel = "middle"
+checkboxshow = "false"
+checkboxposition = "left"
+disabled = "false"
+pageFlipAttributeName = "pageflip"
+clearLabel = "true"
+ccid_imageIconType = "imageasset"
+ccid_linkSendReceive = "True"
+iconurlfilltype = "initial"
+customclass = "ccid-custom"
+affectedByPreviewState = "True"
+shape = "rounded-rectangle"
+customvstheme = "custom"
+id = "i5ohhew51evgk"
+pageflip = "0"
+iconposition = "first"
+previewstate = "pressed"
+orientation = "horizontal"
+labelmode = "simple"
+componentName = "PlayButton"
+ccid_themeCSSSet = "true"
+devicesVisited = "[\"TSW-760\"]"
+size = "custom"
+oldID = "iwml5"
+assetid = "d520b6e9-c525-45f5-8046-ae3f17c8b153"
+iconurl = "StaticFiles/56b963b2-1afb-4ec1-acaa-f378cdd82889/d520b6e9-c525-45f5-8046-ae3f17c8b153/ult2tbk2.png"
+pressed = "true"
+selected = "false"
+sendeventontouch = "Contract Enabled"
+pd-receivestateselected = "Contract Enabled"
+labelinnerhtml = ""
+[[Elements.Components]]
+Type = "Ch5 Button"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+type = "default"
+halignlabel = "center"
+valignlabel = "middle"
+checkboxshow = "false"
+checkboxposition = "left"
+disabled = "false"
+pageFlipAttributeName = "pageflip"
+clearLabel = "false"
+ccid_imageIconType = "iconclass"
+ccid_linkSendReceive = "True"
+iconurlfilltype = "initial"
+customclass = "ccid-custom"
+affectedByPreviewState = "True"
+shape = "rounded-rectangle"
+customvstheme = "custom"
+id = "iwml5"
+labelinnerhtml = "Back"
+pageflip = "0"
+iconposition = "first"
+previewstate = "normal"
+orientation = "horizontal"
+labelmode = "simple"
+componentName = "BackButton"
+ccid_themeCSSSet = "true"
+devicesVisited = "[\"TSW-760\"]"
+size = "custom"
+selected = "false"
+sendeventontouch = "Contract Enabled"
+pd-receivestateselected = "Contract Enabled"
+assetid = "0"
+[[Elements.Components]]
+Type = "Ch5 Dpad"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+[[Elements.Components.Components]]
+Type = "Ch5 Dpad Button"
+
+[Elements.Components.Components.Attributes]
+componentName = "Up"
+key = "up"
+iconclass = "fas fa-caret-up"
+pressed = "false"
+ccid_imageIconType = "iconclass"
+[[Elements.Components.Components]]
+Type = "Ch5 Dpad Button"
+
+[Elements.Components.Components.Attributes]
+componentName = "Down"
+key = "down"
+iconclass = "fas fa-caret-down"
+pressed = "false"
+ccid_imageIconType = "iconclass"
+[[Elements.Components.Components]]
+Type = "Ch5 Dpad Button"
+
+[Elements.Components.Components.Attributes]
+componentName = "Left"
+key = "left"
+iconclass = "fas fa-caret-left"
+pressed = "false"
+ccid_imageIconType = "iconclass"
+[[Elements.Components.Components]]
+Type = "Ch5 Dpad Button"
+
+[Elements.Components.Components.Attributes]
+componentName = "Right"
+key = "right"
+iconclass = "fas fa-caret-right"
+pressed = "false"
+ccid_imageIconType = "iconclass"
+[[Elements.Components.Components]]
+Type = "Ch5 Dpad Button"
+
+[Elements.Components.Components.Attributes]
+componentName = "Center"
+key = "center"
+iconclass = "fas fa-circle"
+pressed = "false"
+ccid_imageIconType = "iconclass"
+
+[Elements.Components.Attributes]
+size = "x-large"
+shape = "plus"
+type = "default"
+useContractForCustomStyle = "false"
+useContractForCustomClass = "false"
+useContractForEnable = "false"
+useContractForShow = "false"
+customvstheme = "custom"
+id = "i6ff"
+componentName = "Dpad"
+disabled = "false"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+ccid_themeCSSSet = "true"
+sendeventonclickstart = "Contract Enabled"
+[[Elements.Components]]
+Type = "Ch5 Background"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+scale = "stretch"
+refreshrate = "600"
+transitioneffect = "ease"
+transitionduration = "1s"
+assetid = "0"
+id = "ifj69yk15s"
+componentName = "Background"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+backgroundcolor = "rgba(0,0,0,0.17)"
+oldID = "i8bypjwfj7"
+
+[Elements.Attributes]
+id = "i45j4ehsbr"
+devicesVisited = "[\"TSW-760\"]"
+defaultWidth = "650px"
+defaultHeight = "600px"
+globalControlContract = "on"
+

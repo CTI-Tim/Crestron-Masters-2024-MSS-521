@@ -1,0 +1,133 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "1.3001.21.0"
+Created = 2024-01-17 10:49:43.604448-05:00
+LastModifiedByAppHost = "1.3001.21.0"
+Modified = 2024-01-17 10:49:43.604447-05:00
+CreatedByProjectApp = "1.3001.21.0"
+LastModifiedByProjectApp = "1.3001.21.0"
+MinimumProjectApp = "1.2600.1"
+
+{Html}
+<div id="icriydzcu2" devicesvisited="[&quot;TSW-760&quot;]" defaultwidth="500px" defaultheight="500px" globalcontrolcontract="on" class="widget-container"><ch5-text clearlabel="false" labelmodeadvncomponent="simple" horizontalalignment="center" verticalalignment="middle" multilinesupport="false" truncatetext="false" labelinnerhtml="Airmedia Address" id="i7abppr7zv" componentname="Formatted-Text_3" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" ccid_themecssset="true" oldid="i7lt"></ch5-text><ch5-text clearlabel="false" labelmodeadvncomponent="simple" horizontalalignment="center" verticalalignment="middle" multilinesupport="false" truncatetext="false" labelinnerhtml="Pin Code" id="ibzegj6r0f" componentname="Formatted-Text_2" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" ccid_themecssset="true" oldid="i7lt"></ch5-text><ch5-text clearlabel="false" labelmodeadvncomponent="simple" horizontalalignment="center" verticalalignment="middle" multilinesupport="false" truncatetext="false" labelinnerhtml="label" id="iwvhcwmbrp" componentname="AirmediaAddressFb" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" ccid_themecssset="true" oldid="i7lt" pd-receivestatelabel="Contract Enabled"></ch5-text><ch5-text clearlabel="false" labelmodeadvncomponent="simple" horizontalalignment="center" verticalalignment="middle" multilinesupport="false" truncatetext="false" labelinnerhtml="label" id="i7lt" componentname="AirmediaPinFb" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" ccid_themecssset="true" pd-receivestatelabel="Contract Enabled">
+              </ch5-text><ch5-background scale="stretch" refreshrate="600" transitioneffect="ease" transitionduration="1s" assetid="0" id="iu8d" componentname="Background" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" backgroundcolor="rgba(0,0,0,0.17)">
+              </ch5-background></div>
+
+{Css}
+@media (orientation: landscape){#icriydzcu2{width:650px;height:600px;left:0;top:0;position:absolute;display:block;partial:undefined;}.widget-container{background-image:linear-gradient(45deg, #DAE2EA 25%, transparent 25%), linear-gradient(-45deg, #DAE2EA 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #DAE2EA 75%), linear-gradient(-45deg, transparent 75%, #DAE2EA 75%);background-size:20px 20px;background-position:0 0, 0 10px, 10px -10px, -10px 0px;z-index:0;}#iu8d{width:100%;height:100%;left:0;top:0;position:absolute;display:block;partial:undefined;z-index:-72;overflow:hidden;}#i7lt .ch5-text{width:460px;height:69px;color:#fff400;font-size:36px;custom-font-size:36px;}#iwvhcwmbrp .ch5-text{width:460px;height:69px;color:#fff400;font-size:36px;custom-font-size:36px;}#ibzegj6r0f .ch5-text{width:460px;height:69px;color:#ffffff;font-size:32px;custom-font-size:32px;}#ibzegj6r0f{width:460px;height:69px;font-family:Roboto;left:95px;top:303px;position:absolute;z-index:32;display:block;}#i7abppr7zv .ch5-text{width:460px;height:69px;color:#ffffff;font-size:32px;custom-font-size:32px;}#i7abppr7zv{width:460px;height:69px;font-family:Roboto;left:95px;top:151px;position:absolute;z-index:35;display:block;}#iwvhcwmbrp{width:460px;height:69px;font-family:Roboto;left:95px;top:227px;position:absolute;z-index:29;display:block;}#i7lt{width:460px;height:69px;font-family:Roboto;left:95px;top:379px;position:absolute;z-index:20;display:block;}}@media (orientation: portrait){#icriydzcu2{width:650px;height:600px;left:0;top:0;position:absolute;display:block;partial:undefined;}.widget-container{background-image:linear-gradient(45deg, #DAE2EA 25%, transparent 25%), linear-gradient(-45deg, #DAE2EA 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #DAE2EA 75%), linear-gradient(-45deg, transparent 75%, #DAE2EA 75%);background-size:20px 20px;background-position:0 0, 0 10px, 10px -10px, -10px 0px;z-index:0;}#iu8d{width:100%;height:100%;left:0;top:0;position:absolute;display:block;partial:undefined;z-index:-72;overflow:hidden;}#i7lt .ch5-text{width:460px;height:69px;color:#fff400;font-size:36px;custom-font-size:36px;}#iwvhcwmbrp .ch5-text{width:460px;height:69px;color:#fff400;font-size:36px;custom-font-size:36px;}#ibzegj6r0f .ch5-text{width:460px;height:69px;color:#ffffff;font-size:32px;custom-font-size:32px;}#ibzegj6r0f{width:460px;height:69px;font-family:Roboto;left:95px;top:303px;position:absolute;z-index:32;display:block;}#i7abppr7zv .ch5-text{width:460px;height:69px;color:#ffffff;font-size:32px;custom-font-size:32px;}#i7abppr7zv{width:460px;height:69px;font-family:Roboto;left:95px;top:151px;position:absolute;z-index:35;display:block;}#iwvhcwmbrp{width:460px;height:69px;font-family:Roboto;left:95px;top:227px;position:absolute;z-index:29;display:block;}#i7lt{width:460px;height:69px;font-family:Roboto;left:95px;top:379px;position:absolute;z-index:20;display:block;}}@media (orientation: landscape) and (max-width: 1263px){#icriydzcu2{width:650px;height:600px;left:0;top:0;position:absolute;display:block;partial:undefined;}#iu8d{width:100%;height:100%;left:0;top:0;position:absolute;display:block;partial:undefined;z-index:-72;overflow:hidden;}#i7lt .ch5-text{width:460px;height:69px;color:#fff400;font-size:36px;custom-font-size:36px;}#iwvhcwmbrp .ch5-text{width:460px;height:69px;color:#fff400;font-size:36px;custom-font-size:36px;}#ibzegj6r0f{width:460px;height:69px;font-family:Roboto;left:95px;top:303px;position:absolute;z-index:32;display:block;}#ibzegj6r0f .ch5-text{width:460px;height:69px;color:#ffffff;font-size:32px;custom-font-size:32px;}#i7abppr7zv{width:460px;height:69px;font-family:Roboto;left:95px;top:151px;position:absolute;z-index:35;display:block;}#i7abppr7zv .ch5-text{width:460px;height:69px;color:#ffffff;font-size:32px;custom-font-size:32px;}#iwvhcwmbrp{width:460px;height:69px;font-family:Roboto;left:95px;top:227px;position:absolute;z-index:29;display:block;}#i7lt{width:460px;height:69px;font-family:Roboto;left:95px;top:379px;position:absolute;z-index:20;display:block;}}
+
+{PageAttributes}
+
+[Attributes]
+Name = "AirMediaInfo"
+PageMode = "absolute"
+Id = "17c2f9ac-504a-49dd-ad50-ab99f754a22e"
+
+[[Elements]]
+Type = "widgetContainer"
+Classes = ["widget-container"]
+
+[[Elements.Components]]
+Type = "Ch5 Text"
+Editable = true
+
+[Elements.Components.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "simple"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "false"
+truncatetext = "false"
+labelinnerhtml = "Airmedia Address"
+id = "i7abppr7zv"
+componentName = "Formatted-Text_3"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+ccid_themeCSSSet = "true"
+oldID = "i7lt"
+[[Elements.Components]]
+Type = "Ch5 Text"
+Editable = true
+
+[Elements.Components.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "simple"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "false"
+truncatetext = "false"
+labelinnerhtml = "Pin Code"
+id = "ibzegj6r0f"
+componentName = "Formatted-Text_2"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+ccid_themeCSSSet = "true"
+oldID = "i7lt"
+[[Elements.Components]]
+Type = "Ch5 Text"
+Editable = true
+
+[Elements.Components.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "simple"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "false"
+truncatetext = "false"
+labelinnerhtml = "label"
+id = "iwvhcwmbrp"
+componentName = "AirmediaAddressFb"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+ccid_themeCSSSet = "true"
+oldID = "i7lt"
+pd-receivestatelabel = "Contract Enabled"
+[[Elements.Components]]
+Type = "Ch5 Text"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "simple"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "false"
+truncatetext = "false"
+labelinnerhtml = "label"
+id = "i7lt"
+componentName = "AirmediaPinFb"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+ccid_themeCSSSet = "true"
+pd-receivestatelabel = "Contract Enabled"
+[[Elements.Components]]
+Type = "Ch5 Background"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+scale = "stretch"
+refreshrate = "600"
+transitioneffect = "ease"
+transitionduration = "1s"
+assetid = "0"
+id = "iu8d"
+componentName = "Background"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+backgroundcolor = "rgba(0,0,0,0.17)"
+
+[Elements.Attributes]
+id = "icriydzcu2"
+devicesVisited = "[\"TSW-760\"]"
+defaultWidth = "500px"
+defaultHeight = "500px"
+globalControlContract = "on"
+

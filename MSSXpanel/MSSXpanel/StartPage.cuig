@@ -1,0 +1,86 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "1.3001.21.0"
+Created = 2024-01-17 14:14:14.24569-05:00
+LastModifiedByAppHost = "1.3001.21.0"
+Modified = 2024-01-17 14:14:14.245688-05:00
+CreatedByProjectApp = "1.3001.21.0"
+LastModifiedByProjectApp = "1.3001.21.0"
+MinimumProjectApp = "1.2600.1"
+
+{Html}
+<ch5-button type="default" halignlabel="center" valignlabel="middle" checkboxshow="false" checkboxposition="left" disabled="false" pageflipattributename="pageflip" clearlabel="false" ccid_imageicontype="iconclass" ccid_linksendreceive="True" iconurlfilltype="initial" customclass="ccid-custom" affectedbypreviewstate="True" shape="rounded-rectangle" customvstheme="custom" id="iasu" labelinnerhtml="Touch the Screen to Begin" pageflip="0" iconposition="first" previewstate="normal" orientation="horizontal" labelmode="simple" componentname="Button" ccid_themecssset="true" devicesvisited="[&quot;TSW-760&quot;]" selected="false" sendeventontouch="Contract Enabled" pd-receivestateselected="Contract Enabled" size="custom">
+              </ch5-button><ch5-background scale="stretch" refreshrate="600" transitioneffect="ease" transitionduration="1s" assetid="6e1628ae-d46c-47fb-8690-191a31b81b83" id="iz1a" componentname="Background" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" imgbackgroundcolor="transparent" backgroundcolor="#ffffff">
+              </ch5-background>
+
+{Css}
+@media (orientation: landscape){#iz1a{width:100%;height:100%;z-index:-83;overflow:hidden;position:absolute;left:0;top:0;display:block;}#iasu{pointer-events:all;width:1259px;height:734px;font-family:Roboto;left:1px;top:3px;position:absolute;z-index:6;display:block;buttonDefaultLabel_font-size:52px;}#iasu .ch5-button--default{border-style:solid;border-color:rgba(0,145,234,0);color:#ffffff;background-color:rgba(0,153,255,0);border-width:1px;}#iasu .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:52px;font-weight:400;buttonDefaultLabel_font-size:52px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;custom-font-size:52px;}#iasu .ch5-button-child{width:inherit;height:inherit;top:inherit;left:inherit;position:fixed;}#iasu .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;}#iasu .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#iasu .ccid-custom.ch5-button--default .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iasu .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:rgba(0,138,230,0);border-color:rgba(0,145,234,0);}#iasu .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultPressedLabel_font-size:14px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;}#iasu .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;}#iasu .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#iasu .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iasu .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#iasu .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;}#iasu .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;}#iasu .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#iasu .ccid-custom.ch5-button--default.ch5-button--selected .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iasu .ch5-button--size-regular .cb-btn{width:1259px;height:734px;}}@media (orientation: portrait){#iz1a{width:100%;height:100%;z-index:-83;overflow:hidden;position:absolute;left:0;top:0;display:block;}#iasu{pointer-events:all;width:1259px;height:734px;font-family:Roboto;left:1px;top:3px;position:absolute;z-index:6;display:block;buttonDefaultLabel_font-size:52px;}#iasu .ch5-button--default{border-style:solid;border-color:rgba(0,145,234,0);color:#ffffff;background-color:rgba(0,153,255,0);border-width:1px;}#iasu .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:52px;font-weight:400;buttonDefaultLabel_font-size:52px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;custom-font-size:52px;}#iasu .ch5-button-child{width:inherit;height:inherit;top:inherit;left:inherit;position:fixed;}#iasu .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;}#iasu .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#iasu .ccid-custom.ch5-button--default .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iasu .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:rgba(0,138,230,0);border-color:rgba(0,145,234,0);}#iasu .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultPressedLabel_font-size:14px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;}#iasu .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;}#iasu .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#iasu .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iasu .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#iasu .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;}#iasu .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;}#iasu .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#iasu .ccid-custom.ch5-button--default.ch5-button--selected .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iasu .ch5-button--size-regular .cb-btn{width:1259px;height:734px;}}@media (orientation: landscape) and (max-width: 1263px){#iz1a{width:1262px;height:740px;z-index:-83;overflow:hidden;position:absolute;left:0px;top:0px;display:block;}#iasu{pointer-events:all;width:1259px;height:734px;font-family:Roboto;left:1px;top:3px;position:absolute;z-index:6;display:block;buttonDefaultLabel_font-size:52px;}#iasu .ch5-button--default{border-style:solid;border-color:rgba(0,145,234,0);color:#ffffff;background-color:rgba(0,153,255,0);border-width:1px;}#iasu .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:52px;font-weight:400;buttonDefaultLabel_font-size:52px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;custom-font-size:52px;}#iasu .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;}#iasu .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#iasu .ccid-custom.ch5-button--default .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iasu .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:rgba(0,138,230,0);border-color:rgba(0,145,234,0);}#iasu .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultPressedLabel_font-size:14px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;}#iasu .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;}#iasu .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#iasu .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iasu .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#iasu .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;}#iasu .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;}#iasu .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#iasu .ccid-custom.ch5-button--default.ch5-button--selected .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iasu .ch5-button--size-regular .cb-btn{width:1259px;height:734px;}}
+
+{PageAttributes}
+
+[Attributes]
+Name = "StartPage"
+PageMode = "absolute"
+Id = "692c9d38-151f-4447-98b9-4086670bbbf5"
+StartPage = "True"
+VisibilityJoin = "VisibilityJoin"
+
+[[Elements]]
+Type = "Ch5 Button"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+type = "default"
+halignlabel = "center"
+valignlabel = "middle"
+checkboxshow = "false"
+checkboxposition = "left"
+disabled = "false"
+pageFlipAttributeName = "pageflip"
+clearLabel = "false"
+ccid_imageIconType = "iconclass"
+ccid_linkSendReceive = "True"
+iconurlfilltype = "initial"
+customclass = "ccid-custom"
+affectedByPreviewState = "True"
+shape = "rounded-rectangle"
+customvstheme = "custom"
+id = "iasu"
+labelinnerhtml = "Touch the Screen to Begin"
+pageflip = "0"
+iconposition = "first"
+previewstate = "normal"
+orientation = "horizontal"
+labelmode = "simple"
+componentName = "Button"
+ccid_themeCSSSet = "true"
+devicesVisited = "[\"TSW-760\"]"
+selected = "false"
+sendeventontouch = "Contract Enabled"
+pd-receivestateselected = "Contract Enabled"
+size = "custom"
+[[Elements]]
+Type = "Ch5 Background"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+scale = "stretch"
+refreshrate = "600"
+transitioneffect = "ease"
+transitionduration = "1s"
+assetid = "6e1628ae-d46c-47fb-8690-191a31b81b83"
+id = "iz1a"
+componentName = "Background"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+imgbackgroundcolor = "transparent"
+backgroundcolor = "#ffffff"
+

@@ -1,0 +1,20 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "1.3001.21.0"
+Created = 2024-02-21 09:39:35.849673-05:00
+LastModifiedByAppHost = "1.3001.21.0"
+Modified = 2024-02-21 09:39:35.849667-05:00
+CreatedByProjectApp = "1.3001.21.0"
+LastModifiedByProjectApp = "1.3001.21.0"
+MinimumProjectApp = "1.2600.1"
+
+{ProjectAttributes}
+
+[Attributes]
+Name = "MSSXpanel"
+ThemeId = "light-theme.css"
+SdkId = "CH5:2.7.0"
+ComponentKey = "UiEditor"
+DeviceResolutionIds = "D-L-TSW0760-1262-0740"
+ipId = "04"
+

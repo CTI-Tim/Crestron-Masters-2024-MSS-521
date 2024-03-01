@@ -1,0 +1,118 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "1.3001.21.0"
+Created = 2024-01-17 18:47:12.782033-05:00
+LastModifiedByAppHost = "1.3001.21.0"
+Modified = 2024-01-17 18:47:12.782029-05:00
+CreatedByProjectApp = "1.3001.21.0"
+LastModifiedByProjectApp = "1.3001.21.0"
+MinimumProjectApp = "1.2600.1"
+
+{Html}
+<div id="im87alz473" devicesvisited="[&quot;TSW-760&quot;]" defaultwidth="1260px" defaultheight="80px" globalcontrolcontract="on" class="widget-container"><ch5-button type="default" halignlabel="center" valignlabel="middle" checkboxshow="false" checkboxposition="left" disabled="false" pageflipattributename="pageflip" clearlabel="true" ccid_imageicontype="iconclass" ccid_linksendreceive="True" iconurlfilltype="initial" customclass="ccid-custom" affectedbypreviewstate="True" shape="rounded-rectangle" customvstheme="custom" id="iqjp" pageflip="0" iconposition="first" previewstate="normal" orientation="horizontal" labelmode="simple" componentname="PowerButton" ccid_themecssset="true" devicesvisited="[&quot;TSW-760&quot;]" size="custom" iconclass="fas fa-power-off" sendeventontouch="Contract Enabled" pd-receivestateselected="Contract Enabled" selected="false" labelinnerhtml="">
+              </ch5-button><ch5-text clearlabel="false" labelmodeadvncomponent="simple" horizontalalignment="center" verticalalignment="middle" multilinesupport="false" truncatetext="false" labelinnerhtml="label" id="iuen" componentname="RoomNameLabel" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" ccid_themecssset="true" pd-receivestatelabel="Contract Enabled">
+              </ch5-text><ch5-background scale="stretch" refreshrate="600" transitioneffect="ease" transitionduration="1s" assetid="0" id="isar" componentname="Background" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" backgroundcolor="rgba(0,0,0,0.34)">
+              </ch5-background></div>
+
+{Css}
+@media (orientation: landscape){#im87alz473{width:1260px;height:80px;left:0;top:0;position:absolute;display:block;partial:undefined;}.widget-container{background-image:linear-gradient(45deg, #DAE2EA 25%, transparent 25%), linear-gradient(-45deg, #DAE2EA 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #DAE2EA 75%), linear-gradient(-45deg, transparent 75%, #DAE2EA 75%);background-size:20px 20px;background-position:0 0, 0 10px, 10px -10px, -10px 0px;z-index:0;}#isar{width:100%;height:100%;left:0;top:0;position:absolute;display:block;z-index:-81;overflow:hidden;}#iuen .ch5-text{width:651px;height:79px;font-size:40px;custom-font-size:40px;color:#ffffff;}#iqjp .ch5-button--default{border-style:solid;border-color:rgba(0,145,234,0);color:#ffffff;background-color:rgba(0,0,0,0);border-width:1px;}#iqjp .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:14px;font-weight:400;buttonDefaultLabel_font-size:14px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;}#iqjp .ch5-button-child{width:inherit;height:inherit;top:inherit;left:inherit;position:fixed;}#iqjp .ch5-button--default .ch5-button--icon{color:#ffffff;custom-font-size:38px;buttonDefaultIcon_color:#ffffff;buttonDefaultIcon_font-size:38px;font-size:38px;}#iqjp .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#iqjp .ccid-custom.ch5-button--default .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iqjp .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:rgba(0,138,230,0);border-color:#0091ea;}#iqjp .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultPressedLabel_font-size:14px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;}#iqjp .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:38px;custom-font-size:38px;buttonDefaultPressedIcon_font-size:38px;buttonDefaultPressedIcon_color:#f0fff0;}#iqjp .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#iqjp .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iqjp .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#iqjp .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;}#iqjp .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;}#iqjp .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#iqjp .ccid-custom.ch5-button--default.ch5-button--selected .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iqjp .ch5-button--size-regular .cb-btn{width:106px;height:79px;}#iqjp{pointer-events:all;width:106px;height:79px;font-family:Roboto;left:0px;top:0px;position:absolute;z-index:10;display:block;buttonDefaultPressedIcon_font-size:38px;}#iuen{width:651px;height:79px;font-family:Roboto;left:304px;top:0px;position:absolute;z-index:9;display:block;}}@media (orientation: portrait){#im87alz473{width:1260px;height:80px;left:0;top:0;position:absolute;display:block;partial:undefined;}.widget-container{background-image:linear-gradient(45deg, #DAE2EA 25%, transparent 25%), linear-gradient(-45deg, #DAE2EA 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #DAE2EA 75%), linear-gradient(-45deg, transparent 75%, #DAE2EA 75%);background-size:20px 20px;background-position:0 0, 0 10px, 10px -10px, -10px 0px;z-index:0;}#isar{width:100%;height:100%;left:0;top:0;position:absolute;display:block;z-index:-81;overflow:hidden;}#iuen .ch5-text{width:651px;height:79px;font-size:40px;custom-font-size:40px;color:#ffffff;}#iqjp .ch5-button--default{border-style:solid;border-color:rgba(0,145,234,0);color:#ffffff;background-color:rgba(0,0,0,0);border-width:1px;}#iqjp .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:14px;font-weight:400;buttonDefaultLabel_font-size:14px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;}#iqjp .ch5-button-child{width:inherit;height:inherit;top:inherit;left:inherit;position:fixed;}#iqjp .ch5-button--default .ch5-button--icon{color:#ffffff;custom-font-size:38px;buttonDefaultIcon_color:#ffffff;buttonDefaultIcon_font-size:38px;font-size:38px;}#iqjp .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#iqjp .ccid-custom.ch5-button--default .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iqjp .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:rgba(0,138,230,0);border-color:#0091ea;}#iqjp .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultPressedLabel_font-size:14px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;}#iqjp .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:38px;custom-font-size:38px;buttonDefaultPressedIcon_font-size:38px;buttonDefaultPressedIcon_color:#f0fff0;}#iqjp .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#iqjp .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iqjp .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#iqjp .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;}#iqjp .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;}#iqjp .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#iqjp .ccid-custom.ch5-button--default.ch5-button--selected .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iqjp .ch5-button--size-regular .cb-btn{width:106px;height:79px;}#iqjp{pointer-events:all;width:106px;height:79px;font-family:Roboto;left:0px;top:0px;position:absolute;z-index:10;display:block;buttonDefaultPressedIcon_font-size:38px;}#iuen{width:651px;height:79px;font-family:Roboto;left:304px;top:0px;position:absolute;z-index:9;display:block;}}@media (orientation: landscape) and (max-width: 1263px){#im87alz473{width:1260px;height:80px;left:0;top:0;position:absolute;display:block;partial:undefined;}#isar{width:100%;height:100%;left:0;top:0;position:absolute;display:block;z-index:-81;overflow:hidden;}#iuen .ch5-text{width:651px;height:79px;font-size:40px;custom-font-size:40px;color:#ffffff;}#iqjp .ch5-button--default{border-style:solid;border-color:rgba(0,145,234,0);color:#ffffff;background-color:rgba(0,0,0,0);border-width:1px;}#iqjp .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:14px;font-weight:400;buttonDefaultLabel_font-size:14px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;}#iqjp .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:38px;custom-font-size:38px;buttonDefaultIcon_font-size:38px;buttonDefaultIcon_color:#ffffff;}#iqjp .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#iqjp .ccid-custom.ch5-button--default .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iqjp .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:rgba(0,138,230,0);border-color:#0091ea;}#iqjp .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultPressedLabel_font-size:14px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;}#iqjp .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:38px;custom-font-size:38px;buttonDefaultPressedIcon_font-size:38px;buttonDefaultPressedIcon_color:#f0fff0;}#iqjp .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#iqjp .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iqjp .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#iqjp .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;}#iqjp .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;}#iqjp .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#iqjp .ccid-custom.ch5-button--default.ch5-button--selected .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iqjp .ch5-button--size-regular .cb-btn{width:106px;height:79px;}#iqjp{pointer-events:all;width:106px;height:79px;font-family:Roboto;left:0px;top:0px;position:absolute;z-index:10;display:block;buttonDefaultPressedIcon_font-size:38px;}#iuen{width:651px;height:79px;font-family:Roboto;left:304px;top:0px;position:absolute;z-index:9;display:block;}}
+
+{PageAttributes}
+
+[Attributes]
+Name = "HeaderBar"
+PageMode = "absolute"
+Id = "8f4e85cd-2faf-4f4b-91eb-3367a560bd9f"
+
+[[Elements]]
+Type = "widgetContainer"
+Classes = ["widget-container"]
+
+[[Elements.Components]]
+Type = "Ch5 Button"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+type = "default"
+halignlabel = "center"
+valignlabel = "middle"
+checkboxshow = "false"
+checkboxposition = "left"
+disabled = "false"
+pageFlipAttributeName = "pageflip"
+clearLabel = "true"
+ccid_imageIconType = "iconclass"
+ccid_linkSendReceive = "True"
+iconurlfilltype = "initial"
+customclass = "ccid-custom"
+affectedByPreviewState = "True"
+shape = "rounded-rectangle"
+customvstheme = "custom"
+id = "iqjp"
+pageflip = "0"
+iconposition = "first"
+previewstate = "normal"
+orientation = "horizontal"
+labelmode = "simple"
+componentName = "PowerButton"
+ccid_themeCSSSet = "true"
+devicesVisited = "[\"TSW-760\"]"
+size = "custom"
+iconclass = "fas fa-power-off"
+sendeventontouch = "Contract Enabled"
+pd-receivestateselected = "Contract Enabled"
+selected = "false"
+labelinnerhtml = ""
+[[Elements.Components]]
+Type = "Ch5 Text"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "simple"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "false"
+truncatetext = "false"
+labelinnerhtml = "label"
+id = "iuen"
+componentName = "RoomNameLabel"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+ccid_themeCSSSet = "true"
+pd-receivestatelabel = "Contract Enabled"
+[[Elements.Components]]
+Type = "Ch5 Background"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+scale = "stretch"
+refreshrate = "600"
+transitioneffect = "ease"
+transitionduration = "1s"
+assetid = "0"
+id = "isar"
+componentName = "Background"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+backgroundcolor = "rgba(0,0,0,0.34)"
+
+[Elements.Attributes]
+id = "im87alz473"
+devicesVisited = "[\"TSW-760\"]"
+defaultWidth = "1260px"
+defaultHeight = "80px"
+globalControlContract = "on"
+

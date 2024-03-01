@@ -1,0 +1,185 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SimplSharpPro/1.6.0.0": {
+        "dependencies": {
+          "ConsoleServiceBase": "1.0.0",
+          "ConsoleServiceCE": "1.0.0",
+          "ManagedUtilities": "1.0.0",
+          "ManagedUtilitiesCE": "1.0.0",
+          "RegistrySupport": "1.0.0",
+          "SimplSharpHelperInterface": "1.0.0",
+          "SmartThreadPool.dll": "2.3.0",
+          "Newtonsoft.Json.Compact": "4.0.8.0",
+          "SimplSharpCustomAttributesInterface": "1.0.0.0"
+        },
+        "runtime": {
+          "SimplSharpPro.dll": {}
+        }
+      },
+      "ConsoleServiceBase/1.0.0": {
+        "dependencies": {
+          "ManagedOpenSslLibrary": "1.0.0",
+          "ManagedUtilities": "1.0.0",
+          "ManagedUtilitiesCE": "1.0.0"
+        },
+        "runtime": {
+          "ConsoleServiceBase.dll": {}
+        }
+      },
+      "ConsoleServiceCE/1.0.0": {
+        "dependencies": {
+          "ConsoleServiceBase": "1.0.0",
+          "ManagedUtilities": "1.0.0",
+          "ManagedUtilitiesCE": "1.0.0",
+          "RegistrySupport": "1.0.0"
+        },
+        "runtime": {
+          "ConsoleServiceCE.dll": {}
+        }
+      },
+      "ManagedOpenSslLibrary/1.0.0": {
+        "dependencies": {
+          "ManagedUtilities": "1.0.0",
+          "SmartThreadPool.dll": "2.3.0"
+        },
+        "runtime": {
+          "ManagedOpenSslLibrary.dll": {}
+        }
+      },
+      "ManagedUtilities/1.0.0": {
+        "dependencies": {
+          "RegistrySupport": "1.0.0"
+        },
+        "runtime": {
+          "ManagedUtilities.dll": {}
+        }
+      },
+      "ManagedUtilitiesCE/1.0.0": {
+        "dependencies": {
+          "ManagedOpenSslLibrary": "1.0.0",
+          "ManagedUtilities": "1.0.0",
+          "RegistrySupport": "1.0.0"
+        },
+        "runtime": {
+          "ManagedUtilitiesCE.dll": {}
+        }
+      },
+      "RegistrySupport/1.0.0": {
+        "runtime": {
+          "RegistrySupport.dll": {}
+        }
+      },
+      "SimplSharpHelperInterface/1.0.0": {
+        "dependencies": {
+          "ConsoleServiceBase": "1.0.0",
+          "ConsoleServiceCE": "1.0.0",
+          "ManagedUtilities": "1.0.0",
+          "ManagedUtilitiesCE": "1.0.0"
+        },
+        "runtime": {
+          "SimplSharpHelperInterface.dll": {}
+        }
+      },
+      "SmartThreadPool.dll/2.3.0": {
+        "dependencies": {
+          "ManagedUtilities": "1.0.0"
+        },
+        "runtime": {
+          "SmartThreadPool.dll": {}
+        }
+      },
+      "Newtonsoft.Json.Compact/4.0.8.0": {
+        "runtime": {
+          "Newtonsoft.Json.Compact.dll": {
+            "assemblyVersion": "4.0.8.0",
+            "fileVersion": "4.0.8.0"
+          }
+        }
+      },
+      "SimplSharpCustomAttributesInterface/1.0.0.0": {
+        "runtime": {
+          "SimplSharpCustomAttributesInterface.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CedbDataStoreInterface/1.0.0.0": {
+        "runtime": {
+          "CedbDataStoreInterface.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SimplSharpPro/1.6.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ConsoleServiceBase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ConsoleServiceCE/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ManagedOpenSslLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ManagedUtilities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ManagedUtilitiesCE/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RegistrySupport/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SimplSharpHelperInterface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SmartThreadPool.dll/2.3.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json.Compact/4.0.8.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SimplSharpCustomAttributesInterface/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CedbDataStoreInterface/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

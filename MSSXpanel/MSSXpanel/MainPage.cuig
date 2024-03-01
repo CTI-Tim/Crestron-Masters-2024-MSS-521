@@ -1,0 +1,350 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "1.3001.21.0"
+Created = 2024-01-17 18:47:12.784017-05:00
+LastModifiedByAppHost = "1.3001.21.0"
+Modified = 2024-01-17 18:47:12.784014-05:00
+CreatedByProjectApp = "1.3001.21.0"
+LastModifiedByProjectApp = "1.3001.21.0"
+MinimumProjectApp = "1.2600.1"
+
+{Html}
+<ch5-template templateid="w722492f7-e97f-4bc9-91bc-07c52995ca85" id="itsfl" componentname="PowerOffOk" devicesvisited="[&quot;TSW-760&quot;]" pd-receivestateshow="Contract Enabled"></ch5-template><ch5-template templateid="wbed4d4b6-bc2a-4f68-9037-c7a37629dd7f" id="ionls" componentname="MediaControl" devicesvisited="[&quot;TSW-760&quot;]" pd-receivestateshow="Contract Enabled"></ch5-template><ch5-template templateid="wb4e9f282-94be-4868-87bf-74e15da6fa0f" id="ihm5u" componentname="NvxInfo" devicesvisited="[&quot;TSW-760&quot;]" pd-receivestateshow="Contract Enabled"></ch5-template><ch5-template templateid="w17c2f9ac-504a-49dd-ad50-ab99f754a22e" id="iqa5i" componentname="AirMediaInfo" devicesvisited="[&quot;TSW-760&quot;]" pd-receivestateshow="Contract Enabled"></ch5-template><ch5-text clearlabel="false" labelmodeadvncomponent="simple" horizontalalignment="center" verticalalignment="middle" multilinesupport="false" truncatetext="false" labelinnerhtml="label" id="izh7t" componentname="SourceFeedbackLabel" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" ccid_themecssset="true" pd-receivestatelabel="Contract Enabled">
+              </ch5-text><ch5-button-list centeritems="false" columns="1" endless="false" numberofitems="3" orientation="vertical" previewstate="buttonnormal" usecontractforcustomstyle="false" usecontractforcustomclass="false" rows="1" scrollbar="true" scrolltoposition="0" stretch="null" indexid="idx" customclass="ccid-custom" buttoncheckboxposition="left" buttoncheckboxshow="false" buttonhalignlabel="center" buttonvalignlabel="middle" buttoniconposition="first" buttonmode="0" buttonshape="rectangle" buttontype="default" buttoniconurlfilltype="initial" pd-receivestateenable="" pd-receivestateshow="" pd-receivestatescrolltoposition="" pd-receivestatenumberofitems="" pd-buttonreceivestateselected="" pd-buttonreceivestatescriptlabelhtml="" pd-buttonreceivestateiconclass="" buttonsendeventonclick="Contract Enabled" pd-buttonreceivestateenable="" pd-buttonreceivestateshow="" affectedbypreviewstate="True" customvstheme="custom" id="iagz7" componentname="VolumeButtonList" ccid_linksendreceive="True" assetid="0" ccid_imageicontype="iconclass" devicesvisited="[&quot;TSW-760&quot;]"><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 1" devicesvisited="[&quot;TSW-760&quot;]" pageflipattributename="onRelease" onrelease="0" id="ipdc7" iconclass="fas fa-volume-up"></ch5-button-list-individual-button><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 2" devicesvisited="[&quot;TSW-760&quot;]" pageflipattributename="onRelease" onrelease="0" id="ido1u" iconclass="fas fa-volume-mute"></ch5-button-list-individual-button><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 3" devicesvisited="[&quot;TSW-760&quot;]" pageflipattributename="onRelease" onrelease="0" id="imcwv" iconclass="fas fa-volume-down"></ch5-button-list-individual-button></ch5-button-list><ch5-text clearlabel="false" labelmodeadvncomponent="simple" horizontalalignment="center" verticalalignment="middle" multilinesupport="false" truncatetext="false" labelinnerhtml="label" id="ikhue" componentname="MutedFeedback" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" ccid_themecssset="true" pd-receivestateshow="Contract Enabled">
+              </ch5-text><ch5-segmented-gauge primarystategraphic="green" secondarystategraphic="yellow" tertiarystategraphic="red" orientation="vertical" touchsettable="false" value="0" minvalue="0" maxvalue="65535" gaugeledstyle="rectangle" numberofsegments="28" id="igrdy" componentname="VolumeBar" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" pd-receivestatevalue="Contract Enabled">
+              </ch5-segmented-gauge><ch5-button-list centeritems="false" columns="1" endless="false" numberofitems="6" orientation="vertical" previewstate="buttonnormal" usecontractforcustomstyle="false" usecontractforcustomclass="false" rows="1" scrollbar="true" scrolltoposition="0" stretch="null" indexid="idx" customclass="ccid-custom" buttoncheckboxposition="left" buttoncheckboxshow="false" buttonhalignlabel="center" buttonvalignlabel="middle" buttoniconposition="first" buttonmode="0" buttonshape="rectangle" buttontype="default" buttoniconurlfilltype="initial" pd-receivestateenable="" pd-receivestateshow="" pd-receivestatescrolltoposition="" pd-receivestatenumberofitems="" pd-buttonreceivestateselected="Contract Enabled" pd-buttonreceivestatescriptlabelhtml="Contract Enabled" pd-buttonreceivestateiconclass="" buttonsendeventonclick="Contract Enabled" pd-buttonreceivestateenable="" pd-buttonreceivestateshow="" affectedbypreviewstate="True" customvstheme="custom" id="iyp3" componentname="SourceList" ccid_linksendreceive="True" assetid="0" ccid_imageicontype="iconclass" devicesvisited="[&quot;TSW-760&quot;]" contractitemlabeltype="innerHTML" buttonlabelinnerhtml="button"><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 1"></ch5-button-list-individual-button><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 2"></ch5-button-list-individual-button><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 3"></ch5-button-list-individual-button><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 4"></ch5-button-list-individual-button><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 5"></ch5-button-list-individual-button><ch5-button-list-individual-button ccid_imageicontype="iconclass" componentname="Individual Button 6"></ch5-button-list-individual-button></ch5-button-list><ch5-template templateid="w8f4e85cd-2faf-4f4b-91eb-3367a560bd9f" id="i4wr" componentname="HeaderBar" devicesvisited="[&quot;TSW-760&quot;]"></ch5-template><ch5-background scale="stretch" refreshrate="600" transitioneffect="ease" transitionduration="1s" assetid="6e1628ae-d46c-47fb-8690-191a31b81b83" id="ij25f4j1aid7z" componentname="Background" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" imgbackgroundcolor="transparent" backgroundcolor="#ffffff" oldid="iz1a">
+              </ch5-background><ch5-background scale="stretch" refreshrate="600" transitioneffect="ease" transitionduration="1s" assetid="6e1628ae-d46c-47fb-8690-191a31b81b83" id="iyjogvseqr" componentname="Background_1" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" imgbackgroundcolor="transparent" backgroundcolor="#ffffff" oldid="iz1a">
+              </ch5-background>
+
+{Css}
+@media (orientation: landscape){#i4wr{display:block;left:0;top:0;position:absolute;z-index:58;}#iyjogvseqr{width:100%;height:100%;z-index:-79;overflow:hidden;position:absolute;left:0px;top:0px;display:block;}#iyp3 .ch5-button-list{width:371px;height:641px;}#iyp3 .ch5-button-list--button-container{listbuttonHSize_width:100px;width:100px;listbuttonVSize_height:104px;height:104px;}#iyp3 .ch5-button-list.ch5-button-list--orientation-horizontal{listbuttonSpacing_row-gap:0px;row-gap:0px;listbuttonSpacing_column-gap:0px;column-gap:0px;}#iyp3 .ccid-custom .ch5-button-list--button-type-default .ch5-button--img{buttonListDefaultImage_width:21px;width:21px;buttonListDefaultImage_height:21px;height:21px;}#iyp3 .ch5-button-list.ch5-button-list--orientation-horizontal .ch5-button-list--button-container{height:100%;}#iyp3 .ch5-button-list.ch5-button-list--orientation-vertical .ch5-button-list--button-container{width:100%;}#iyp3 .ch5-button-list.ch5-button-list--orientation-vertical{listbuttonSpacing_row-gap:0px;row-gap:0px;listbuttonSpacing_column-gap:0px;column-gap:0px;}#iyp3 .ccid-custom .ch5-button-list--button-type-default.ch5-button--selected .ch5-button--img{buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;width:21px;height:21px;}#iyp3 .ccid-custom .ch5-button-list--button-type-default.ch5-button--pressed .ch5-button--img{buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;width:21px;height:21px;}#iyp3 .ch5-button-list--button-type-default .ch5-button--span .ch5-button--label{buttonListDefaultLabel_font-size:38px;font-size:38px;custom-font-size:38px;}#izh7t .ch5-text{width:560px;height:71px;color:#ffffff;font-size:32px;custom-font-size:32px;}#izh7t{width:560px;height:71px;font-family:Roboto;left:425px;top:109px;position:absolute;z-index:63;display:block;}#igrdy{display:default;left:1231px;top:101px;position:absolute;z-index:60;width:auto;height:auto;}#ij25f4j1aid7z{width:100%;height:100%;z-index:-76;overflow:hidden;position:absolute;left:0px;top:0px;display:block;}#iagz7 .ch5-button-list{width:162px;height:324px;}#iagz7 .ch5-button-list--button-container{listbuttonHSize_width:100px;width:100px;listbuttonVSize_height:104px;height:104px;}#iagz7 .ch5-button-list.ch5-button-list--orientation-horizontal{listbuttonSpacing_row-gap:0px;row-gap:0px;listbuttonSpacing_column-gap:0px;column-gap:0px;}#iagz7 .ccid-custom .ch5-button-list--button-type-default .ch5-button--img{buttonListDefaultImage_width:21px;width:21px;buttonListDefaultImage_height:21px;height:21px;}#iagz7 .ch5-button-list.ch5-button-list--orientation-horizontal .ch5-button-list--button-container{height:100%;}#iagz7 .ch5-button-list.ch5-button-list--orientation-vertical .ch5-button-list--button-container{width:100%;}#iagz7 .ch5-button-list.ch5-button-list--orientation-vertical{listbuttonSpacing_row-gap:0px;row-gap:0px;listbuttonSpacing_column-gap:0px;column-gap:0px;}#iagz7 .ccid-custom .ch5-button-list--button-type-default.ch5-button--selected .ch5-button--img{buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;width:21px;height:21px;}#iagz7 .ccid-custom .ch5-button-list--button-type-default.ch5-button--pressed .ch5-button--img{buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;width:21px;height:21px;}#ikhue .ch5-text{width:171px;height:94px;background-color:#ff0000;border-color:#ff0000;}#ikhue{width:171px;height:94px;font-family:Roboto;left:1041px;top:363px;position:absolute;z-index:61;display:block;}#iagz7 .ch5-button-list--button-type-default .ch5-button--span .ch5-button--icon{buttonListDefaultIcon_font-size:38px;font-size:38px;custom-font-size:38px;}#iqa5i{left:382px;top:108px;position:absolute;z-index:64;width:auto;height:auto;display:none;}#ihm5u{left:382px;top:108px;position:absolute;z-index:65;display:none;}#ionls{left:382px;top:108px;position:absolute;z-index:66;display:none;}#itsfl{left:0px;top:0;position:absolute;z-index:68;width:auto;height:auto;display:none;}#iagz7{width:162px;height:324px;listbuttonHSize_width:100px;listbuttonVSize_height:104px;listbuttonSpacing_row-gap:0px;listbuttonSpacing_column-gap:0px;buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;left:1045px;top:249px;position:absolute;z-index:62;display:block;buttonListDefaultIcon_font-size:38px;}#iyp3{width:371px;height:641px;listbuttonHSize_width:100px;listbuttonVSize_height:104px;listbuttonSpacing_row-gap:0px;listbuttonSpacing_column-gap:0px;buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;left:11px;top:89px;position:absolute;z-index:59;display:block;buttonListDefaultLabel_font-size:38px;}}@media (orientation: portrait){#i4wr{display:block;left:0;top:0;position:absolute;z-index:58;}#iyjogvseqr{width:100%;height:100%;z-index:-78;overflow:hidden;position:absolute;left:0px;top:0px;display:block;}#iyp3 .ch5-button-list{width:371px;height:641px;}#iyp3 .ch5-button-list--button-container{listbuttonHSize_width:100px;width:100px;listbuttonVSize_height:104px;height:104px;}#iyp3 .ch5-button-list.ch5-button-list--orientation-horizontal{listbuttonSpacing_row-gap:0px;row-gap:0px;listbuttonSpacing_column-gap:0px;column-gap:0px;}#iyp3 .ccid-custom .ch5-button-list--button-type-default .ch5-button--img{buttonListDefaultImage_width:21px;width:21px;buttonListDefaultImage_height:21px;height:21px;}#iyp3 .ch5-button-list.ch5-button-list--orientation-horizontal .ch5-button-list--button-container{height:100%;}#iyp3 .ch5-button-list.ch5-button-list--orientation-vertical .ch5-button-list--button-container{width:100%;}#iyp3 .ch5-button-list.ch5-button-list--orientation-vertical{listbuttonSpacing_row-gap:0px;row-gap:0px;listbuttonSpacing_column-gap:0px;column-gap:0px;}#iyp3 .ccid-custom .ch5-button-list--button-type-default.ch5-button--selected .ch5-button--img{buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;width:21px;height:21px;}#iyp3 .ccid-custom .ch5-button-list--button-type-default.ch5-button--pressed .ch5-button--img{buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;width:21px;height:21px;}#iyp3 .ch5-button-list--button-type-default .ch5-button--span .ch5-button--label{buttonListDefaultLabel_font-size:38px;font-size:38px;custom-font-size:38px;}#izh7t .ch5-text{width:560px;height:71px;color:#ffffff;font-size:32px;custom-font-size:32px;}#izh7t{width:560px;height:71px;font-family:Roboto;left:425px;top:109px;position:absolute;z-index:63;display:block;}#igrdy{display:default;left:1231px;top:101px;position:absolute;z-index:60;width:auto;height:auto;}#ij25f4j1aid7z{width:100%;height:100%;z-index:-75;overflow:hidden;position:absolute;left:0px;top:0px;display:block;}#iagz7 .ch5-button-list{width:162px;height:324px;}#iagz7 .ch5-button-list--button-container{listbuttonHSize_width:100px;width:100px;listbuttonVSize_height:104px;height:104px;}#iagz7 .ch5-button-list.ch5-button-list--orientation-horizontal{listbuttonSpacing_row-gap:0px;row-gap:0px;listbuttonSpacing_column-gap:0px;column-gap:0px;}#iagz7 .ccid-custom .ch5-button-list--button-type-default .ch5-button--img{buttonListDefaultImage_width:21px;width:21px;buttonListDefaultImage_height:21px;height:21px;}#iagz7 .ch5-button-list.ch5-button-list--orientation-horizontal .ch5-button-list--button-container{height:100%;}#iagz7 .ch5-button-list.ch5-button-list--orientation-vertical .ch5-button-list--button-container{width:100%;}#iagz7 .ch5-button-list.ch5-button-list--orientation-vertical{listbuttonSpacing_row-gap:0px;row-gap:0px;listbuttonSpacing_column-gap:0px;column-gap:0px;}#iagz7 .ccid-custom .ch5-button-list--button-type-default.ch5-button--selected .ch5-button--img{buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;width:21px;height:21px;}#iagz7 .ccid-custom .ch5-button-list--button-type-default.ch5-button--pressed .ch5-button--img{buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;width:21px;height:21px;}#ikhue .ch5-text{width:171px;height:94px;background-color:#ff0000;border-color:#ff0000;}#ikhue{width:171px;height:94px;font-family:Roboto;left:1041px;top:363px;position:absolute;z-index:61;display:block;}#iagz7 .ch5-button-list--button-type-default .ch5-button--span .ch5-button--icon{buttonListDefaultIcon_font-size:38px;font-size:38px;custom-font-size:38px;}#iqa5i{left:382px;top:108px;position:absolute;z-index:64;width:auto;height:auto;display:none;}#ihm5u{left:382px;top:108px;position:absolute;z-index:65;display:none;}#ionls{left:382px;top:108px;position:absolute;z-index:66;display:none;}#itsfl{left:0px;top:0;position:absolute;z-index:68;width:auto;height:auto;display:none;}#iagz7{width:162px;height:324px;listbuttonHSize_width:100px;listbuttonVSize_height:104px;listbuttonSpacing_row-gap:0px;listbuttonSpacing_column-gap:0px;buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;left:1045px;top:249px;position:absolute;z-index:62;display:block;buttonListDefaultIcon_font-size:38px;}#iyp3{width:371px;height:641px;listbuttonHSize_width:100px;listbuttonVSize_height:104px;listbuttonSpacing_row-gap:0px;listbuttonSpacing_column-gap:0px;buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;left:11px;top:89px;position:absolute;z-index:59;display:block;buttonListDefaultLabel_font-size:38px;}}@media (orientation: landscape) and (max-width: 1263px){#i4wr{display:block;left:0;top:0;position:absolute;z-index:58;}#iyjogvseqr{width:1252px;height:723px;z-index:-77;overflow:hidden;position:absolute;left:0px;top:0px;display:block;}#iyp3 .ch5-button-list{width:371px;height:641px;}#iyp3 .ch5-button-list--button-container{listbuttonHSize_width:100px;width:100px;listbuttonVSize_height:104px;height:104px;}#iyp3 .ch5-button-list.ch5-button-list--orientation-horizontal{listbuttonSpacing_row-gap:0px;row-gap:0px;listbuttonSpacing_column-gap:0px;column-gap:0px;}#iyp3 .ccid-custom .ch5-button-list--button-type-default .ch5-button--img{buttonListDefaultImage_width:21px;width:21px;buttonListDefaultImage_height:21px;height:21px;}#iyp3 .ch5-button-list.ch5-button-list--orientation-horizontal .ch5-button-list--button-container{height:100%;}#iyp3 .ch5-button-list.ch5-button-list--orientation-vertical .ch5-button-list--button-container{width:100%;}#iyp3 .ch5-button-list.ch5-button-list--orientation-vertical{listbuttonSpacing_row-gap:0px;row-gap:0px;listbuttonSpacing_column-gap:0px;column-gap:0px;}#iyp3 .ccid-custom .ch5-button-list--button-type-default.ch5-button--selected .ch5-button--img{buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;width:21px;height:21px;}#iyp3 .ccid-custom .ch5-button-list--button-type-default.ch5-button--pressed .ch5-button--img{buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;width:21px;height:21px;}#iyp3 .ch5-button-list--button-type-default .ch5-button--span .ch5-button--label{buttonListDefaultLabel_font-size:38px;font-size:38px;custom-font-size:38px;}#izh7t .ch5-text{width:560px;height:71px;color:#ffffff;font-size:32px;custom-font-size:32px;}#izh7t{width:560px;height:71px;font-family:Roboto;left:425px;top:109px;position:absolute;z-index:63;display:block;}#igrdy{display:default;left:1231px;top:101px;position:absolute;z-index:60;width:auto;height:auto;}#ij25f4j1aid7z{width:100%;height:100%;z-index:-74;overflow:hidden;position:absolute;left:0px;top:0px;display:block;}#iagz7 .ch5-button-list{width:162px;height:324px;}#iagz7 .ch5-button-list--button-container{listbuttonHSize_width:100px;width:100px;listbuttonVSize_height:104px;height:104px;}#iagz7 .ch5-button-list.ch5-button-list--orientation-horizontal{listbuttonSpacing_row-gap:0px;row-gap:0px;listbuttonSpacing_column-gap:0px;column-gap:0px;}#iagz7 .ccid-custom .ch5-button-list--button-type-default .ch5-button--img{buttonListDefaultImage_width:21px;width:21px;buttonListDefaultImage_height:21px;height:21px;}#iagz7 .ch5-button-list.ch5-button-list--orientation-horizontal .ch5-button-list--button-container{height:100%;}#iagz7 .ch5-button-list.ch5-button-list--orientation-vertical .ch5-button-list--button-container{width:100%;}#iagz7 .ch5-button-list.ch5-button-list--orientation-vertical{listbuttonSpacing_row-gap:0px;row-gap:0px;listbuttonSpacing_column-gap:0px;column-gap:0px;}#iagz7 .ccid-custom .ch5-button-list--button-type-default.ch5-button--selected .ch5-button--img{buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;width:21px;height:21px;}#iagz7 .ccid-custom .ch5-button-list--button-type-default.ch5-button--pressed .ch5-button--img{buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;width:21px;height:21px;}#ikhue .ch5-text{width:171px;height:94px;background-color:#ff0000;border-color:#ff0000;}#ikhue{width:171px;height:94px;font-family:Roboto;left:1041px;top:363px;position:absolute;z-index:61;display:block;}#iagz7 .ch5-button-list--button-type-default .ch5-button--span .ch5-button--icon{buttonListDefaultIcon_font-size:38px;font-size:38px;custom-font-size:38px;}#iqa5i{display:none;left:382px;top:108px;position:absolute;z-index:64;width:auto;height:auto;}#ihm5u{display:none;left:382px;top:108px;position:absolute;z-index:65;}#ionls{display:none;left:382px;top:108px;position:absolute;z-index:66;}#itsfl{display:none;left:0px;top:0;position:absolute;z-index:68;width:auto;height:auto;}#iagz7{width:162px;height:324px;listbuttonHSize_width:100px;listbuttonVSize_height:104px;listbuttonSpacing_row-gap:0px;listbuttonSpacing_column-gap:0px;buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;left:1045px;top:249px;position:absolute;z-index:62;display:block;buttonListDefaultIcon_font-size:38px;}#iyp3{width:371px;height:641px;listbuttonHSize_width:100px;listbuttonVSize_height:104px;listbuttonSpacing_row-gap:0px;listbuttonSpacing_column-gap:0px;buttonListDefaultImage_width:21px;buttonListDefaultImage_height:21px;left:11px;top:89px;position:absolute;z-index:59;display:block;buttonListDefaultLabel_font-size:38px;}}
+
+{PageAttributes}
+
+[Attributes]
+Name = "MainPage"
+PageMode = "absolute"
+Id = "785d8d96-b15f-4b95-b4c8-cecb99458cf7"
+StartPage = "False"
+VisibilityJoin = "VisibilityJoin"
+
+[[Elements]]
+Type = "Ch5 Template"
+
+[Elements.Attributes]
+templateid = "w722492f7-e97f-4bc9-91bc-07c52995ca85"
+id = "itsfl"
+componentName = "PowerOffOk"
+devicesVisited = "[\"TSW-760\"]"
+pd-receivestateshow = "Contract Enabled"
+[[Elements]]
+Type = "Ch5 Template"
+
+[Elements.Attributes]
+templateid = "wbed4d4b6-bc2a-4f68-9037-c7a37629dd7f"
+id = "ionls"
+componentName = "MediaControl"
+devicesVisited = "[\"TSW-760\"]"
+pd-receivestateshow = "Contract Enabled"
+[[Elements]]
+Type = "Ch5 Template"
+
+[Elements.Attributes]
+templateid = "wb4e9f282-94be-4868-87bf-74e15da6fa0f"
+id = "ihm5u"
+componentName = "NvxInfo"
+devicesVisited = "[\"TSW-760\"]"
+pd-receivestateshow = "Contract Enabled"
+[[Elements]]
+Type = "Ch5 Template"
+
+[Elements.Attributes]
+templateid = "w17c2f9ac-504a-49dd-ad50-ab99f754a22e"
+id = "iqa5i"
+componentName = "AirMediaInfo"
+devicesVisited = "[\"TSW-760\"]"
+pd-receivestateshow = "Contract Enabled"
+[[Elements]]
+Type = "Ch5 Text"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "simple"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "false"
+truncatetext = "false"
+labelinnerhtml = "label"
+id = "izh7t"
+componentName = "SourceFeedbackLabel"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+ccid_themeCSSSet = "true"
+pd-receivestatelabel = "Contract Enabled"
+[[Elements]]
+Type = "Ch5 Button List"
+Editable = true
+
+[[Elements.Components]]
+Type = "Ch5 Button List Individual Button"
+
+[Elements.Components.Attributes]
+ccid_imageIconType = "iconclass"
+componentName = "Individual Button 1"
+devicesVisited = "[\"TSW-760\"]"
+pageFlipAttributeName = "onRelease"
+onRelease = "0"
+id = "ipdc7"
+iconclass = "fas fa-volume-up"
+[[Elements.Components]]
+Type = "Ch5 Button List Individual Button"
+
+[Elements.Components.Attributes]
+ccid_imageIconType = "iconclass"
+componentName = "Individual Button 2"
+devicesVisited = "[\"TSW-760\"]"
+pageFlipAttributeName = "onRelease"
+onRelease = "0"
+id = "ido1u"
+iconclass = "fas fa-volume-mute"
+[[Elements.Components]]
+Type = "Ch5 Button List Individual Button"
+
+[Elements.Components.Attributes]
+ccid_imageIconType = "iconclass"
+componentName = "Individual Button 3"
+devicesVisited = "[\"TSW-760\"]"
+pageFlipAttributeName = "onRelease"
+onRelease = "0"
+id = "imcwv"
+iconclass = "fas fa-volume-down"
+
+[Elements.Attributes]
+centeritems = "false"
+columns = "1"
+endless = "false"
+numberofitems = "3"
+orientation = "vertical"
+previewstate = "buttonnormal"
+useContractForCustomStyle = "false"
+useContractForCustomClass = "false"
+rows = "1"
+scrollbar = "true"
+scrolltoposition = "0"
+stretch = "null"
+indexid = "idx"
+customclass = "ccid-custom"
+buttoncheckboxposition = "left"
+buttoncheckboxshow = "false"
+buttonhalignlabel = "center"
+buttonvalignlabel = "middle"
+buttoniconposition = "first"
+buttonmode = "0"
+buttonshape = "rectangle"
+buttontype = "default"
+buttoniconurlfilltype = "initial"
+pd-receivestateenable = ""
+pd-receivestateshow = ""
+pd-receivestatescrolltoposition = ""
+pd-receivestatenumberofitems = ""
+pd-buttonreceivestateselected = ""
+pd-buttonreceivestatescriptlabelhtml = ""
+pd-buttonreceivestateiconclass = ""
+buttonsendeventonclick = "Contract Enabled"
+pd-buttonreceivestateenable = ""
+pd-buttonreceivestateshow = ""
+affectedByPreviewState = "True"
+customvstheme = "custom"
+id = "iagz7"
+componentName = "VolumeButtonList"
+ccid_linkSendReceive = "True"
+assetid = "0"
+ccid_imageIconType = "iconclass"
+devicesVisited = "[\"TSW-760\"]"
+[[Elements]]
+Type = "Ch5 Text"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "simple"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "false"
+truncatetext = "false"
+labelinnerhtml = "label"
+id = "ikhue"
+componentName = "MutedFeedback"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+ccid_themeCSSSet = "true"
+pd-receivestateshow = "Contract Enabled"
+[[Elements]]
+Type = "Ch5 Segmented Gauge"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+primarystategraphic = "green"
+secondarystategraphic = "yellow"
+tertiarystategraphic = "red"
+orientation = "vertical"
+touchsettable = "false"
+value = "0"
+minvalue = "0"
+maxvalue = "65535"
+gaugeledstyle = "rectangle"
+numberofsegments = "28"
+id = "igrdy"
+componentName = "VolumeBar"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+pd-receivestatevalue = "Contract Enabled"
+[[Elements]]
+Type = "Ch5 Button List"
+Editable = true
+
+[[Elements.Components]]
+Type = "Ch5 Button List Individual Button"
+
+[Elements.Components.Attributes]
+ccid_imageIconType = "iconclass"
+componentName = "Individual Button 1"
+[[Elements.Components]]
+Type = "Ch5 Button List Individual Button"
+
+[Elements.Components.Attributes]
+ccid_imageIconType = "iconclass"
+componentName = "Individual Button 2"
+[[Elements.Components]]
+Type = "Ch5 Button List Individual Button"
+
+[Elements.Components.Attributes]
+ccid_imageIconType = "iconclass"
+componentName = "Individual Button 3"
+[[Elements.Components]]
+Type = "Ch5 Button List Individual Button"
+
+[Elements.Components.Attributes]
+ccid_imageIconType = "iconclass"
+componentName = "Individual Button 4"
+[[Elements.Components]]
+Type = "Ch5 Button List Individual Button"
+
+[Elements.Components.Attributes]
+ccid_imageIconType = "iconclass"
+componentName = "Individual Button 5"
+[[Elements.Components]]
+Type = "Ch5 Button List Individual Button"
+
+[Elements.Components.Attributes]
+ccid_imageIconType = "iconclass"
+componentName = "Individual Button 6"
+
+[Elements.Attributes]
+centeritems = "false"
+columns = "1"
+endless = "false"
+numberofitems = "6"
+orientation = "vertical"
+previewstate = "buttonnormal"
+useContractForCustomStyle = "false"
+useContractForCustomClass = "false"
+rows = "1"
+scrollbar = "true"
+scrolltoposition = "0"
+stretch = "null"
+indexid = "idx"
+customclass = "ccid-custom"
+buttoncheckboxposition = "left"
+buttoncheckboxshow = "false"
+buttonhalignlabel = "center"
+buttonvalignlabel = "middle"
+buttoniconposition = "first"
+buttonmode = "0"
+buttonshape = "rectangle"
+buttontype = "default"
+buttoniconurlfilltype = "initial"
+pd-receivestateenable = ""
+pd-receivestateshow = ""
+pd-receivestatescrolltoposition = ""
+pd-receivestatenumberofitems = ""
+pd-buttonreceivestateselected = "Contract Enabled"
+pd-buttonreceivestatescriptlabelhtml = "Contract Enabled"
+pd-buttonreceivestateiconclass = ""
+buttonsendeventonclick = "Contract Enabled"
+pd-buttonreceivestateenable = ""
+pd-buttonreceivestateshow = ""
+affectedByPreviewState = "True"
+customvstheme = "custom"
+id = "iyp3"
+componentName = "SourceList"
+ccid_linkSendReceive = "True"
+assetid = "0"
+ccid_imageIconType = "iconclass"
+devicesVisited = "[\"TSW-760\"]"
+contractitemlabeltype = "innerHTML"
+buttonlabelinnerhtml = "button"
+[[Elements]]
+Type = "Ch5 Template"
+
+[Elements.Attributes]
+templateid = "w8f4e85cd-2faf-4f4b-91eb-3367a560bd9f"
+id = "i4wr"
+componentName = "HeaderBar"
+devicesVisited = "[\"TSW-760\"]"
+[[Elements]]
+Type = "Ch5 Background"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+scale = "stretch"
+refreshrate = "600"
+transitioneffect = "ease"
+transitionduration = "1s"
+assetid = "6e1628ae-d46c-47fb-8690-191a31b81b83"
+id = "ij25f4j1aid7z"
+componentName = "Background"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+imgbackgroundcolor = "transparent"
+backgroundcolor = "#ffffff"
+oldID = "iz1a"
+[[Elements]]
+Type = "Ch5 Background"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+scale = "stretch"
+refreshrate = "600"
+transitioneffect = "ease"
+transitionduration = "1s"
+assetid = "6e1628ae-d46c-47fb-8690-191a31b81b83"
+id = "iyjogvseqr"
+componentName = "Background_1"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+imgbackgroundcolor = "transparent"
+backgroundcolor = "#ffffff"
+oldID = "iz1a"
+

@@ -1,0 +1,151 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "1.3001.21.0"
+Created = 2024-01-17 11:43:01.241962-05:00
+LastModifiedByAppHost = "1.3001.21.0"
+Modified = 2024-01-17 11:43:01.24196-05:00
+CreatedByProjectApp = "1.3001.21.0"
+LastModifiedByProjectApp = "1.3001.21.0"
+MinimumProjectApp = "1.2600.1"
+
+{Html}
+<div id="ijg3g49w9n" devicesvisited="[&quot;TSW-760&quot;]" defaultwidth="501px" defaultheight="500px" globalcontrolcontract="on" class="widget-container"><ch5-text clearlabel="false" labelmodeadvncomponent="simple" horizontalalignment="center" verticalalignment="middle" multilinesupport="false" truncatetext="false" labelinnerhtml="Power system Off?" id="id89" componentname="Formatted-Text" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" ccid_themecssset="true">
+              </ch5-text><ch5-button type="default" halignlabel="center" valignlabel="middle" checkboxshow="false" checkboxposition="left" disabled="false" pageflipattributename="pageflip" clearlabel="false" ccid_imageicontype="iconclass" ccid_linksendreceive="True" iconurlfilltype="initial" customclass="ccid-custom" affectedbypreviewstate="True" shape="circle" customvstheme="custom" id="iexkez45rv" labelinnerhtml="NO" pageflip="0" iconposition="first" previewstate="normal" orientation="horizontal" labelmode="simple" componentname="PowerOffNoButton" ccid_themecssset="true" devicesvisited="[&quot;TSW-760&quot;]" size="custom" selected="false" oldid="iv2r" sendeventontouch="Contract Enabled" pd-receivestateselected="Contract Enabled"></ch5-button><ch5-button type="default" halignlabel="center" valignlabel="middle" checkboxshow="false" checkboxposition="left" disabled="false" pageflipattributename="pageflip" clearlabel="false" ccid_imageicontype="iconclass" ccid_linksendreceive="True" iconurlfilltype="initial" customclass="ccid-custom" affectedbypreviewstate="True" shape="circle" customvstheme="custom" id="iv2r" labelinnerhtml="YES" pageflip="0" iconposition="first" previewstate="normal" orientation="horizontal" labelmode="simple" componentname="PowerOffYesButton" ccid_themecssset="true" devicesvisited="[&quot;TSW-760&quot;]" size="custom" selected="false" sendeventontouch="Contract Enabled" pd-receivestateselected="Contract Enabled">
+              </ch5-button><ch5-background scale="stretch" refreshrate="600" transitioneffect="ease" transitionduration="1s" assetid="0" id="ixby" componentname="Background" ccid_linksendreceive="True" devicesvisited="[&quot;TSW-760&quot;]" backgroundcolor="rgba(0,0,0,0.62)">
+              </ch5-background></div>
+
+{Css}
+@media (orientation: landscape){#ijg3g49w9n{width:1262px;height:740px;left:0;top:0;position:absolute;display:block;partial:undefined;}.widget-container{background-image:linear-gradient(45deg, #DAE2EA 25%, transparent 25%), linear-gradient(-45deg, #DAE2EA 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #DAE2EA 75%), linear-gradient(-45deg, transparent 75%, #DAE2EA 75%);background-size:20px 20px;background-position:0 0, 0 10px, 10px -10px, -10px 0px;z-index:0;}#ixby{width:100%;height:100%;left:0;top:0;position:absolute;display:block;partial:undefined;z-index:-99;overflow:hidden;}#iv2r{pointer-events:all;width:288px;height:288px;font-family:Roboto;left:279px;top:330px;position:absolute;z-index:70;display:block;buttonDefaultLabel_font-size:38px;buttonDefaultLabel_font-weight:400;buttonDefaultPressedLabel_font-size:38px;}#iv2r .ch5-button--default{border-style:solid;border-color:#008214;color:#ffffff;background-color:#008214;border-width:1px;}#iv2r .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:38px;font-weight:400;buttonDefaultLabel_font-size:38px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;custom-font-size:38px;}#iv2r .ch5-button-child{width:inherit;height:inherit;top:inherit;left:inherit;position:fixed;}#iv2r .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;margin-left:0;margin-right:0;margin-bottom:0;}#iv2r .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#iv2r .ccid-custom.ch5-button--default .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iv2r .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:#008ae6;border-color:#0091ea;}#iv2r .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:38px;font-weight:400;buttonDefaultPressedLabel_font-size:38px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;custom-font-size:38px;}#iv2r .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;margin-left:0;margin-right:0;margin-bottom:0;}#iv2r .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#iv2r .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iv2r .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#iv2r .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;}#iv2r .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;margin-left:0;margin-right:0;margin-bottom:0;}#iv2r .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#iv2r .ccid-custom.ch5-button--default.ch5-button--selected .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iv2r .ch5-button--size-regular .cb-btn{width:288px;height:259px;}#iv2r .ch5-button--circle.ch5-button--size-regular .cb-btn{width:288px;height:288px;}#iv2r-2 .ch5-button--default .ch5-button--label{font-family:Roboto;}#iv2r-2 .ch5-button-child{width:inherit;height:inherit;top:inherit;left:inherit;position:fixed;}#iexkez45rv{pointer-events:all;width:288px;height:288px;font-family:Roboto;left:694px;top:330px;position:absolute;z-index:73;display:block;buttonDefaultLabel_font-size:38px;buttonDefaultLabel_font-weight:400;buttonDefaultPressedLabel_font-size:38px;}#iexkez45rv .ch5-button--default{border-style:solid;border-color:#a00000;color:#ffffff;background-color:#a00000;border-width:1px;}#iexkez45rv .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:38px;font-weight:400;buttonDefaultLabel_font-size:38px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;custom-font-size:38px;}#iexkez45rv .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;margin-left:0;margin-right:0;margin-bottom:0;}#iexkez45rv .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#iexkez45rv .ccid-custom.ch5-button--default .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iexkez45rv .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:#008ae6;border-color:#0091ea;}#iexkez45rv .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:38px;font-weight:400;buttonDefaultPressedLabel_font-size:38px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;custom-font-size:38px;}#iexkez45rv .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;margin-left:0;margin-right:0;margin-bottom:0;}#iexkez45rv .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#iexkez45rv .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iexkez45rv .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#iexkez45rv .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;}#iexkez45rv .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;margin-left:0;margin-right:0;margin-bottom:0;}#iexkez45rv .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#iexkez45rv .ccid-custom.ch5-button--default.ch5-button--selected .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iexkez45rv .ch5-button--size-regular .cb-btn{width:288px;height:259px;}#iexkez45rv .ch5-button--circle.ch5-button--size-regular .cb-btn{width:288px;height:288px;}#id89 .ch5-text{width:549px;height:61px;color:white;font-size:44px;custom-font-size:44px;}#id89{width:549px;height:61px;font-family:Roboto;left:356px;top:157px;position:absolute;z-index:74;display:block;}#iv2r .ch5-button--circle.ch5-button--size-custom .cb-btn{width:288px;height:288px;}}@media (orientation: portrait){#ijg3g49w9n{width:1262px;height:740px;left:0;top:0;position:absolute;display:block;partial:undefined;}.widget-container{background-image:linear-gradient(45deg, #DAE2EA 25%, transparent 25%), linear-gradient(-45deg, #DAE2EA 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #DAE2EA 75%), linear-gradient(-45deg, transparent 75%, #DAE2EA 75%);background-size:20px 20px;background-position:0 0, 0 10px, 10px -10px, -10px 0px;z-index:0;}#ixby{width:100%;height:100%;left:0;top:0;position:absolute;display:block;partial:undefined;z-index:-99;overflow:hidden;}#iv2r{pointer-events:all;width:288px;height:288px;font-family:Roboto;left:279px;top:330px;position:absolute;z-index:70;display:block;buttonDefaultLabel_font-size:38px;buttonDefaultLabel_font-weight:400;buttonDefaultPressedLabel_font-size:38px;}#iv2r .ch5-button--default{border-style:solid;border-color:#008214;color:#ffffff;background-color:#008214;border-width:1px;}#iv2r .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:38px;font-weight:400;buttonDefaultLabel_font-size:38px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;custom-font-size:38px;}#iv2r .ch5-button-child{width:inherit;height:inherit;top:inherit;left:inherit;position:fixed;}#iv2r .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;margin-left:0;margin-right:0;margin-bottom:0;}#iv2r .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#iv2r .ccid-custom.ch5-button--default .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iv2r .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:#008ae6;border-color:#0091ea;}#iv2r .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:38px;font-weight:400;buttonDefaultPressedLabel_font-size:38px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;custom-font-size:38px;}#iv2r .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;margin-left:0;margin-right:0;margin-bottom:0;}#iv2r .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#iv2r .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iv2r .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#iv2r .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;}#iv2r .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;margin-left:0;margin-right:0;margin-bottom:0;}#iv2r .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#iv2r .ccid-custom.ch5-button--default.ch5-button--selected .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iv2r .ch5-button--size-regular .cb-btn{width:288px;height:259px;}#iv2r .ch5-button--circle.ch5-button--size-regular .cb-btn{width:288px;height:288px;}#iv2r-2 .ch5-button--default .ch5-button--label{font-family:Roboto;}#iv2r-2 .ch5-button-child{width:inherit;height:inherit;top:inherit;left:inherit;position:fixed;}#iexkez45rv{pointer-events:all;width:288px;height:288px;font-family:Roboto;left:694px;top:330px;position:absolute;z-index:73;display:block;buttonDefaultLabel_font-size:38px;buttonDefaultLabel_font-weight:400;buttonDefaultPressedLabel_font-size:38px;}#iexkez45rv .ch5-button--default{border-style:solid;border-color:#a00000;color:#ffffff;background-color:#a00000;border-width:1px;}#iexkez45rv .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:38px;font-weight:400;buttonDefaultLabel_font-size:38px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;custom-font-size:38px;}#iexkez45rv .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;margin-left:0;margin-right:0;margin-bottom:0;}#iexkez45rv .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#iexkez45rv .ccid-custom.ch5-button--default .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iexkez45rv .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:#008ae6;border-color:#0091ea;}#iexkez45rv .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:38px;font-weight:400;buttonDefaultPressedLabel_font-size:38px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;custom-font-size:38px;}#iexkez45rv .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;margin-left:0;margin-right:0;margin-bottom:0;}#iexkez45rv .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#iexkez45rv .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iexkez45rv .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#iexkez45rv .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;}#iexkez45rv .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;margin-left:0;margin-right:0;margin-bottom:0;}#iexkez45rv .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#iexkez45rv .ccid-custom.ch5-button--default.ch5-button--selected .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iexkez45rv .ch5-button--size-regular .cb-btn{width:288px;height:259px;}#iexkez45rv .ch5-button--circle.ch5-button--size-regular .cb-btn{width:288px;height:288px;}#id89 .ch5-text{width:549px;height:61px;color:white;font-size:44px;custom-font-size:44px;}#id89{width:549px;height:61px;font-family:Roboto;left:356px;top:157px;position:absolute;z-index:74;display:block;}#iv2r .ch5-button--circle.ch5-button--size-custom .cb-btn{width:288px;height:288px;}}@media (orientation: landscape) and (max-width: 1263px){#ijg3g49w9n{width:1262px;height:740px;left:0;top:0;position:absolute;display:block;partial:undefined;}#ixby{width:100%;height:100%;left:0;top:0;position:absolute;display:block;partial:undefined;z-index:-99;overflow:hidden;}#iv2r{pointer-events:all;width:288px;height:288px;font-family:Roboto;left:279px;top:330px;position:absolute;z-index:70;display:block;buttonDefaultLabel_font-size:38px;buttonDefaultLabel_font-weight:400;buttonDefaultPressedLabel_font-size:38px;}#iv2r .ch5-button--default{border-style:solid;border-color:#008214;color:#ffffff;background-color:#008214;border-width:1px;}#iv2r .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:38px;font-weight:400;buttonDefaultLabel_font-size:38px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;custom-font-size:38px;}#iv2r .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;margin-left:0;margin-right:0;margin-bottom:0;}#iv2r .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#iv2r .ccid-custom.ch5-button--default .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iv2r .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:#008ae6;border-color:#0091ea;}#iv2r .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:38px;font-weight:400;buttonDefaultPressedLabel_font-size:38px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;custom-font-size:38px;}#iv2r .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;margin-left:0;margin-right:0;margin-bottom:0;}#iv2r .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#iv2r .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iv2r .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#iv2r .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;}#iv2r .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;margin-left:0;margin-right:0;margin-bottom:0;}#iv2r .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#iv2r .ccid-custom.ch5-button--default.ch5-button--selected .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iv2r .ch5-button--size-regular .cb-btn{width:288px;height:259px;}#iv2r .ch5-button--circle.ch5-button--size-regular .cb-btn{width:288px;height:288px;}#iexkez45rv{pointer-events:all;width:288px;height:288px;font-family:Roboto;left:694px;top:330px;position:absolute;z-index:73;display:block;buttonDefaultLabel_font-size:38px;buttonDefaultLabel_font-weight:400;buttonDefaultPressedLabel_font-size:38px;}#iv2r-2 .ch5-button--default .ch5-button--label{font-family:Roboto;}#iexkez45rv .ch5-button--default{border-style:solid;border-color:#a00000;color:#ffffff;background-color:#a00000;border-width:1px;}#iexkez45rv .ch5-button--default .ch5-button--label{font-family:Roboto;color:#ffffff;font-size:38px;font-weight:400;buttonDefaultLabel_font-size:38px;buttonDefaultLabel_color:#ffffff;buttonDefaultLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;custom-font-size:38px;}#iexkez45rv .ch5-button--default .ch5-button--icon{color:#ffffff;font-size:14px;custom-font-size:14px;buttonDefaultIcon_font-size:14px;buttonDefaultIcon_color:#ffffff;margin-left:0;margin-right:0;margin-bottom:0;}#iexkez45rv .ch5-button--default .cb-checkbox-icon{color:#ffffff;buttonDefaultCheckbox_color:#ffffff;}#iexkez45rv .ccid-custom.ch5-button--default .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iexkez45rv .ch5-button--default.ch5-button--pressed{color:#f0fff0;background-color:#008ae6;border-color:#0091ea;}#iexkez45rv .ch5-button--default.ch5-button--pressed .ch5-button--label{color:#f0fff0;font-size:38px;font-weight:400;buttonDefaultPressedLabel_font-size:38px;buttonDefaultPressedLabel_color:#f0fff0;buttonDefaultPressedLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;custom-font-size:38px;}#iexkez45rv .ch5-button--default.ch5-button--pressed .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultPressedIcon_font-size:14px;buttonDefaultPressedIcon_color:#f0fff0;margin-left:0;margin-right:0;margin-bottom:0;}#iexkez45rv .ch5-button--default.ch5-button--pressed .cb-checkbox-icon{color:#f0fff0;buttonDefaultPressedCheckbox_color:#f0fff0;}#iexkez45rv .ccid-custom.ch5-button--default.ch5-button--pressed .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iexkez45rv .ch5-button--default.ch5-button--selected{color:#f0fff0;background-color:#0073bf;border-color:#0091ea;}#iexkez45rv .ch5-button--default.ch5-button--selected .ch5-button--label{color:#f0fff0;font-size:14px;font-weight:400;buttonDefaultSelectedLabel_font-size:14px;buttonDefaultSelectedLabel_color:#f0fff0;buttonDefaultSelectedLabel_font-weight:400;margin-left:0;margin-right:0;margin-bottom:0;}#iexkez45rv .ch5-button--default.ch5-button--selected .ch5-button--icon{color:#f0fff0;font-size:14px;custom-font-size:14px;buttonDefaultSelectedIcon_font-size:14px;buttonDefaultSelectedIcon_color:#f0fff0;margin-left:0;margin-right:0;margin-bottom:0;}#iexkez45rv .ch5-button--default.ch5-button--selected .cb-checkbox-icon{color:#f0fff0;buttonDefaultSelectedCheckbox_color:#f0fff0;}#iexkez45rv .ccid-custom.ch5-button--default.ch5-button--selected .ch5-button--img{width:21px;height:21px;buttonDefaultImage_width:21px;buttonDefaultImage_height:21px;}#iexkez45rv .ch5-button--size-regular .cb-btn{width:288px;height:259px;}#iexkez45rv .ch5-button--circle.ch5-button--size-regular .cb-btn{width:288px;height:288px;}#id89{width:549px;height:61px;font-family:Roboto;left:356px;top:157px;position:absolute;z-index:74;display:block;}#id89 .ch5-text{width:549px;height:61px;color:white;font-size:44px;custom-font-size:44px;}#iv2r .ch5-button--circle.ch5-button--size-custom .cb-btn{width:288px;height:288px;}}
+
+{PageAttributes}
+
+[Attributes]
+Name = "PowerOffOk"
+PageMode = "absolute"
+Id = "722492f7-e97f-4bc9-91bc-07c52995ca85"
+
+[[Elements]]
+Type = "widgetContainer"
+Classes = ["widget-container"]
+
+[[Elements.Components]]
+Type = "Ch5 Text"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "simple"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "false"
+truncatetext = "false"
+labelinnerhtml = "Power system Off?"
+id = "id89"
+componentName = "Formatted-Text"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+ccid_themeCSSSet = "true"
+[[Elements.Components]]
+Type = "Ch5 Button"
+Editable = true
+
+[Elements.Components.Attributes]
+type = "default"
+halignlabel = "center"
+valignlabel = "middle"
+checkboxshow = "false"
+checkboxposition = "left"
+disabled = "false"
+pageFlipAttributeName = "pageflip"
+clearLabel = "false"
+ccid_imageIconType = "iconclass"
+ccid_linkSendReceive = "True"
+iconurlfilltype = "initial"
+customclass = "ccid-custom"
+affectedByPreviewState = "True"
+shape = "circle"
+customvstheme = "custom"
+id = "iexkez45rv"
+labelinnerhtml = "NO"
+pageflip = "0"
+iconposition = "first"
+previewstate = "normal"
+orientation = "horizontal"
+labelmode = "simple"
+componentName = "PowerOffNoButton"
+ccid_themeCSSSet = "true"
+devicesVisited = "[\"TSW-760\"]"
+size = "custom"
+selected = "false"
+oldID = "iv2r"
+sendeventontouch = "Contract Enabled"
+pd-receivestateselected = "Contract Enabled"
+[[Elements.Components]]
+Type = "Ch5 Button"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+type = "default"
+halignlabel = "center"
+valignlabel = "middle"
+checkboxshow = "false"
+checkboxposition = "left"
+disabled = "false"
+pageFlipAttributeName = "pageflip"
+clearLabel = "false"
+ccid_imageIconType = "iconclass"
+ccid_linkSendReceive = "True"
+iconurlfilltype = "initial"
+customclass = "ccid-custom"
+affectedByPreviewState = "True"
+shape = "circle"
+customvstheme = "custom"
+id = "iv2r"
+labelinnerhtml = "YES"
+pageflip = "0"
+iconposition = "first"
+previewstate = "normal"
+orientation = "horizontal"
+labelmode = "simple"
+componentName = "PowerOffYesButton"
+ccid_themeCSSSet = "true"
+devicesVisited = "[\"TSW-760\"]"
+size = "custom"
+selected = "false"
+sendeventontouch = "Contract Enabled"
+pd-receivestateselected = "Contract Enabled"
+[[Elements.Components]]
+Type = "Ch5 Background"
+Editable = true
+
+[[Elements.Components.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Components.Attributes]
+scale = "stretch"
+refreshrate = "600"
+transitioneffect = "ease"
+transitionduration = "1s"
+assetid = "0"
+id = "ixby"
+componentName = "Background"
+ccid_linkSendReceive = "True"
+devicesVisited = "[\"TSW-760\"]"
+backgroundcolor = "rgba(0,0,0,0.62)"
+
+[Elements.Attributes]
+id = "ijg3g49w9n"
+devicesVisited = "[\"TSW-760\"]"
+defaultWidth = "501px"
+defaultHeight = "500px"
+globalControlContract = "on"
+
