@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="app.css" />
+    <title>CTI Crestron Drivers</title>
+  </head>
+  <body>
+    <div id="divBody">
+      <div>
+        <label>Select Driver to upload. Can be either a .dll or a .pkg</label>
+        <input type="file" width="200" id="driver" title="driverSelect" />
+      </div>
+      <br />
+      <div>
+        <label>Driver IP Address</label>
+        <input type="text" width="100" id="driverIP" title="driverIP" />
+      </div>
+      <br />
+      <br />
+      <div>
+        <button id="sendDriver" type="submit">Submit</button>
+      </div>
+    </div>
+  </body>
+
+  <script src="index.js"></script>
+</html>

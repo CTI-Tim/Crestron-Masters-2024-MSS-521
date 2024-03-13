@@ -1,0 +1,167 @@
+{
+  "CrestronSerialDeviceApi": {
+    "DeviceSupport": {
+      "SupportsDisconnect": true,
+      "SupportsDiscretePower": true,
+      "SupportsPowerFeedback": true,
+      "SupportsReconnect": true,
+      "SupportsWarmUpTime": true,
+      "SupportsCoolDownTime": true,
+      "SupportsFeedback": true,
+      "SupportsInputFeedback": true,
+      "SupportsLampHours": true,
+      "SupportsSetInputSource": true
+    },
+    "DeviceSupport2": [],
+    "GeneralInformation": {
+      "DeviceType": "Projector",
+      "Manufacturer": "CTICrestron",
+      "BaseModel": "CTI_Projo",
+      "VersionDate": "2020-10-28 16:03:05.000",
+      "DriverVersion": "1.1.1",
+      "SdkVersion": "7.0.0.12",
+      "Description": "CTI Demo Projector",
+      "Guid": "86918605-AB8E-4341-9115-71C5E0FE1C6B",
+      "SupportedSeries": [ "CTI_Projo" ],
+      "SupportedModels": [ "CTI_Projo" ]
+    },
+    "Api": {
+      "Communication": {
+        "CommunicationType": 1,
+        "Protocol": -1,
+        "Baud": -1,
+        "Parity": -1,
+        "HwHandshake": -1,
+        "SwHandshake": -1,
+        "DataBits": 0,
+        "StopBits": -1,
+        "Port": 12345,
+        "EnableAutoPolling": false,
+        "EnableAutoReconnect": true,
+        "TimeBetweenCommands": 5000,
+        "ResponseTimeout": 1000,
+        "WaitForResponse": false,
+        "IpProtocol": 0,
+        "IsUserAdjustable": false,
+        "Authentication": {
+          "UsernameRequired": false,
+          "PasswordRequired": false,
+          "Type": "UsernamePassword",
+          "Required": false,
+          "UsernameMask": "",
+          "PasswordMask": "",
+          "DefaultUsername": "",
+          "DefaultPassword": ""
+        },
+        "IsSecure": false,
+        "UserAdjustableProperties": [],
+        "DeviceId": 0
+      },
+      "StandardCommands": {
+        "PowerOff": {
+          "StandardCommand": 6601,
+          "Command": "\\u0002POF\\u0003",
+          "Parameters": []
+        },
+        "PowerOn": {
+          "StandardCommand": 6602,
+          "Command": "\\u0002PON\\u0003",
+          "Parameters": []
+        },
+        "Hdmi1": {
+          "StandardCommand": 400,
+          "Command": "\\u0002HD1\\u0003",
+          "Parameters": []
+        },
+        "Hdmi2": {
+          "StandardCommand": 401,
+          "Command": "\\u0002HD2\\u0003",
+          "Parameters": []
+        },
+        "LampHoursPoll": {
+          "StandardCommand": 18400,
+          "Command": "LH?",
+          "Parameters": []
+        }
+      },
+      "InputConnections": [
+        {
+          "InputType": 400,
+          "InputConnector": 20,
+          "Description": "HDMI 1"
+        },
+        {
+          "InputType": 401,
+          "InputConnector": 20,
+          "Description": "HDMI 2"
+        }
+      ],
+      "AudioInOut": {
+        "Inputs": [],
+        "Outputs": []
+      },
+      "VideoInOut": {
+        "Inputs": [
+          {
+            "type": 400,
+            "description": "HDMI1",
+            "connector": 20,
+            "friendlyName": "HDMI 1"
+          },
+          {
+            "type": 401,
+            "description": "HDMI2",
+            "connector": 20,
+            "friendlyName": "HDMI 2"
+          }
+        ],
+        "Outputs": []
+      },
+      "CustomCommands": [
+        {
+          "Name": "LampHours",
+          "Command": "LH?"
+        },
+        {
+          "Name": "PollData",
+          "Command": "POL"
+        }
+      ],
+      "ArrowKeys": [],
+      "PowerWaitPeriod": {
+        "UseLocalWarmupTimer": false,
+        "WarmUpTime": 10,
+        "UseLocalCooldownTimer": false,
+        "CoolDownTime": 10
+      },
+      "Feedback": {
+        "CommandAckNak": {
+          "Ack": "\\u0002ACK\\u0003",
+          "Nak": "\\u0002NAK\\u0003"
+        },
+        "Header": "",
+        "PowerFeedback": {
+          "Feedback": {
+            "On": "\\u0002PONOK\\u0003",
+            "Off": "\\u0002POFOK\\u0003"
+          },
+          "GroupHeader": ""
+        },
+        "InputFeedback": {
+          "GroupHeader": "",
+          "Feedback": [
+            {
+              "InputType": 400,
+              "Feedback": "\\u0002HD1OK\\u0003"
+            },
+            {
+              "InputType": 401,
+              "Feedback": "\\u0002HD2OK\\u0003"
+            }
+          ]
+        },
+        "LampHourFeedback": { "GroupHeader": "LH?" }
+      }
+    }
+  }
+}

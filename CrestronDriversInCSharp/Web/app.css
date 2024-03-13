@@ -1,0 +1,27 @@
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+#driverIP {
+  width: 300px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+#divBody {
+  border: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  padding: 20px;
+  height: 300px;
+  width: 600px;
+  justify-content: space-between;
+  align-items: center;
+}
