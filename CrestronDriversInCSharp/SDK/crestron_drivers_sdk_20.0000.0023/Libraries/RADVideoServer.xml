@@ -1,0 +1,907 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RADVideoServer</name>
+    </assembly>
+    <members>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsForwardScan">
+            <summary>
+            Property indicating that the Forward Scan command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.ForwardScan">
+            <summary>
+            Method to send the forward scan command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsReverseScan">
+            <summary>
+            Property indicating that the Reverse Scan command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.ReverseScan">
+            <summary>
+            Method to send the reverse scan command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsPlay">
+            <summary>
+            Property indicating that the Play command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Play">
+            <summary>
+            Method to send the play command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsPause">
+            <summary>
+            Property indicating that the Pause command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Pause">
+            <summary>
+            Method to send the pause command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsStop">
+            <summary>
+            Property indicating that the Stop command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Stop">
+            <summary>
+            Method to send the stop command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsForwardSkip">
+            <summary>
+            Property indicating that the Forward Skip command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.ForwardSkip">
+            <summary>
+            Method to send the forward skip command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsReverseSkip">
+            <summary>
+            Property indicating that the Reverse Skip command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.ReverseSkip">
+            <summary>
+            Method to send the reverse skip command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsRepeat">
+            <summary>
+            Property indicating that the Repeat command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Repeat">
+            <summary>
+            Method to send the repeat command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsReturn">
+            <summary>
+            Property indicating that the Return command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Return">
+            <summary>
+            Method to send the return command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsBack">
+            <summary>
+            Property indicating that the Back command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Back">
+            <summary>
+            Method to send the back command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsArrowKeys">
+            <summary>
+            Property indicating that the ArrowKey command is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.ArrowKeysSupported">
+            <summary>
+            Property indicating which Arrow Keys are supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.ArrowKey(Crestron.RAD.Common.Enums.ArrowDirections,Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method to send a arrow key to the Device.
+            </summary>
+            <param name="direction">Direction of arrow to be send to the device.</param>
+            <param name="action">Indicates if command should be pressed, held, or released.</param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsEnter">
+            <summary>
+            Property indicating that the Enter command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Enter">
+            <summary>
+            Method to send the enter command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsSelect">
+            <summary>
+            Property indicating that the Enter command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Select">
+            <summary>
+            Method to send the enter command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Select(Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method to send the enter command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsClear">
+            <summary>
+            Property indicating that the Clear command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Clear">
+            <summary>
+            Method to send the clear command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsExit">
+            <summary>
+            Property indicating that the Exit command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Exit">
+            <summary>
+            Method to send the exit command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsHome">
+            <summary>
+            Property indicating that the Home command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Home">
+            <summary>
+            Method to send the home command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsMenu">
+            <summary>
+            Property indicating that the Menu command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Menu">
+            <summary>
+            Method to send the menu command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsKeypadNumber">
+            <summary>
+            Property indicating that the KeypadNumber command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.KeypadNumber(System.UInt32)">
+            <summary>
+            Sends a keypard number to the device.
+            </summary>
+            <param name="number">Number to be sent to the device.</param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsPound">
+            <summary>
+            Property indicating that the Keypad Pound command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Pound">
+            <summary>
+            Method to send a Keypad "#" to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsAsterisk">
+            <summary>
+            Property indicating that the Keypad Asterisk command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Asterisk">
+            <summary>
+            Method to send a Keypad "*" to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SendKeypadString(System.String)">
+            <summary>
+            Method to send a series of keypad characters to the device.
+            </summary>
+            <param name="keys"></param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsKeypadBackSpace">
+            <summary>
+            Property indicating that the Keypad Back Space command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.KeypadBackSpace">
+            <summary>
+            Method to send a Back Space to the Device.
+            </summary>
+        </member>
+        <member name="E:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.StateChangeEvent">
+            <summary>
+            Provides notifications of changes in states.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.StateChange(Crestron.RAD.Common.Enums.VideoServerStateObjects,System.Object)">
+            <summary>
+            Alerts of a change in state.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SendStateChangeEvent(Crestron.RAD.Common.Enums.VideoServerStateObjects)">
+            <summary>
+            Sends a StateChange event without checking for changes first.
+            If this is an Input event, this will also send VideoInput and AudioInput events.
+            </summary>
+            <param name="avrStateObject">The state change that will be advertised</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.FakeFeedbackForStandardCommand(Crestron.RAD.Common.Enums.StandardCommandsEnum,Crestron.RAD.Common.Enums.CommonCommandGroupType)">
+            <summary>
+            Invoked by the feedback controller in ABasicDriver when feedback should be faked for a particular command/command group.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Search">
+            <summary>
+            Method to send the Search command to the device
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsSearch">
+            <summary>
+            Property indicating that the search command is supported
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsLocalWarmupTimer">
+            <summary>
+            Supports using a timer for warmup period
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsLocalCooldownTimer">
+            <summary>
+            Supports using a timer for cool down period
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsPlayPause">
+            <summary>
+            Property indicating that Play/Pause is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.PlayPause">
+            <summary>
+            Method to send the Play/Pause command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsDvrCommand">
+            <summary>
+            Property indicating that the DVR command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.DvrCommand">
+            <summary>
+            Method to send the DVR command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsLive">
+            <summary>
+            Property indicating that the Live command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Live">
+            <summary>
+            Method to send the Live command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsRecord">
+            <summary>
+            Property indicating that the Record command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Record">
+            <summary>
+            Method to send the Record command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsSpeedSlow">
+            <summary>
+            Property indicating that the Speed Slow command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SpeedSlow">
+            <summary>
+            Method to send the Speed Slow command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsThumbsUp">
+            <summary>
+            Property indicating that the Thumbs Up command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.ThumbsUp">
+            <summary>
+            Method to send the Thumbs Up command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsThumbsDown">
+            <summary>
+            Property indicating that the Thumbs Down command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.ThumbsDown">
+            <summary>
+            Method to send the Thumbs Down command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsChannelFeedback">
+            <summary>
+            Property indicating that the Channel Feedback is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Channel">
+            <summary>
+            Gets the Device's channel.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsChangeChannel">
+            <summary>
+            Property indicating that the change channel command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.ChannelDown(Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method to send the Channel Down command to the Device.
+            </summary>
+            <param name="action">Indicates if command should be pressed, held, or released</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.ChannelUp(Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method to send the Channel Up command to the Device.
+            </summary>
+            <param name="action">Indicates if command should be pressed, held, or released</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SetChannel(System.String)">
+            <summary>
+            Method to turn the Device volume to a given channel number.
+            </summary>
+            <param name="value">The channel number to set.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.Guide">
+            <summary>
+            Method to send the Guide command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.PageDown(Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method to send the Page Down command to the Device.
+            </summary>
+            <param name="action">Indicates if command should be pressed, held, or released</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.PageUp(Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method to send the Page Up command to the Device.
+            </summary>
+            <param name="action">Indicates if command should be pressed, held, or released</param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.SupportsLetterKeys">
+            <summary>
+            Property indicating that the Letter Keys command is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.LetterButtonsSupported">
+            <summary>
+            Property indicating which Letter Buttons are supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.ABasicVideoServer.LetterKeys(Crestron.RAD.Common.Enums.LetterButtons)">
+            <summary>
+            Method to send a letter key to the device.
+            </summary>
+            <param name="letterKeys">Letter to be sent.</param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.SupportsLocalWarmupTimer">
+            <summary>
+            Supports using a timer for warmup period
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.SupportsLocalCooldownTimer">
+            <summary>
+            Supports using a timer for cool down period
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.FireEvent(Crestron.RAD.Common.Enums.VideoServerStateObjects,System.Object)">
+            <summary>
+            Method to send a state change event.
+            </summary>
+            <param name="type">State Change type.</param>
+            <param name="obj">State Change object.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.DisableArtworkOnPowerOff">
+            <summary>
+            Drivers should override this if they wish to handle sending Artwork On 
+            on their own. Otherwise this will cause PowerOff() to invoke ArtworkOn() instead.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.EnableArtworkOnPowerOff">
+            <summary>
+            Drivers should override this if they wish to handle sending Artwork On 
+            on their own. Otherwise this will cause PowerOff() to invoke ArtworkOn() instead.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.ChannelUp">
+            <summary>
+            Method to send the Channel Up command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.ChannelDown">
+            <summary>
+            Method to send the Channel Down command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.ChannelPoll">
+            <summary>
+            Method to send the Channel Poll command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Guide">
+            <summary>
+            Method to send the Guide command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.PageDown">
+            <summary>
+            Method to send the Page Down command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.PageUp">
+            <summary>
+            Method to send the Page Up command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Dvr">
+            <summary>
+            Method to send the DVR command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Live">
+            <summary>
+            Method to send the Live command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Record">
+            <summary>
+            Method to send the Record command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.SpeedSlow">
+            <summary>
+            Method to send the SpeedSlow command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.OnDemand">
+            <summary>
+            Method to send the OnDemand command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.ThumbsUp">
+            <summary>
+            Sends the ThumbsUp command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.ThumbsDown">
+            <summary>
+            Sends the ThumbsDown command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.SelectMediaService(System.String)">
+            <summary>
+            Selects a media service by ID on the device
+            </summary>
+            <param name="mediaServiceId">The ID of the media service to be selected on the device</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Sirius">
+            <summary>
+            Method to send a Sirius Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Xm">
+            <summary>
+            Method to send an XM Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.SiriusXm">
+            <summary>
+            Method to send a SiriusXm Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.HdRadio">
+            <summary>
+            Method to send an HD Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.InternetRadio">
+            <summary>
+            Method to send an Internet Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.LastFm">
+            <summary>
+            Method to send a LastFm Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.PandoraRadio">
+            <summary>
+            Method to send a Pandora Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.RhapsodyRadio">
+            <summary>
+            Method to send a Rhapsody Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Spotify">
+            <summary>
+            Method to send a Spotify Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.YouTube">
+            <summary>
+            Method to send a YouTube command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.YouTubeTv">
+            <summary>
+            Method to send a YouTubeTv command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Netflix">
+            <summary>
+            Method to send a Netflix command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Hulu">
+            <summary>
+            Method to send a Hulu command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.DirecTvNow">
+            <summary>
+            Method to send a DirectvNow command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.AmazonVideo">
+            <summary>
+            Method to send an Amazon Video command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.PlaystationVue">
+            <summary>
+            Method to send a Playstation Vue command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.SlingTv">
+            <summary>
+            Method to send a Sling Tv command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Airplay">
+            <summary>
+            Method to send an Airplay command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.GoogleCast">
+            <summary>
+            Method to send a GoogleCast command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Dlna">
+            <summary>
+            Method to send a DLNA command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Tidal">
+            <summary>
+            Method to send a Tidal command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Deezer">
+            <summary>
+            Method to send a Deezer command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Crackle">
+            <summary>
+            Method to send a Crackle command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.GooglePlay">
+            <summary>
+            Method to send a Google Play command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.KeypadAsterisk">
+            <summary>
+            Method to send a Keypad "*" to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.KeypadPound">
+            <summary>
+            Method to send a Keypad "#" to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.KeypadBackSpace">
+            <summary>
+            Method to send a Keypad Back Space to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Dash">
+            <summary>
+            Method to send a "-" to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Period">
+            <summary>
+            Method to send a "." to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Enter">
+            <summary>
+            Method to send the Enter command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.PressSelect">
+            <summary>
+            Method to send the Select command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Select">
+            <summary>
+            Method to send the Select command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Clear">
+            <summary>
+            Method to send the Clear command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Exit">
+            <summary>
+            Method to send the Exit command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Home">
+            <summary>
+            Method to send the Home command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Menu">
+            <summary>
+            Method to send the Menu command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.ArrowKey(Crestron.RAD.Common.Enums.ArrowDirections)">
+            <summary>
+            Method to send an Arrow Key command to the Device.
+            </summary>
+            <param name="direction">Direction of the arrow key</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.KeypadNumber(System.UInt32)">
+            <summary>
+            Sends a keypard number to the Device.
+            </summary>
+            <param name="num">Number to be sent to the device.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.GetKeypadNumberCommand(System.UInt32)">
+            <summary>
+            Get commandset for keypad number if number is single digit
+            </summary>
+            <param name="num"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.SendCommandSetCollection(System.Collections.Generic.IEnumerable{Crestron.RAD.Common.BasicDriver.CommandSet})">
+            <summary>
+            Send collection of command sets if 
+            </summary>
+            <param name="commandsToSend"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.SendKeypadString(System.String)">
+            <summary>
+            Method to send a series of keypad characters to the device.
+            </summary>
+            <param name="keys">Maximum of 20 keys</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.UpdatePowerChangeStates(Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.PowerChangeStates)">
+            <summary>
+            Updates <see cref="F:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol._previousPowerChangeState"/> and <see cref="F:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol._currentPowerChangeState"/> based on the new power state being entered.
+            This is used to aid in the determination of WarmUp/CoolDown starting a warmup/cooldown period.
+            </summary>
+            <param name="newState">The new power state.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.PowerToggleCallback">
+            <summary>
+            Invoked when PowerToggle is sent to transport. 
+            Determines if we should cool down or warm up.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.ForwardScan">
+            <summary>
+            Method to send the Forward Scan command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.ReverseScan">
+            <summary>
+            Method to send the Reverse Scan command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Play">
+            <summary>
+            Method to send the Play command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Pause">
+            <summary>
+            Method to send the Pause command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Stop">
+            <summary>
+            Method to send the Stop command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.ForwardSkip">
+            <summary>
+            Method to send the Forward Skip command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.ReverseSkip">
+            <summary>
+            Method to send the Reverse Skip command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Repeat">
+            <summary>
+            Method to send the Repeat command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Return">
+            <summary>
+            Method to send the Return command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Back">
+            <summary>
+            Method to send the Back command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.PlayPause">
+            <summary>
+            Method to send the Play/Pause command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Options">
+            <summary>
+            Method to send the Options command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.Replay">
+            <summary>
+            Method to send the Replay command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.LetterKeys(Crestron.RAD.Common.Enums.LetterButtons)">
+            <summary>
+            Sends the LetterKeys command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.ColorButton(Crestron.RAD.Common.Enums.ColorButtons)">
+            <summary>
+            Sends the ColorButton command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.DeConstructAckNak(System.String)">
+            <summary>
+            Method to handle an Ack or Nak response.
+            </summary>
+            <param name="response">Message sent from the device.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.DeConstructActiveMediaServiceFeedback(System.String)">
+            <summary>
+            This will set the ActiveMediaService to the one found
+            This will compare to values under MediaServiceProviderData.Feedback.ActiveServiceFeedbackData
+            </summary>
+            <param name="response">Response from device with only relevent data about the active feedback 
+            (only include data that matches the values in the dictionary)</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.DeConstructActiveMediaServicePlaybackStateFeedback(System.String)">
+            <summary>
+            This will set the ActiveMediaServicePlaybackState to the one found
+            This will compare to values under MediaServiceProviderData.Feedback.ActiveMediaServicePlaybackState
+            This will set the ActiveMediaService play state, and set the rest to Stopped
+            </summary>
+            <param name="response">Response from device with only relevent data about the playback feedback 
+            (only include data that matches the values in the dictionary)</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.AVideoServerProtocol.DeConstructMediaServiceSubscriptionStateFeedback(System.String)">
+            <summary>
+            No base implementation
+            </summary>
+            <param name="response"></param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.Feedback.MinimumResponseTime">
+            <summary>
+            The minimum amount of time in ms an application would need to wait before expecting
+            the driver to report true feedback after an operation.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.Feedback.MaximumResponseTime">
+            <summary>
+            The maximum amount of time in ms an application would need to wait before expecting
+            the driver to report true feedback after an operation.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.Feedback.SupportsUnsolicitedFeedback">
+            <summary>
+            Lets a driver define if the API supports providing updates without polling.
+            If this is enabled, then the driver's polling sequence will only be sent until each 
+            individual poll command receives a response. The driver will poll again like this
+            if the connection state goes from false to true.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Crestron.RAD.DeviceTypes.VideoServer.Feedback.ConnectedStatePollCommand" -->
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.SimplVideoServer.SimplArrowDirectionsSupported">
+            <summary>
+            [0] Up
+            [1] Down
+            [2] Left
+            [3] Right
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.SimplVideoServer.SimplLetterKeysSupported">
+            <summary>
+            [0] A
+            [1] B
+            [2] C
+            [3] D
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.VideoServer.SimplVideoServer.SimplColorKeysSupported">
+            <summary>
+            [0]Red
+            [1]Green
+            [2]Blue
+            [3]Yellow
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.SimplVideoServer.SimplSelectMediaService(System.String)">
+            <summary>
+            Selects a media service by ID.
+            S+ will call this method with the ID instead of index so no extra processing is needed here
+            </summary>
+            <param name="mediaServiceId"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.SimplVideoServer.SetupMediaServices">
+            <summary>
+            Sets up all the media services for S+ to reference
+            Not used by IR drivers currently
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.VideoServer.SimplVideoServer.ExtractBitmapToHtmlDirectory(System.Byte[],System.String)">
+            <summary>
+            Extracts specified bitmap to HTML directory on processor
+            </summary>
+            <returns>Path to image file on file system in HTML directory</returns>
+        </member>
+    </members>
+</doc>

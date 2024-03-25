@@ -1,0 +1,250 @@
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\M24DriversDemo.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\M24DriversDemo.pdb
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.AudioDistribution.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.CrestronConnected.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.DM.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.EthernetCommunications.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Fusion.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Gateways.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.GeneralIO.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Keypads.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Lighting.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Media.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Remotes.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Shades.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Thermostats.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.ThreeSeriesCards.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.UC.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.UI.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpAutoUpdateInterface.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCloudClientInterface.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCryptographyInterface.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCustomAttributesInterface.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCWSHelperInterface.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpExchangeWebServices.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpHelperInterface.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpNewtonsoft.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpOnvifInterface.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpPro.exe
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpProgrammingInterfaces.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpReflectionInterface.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpSQLHelperInterface.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpTimerEventInterface.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.AudioDistribution.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.CrestronConnected.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.DM.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.EthernetCommunications.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Fusion.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Gateways.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.GeneralIO.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Keypads.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Lighting.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Media.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Remotes.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Shades.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Thermostats.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.ThreeSeriesCards.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.UC.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.UI.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpAutoUpdateInterface.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCloudClientInterface.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCryptographyInterface.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCustomAttributesInterface.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCWSHelperInterface.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpExchangeWebServices.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpHelperInterface.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpNewtonsoft.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpOnvifInterface.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpPro.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpProgrammingInterfaces.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpReflectionInterface.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpSQLHelperInterface.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpTimerEventInterface.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\obj\Debug\M24DriversDemo.csproj.CoreCompileInputs.cache
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\obj\Debug\M24DriversDemo.csproj.CopyComplete
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\obj\Debug\M24DriversDemo.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\obj\Debug\M24DriversDemo.pdb
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\FlatPanelDisplay_Samsung_ED75E_IP.pkg
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.DeviceDrivers.SDK.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.DeviceDrivers.SimplSharpPro.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\RADCommon.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\RADDisplay.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.DeviceDrivers.API.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\RADProTransports.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.DeviceDrivers.Core.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\CrestronCertifiedDriverResourcesLibrary.dll
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\RADCommon.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\RADDisplay.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.DeviceDrivers.API.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\RADProTransports.xml
+C:\Users\dbransford\Google Drive\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\obj\Debug\M24DriversDemo.csproj.AssemblyReference.cache
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\M24DriversDemo.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\M24DriversDemo.pdb
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.DeviceDrivers.SDK.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.DeviceDrivers.SimplSharpPro.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.AudioDistribution.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.CrestronConnected.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.DM.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.EthernetCommunications.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Fusion.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Gateways.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.GeneralIO.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Keypads.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Lighting.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Media.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Remotes.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Shades.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Thermostats.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.ThreeSeriesCards.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.UC.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.UI.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\RADCommon.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\RADDisplay.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpAutoUpdateInterface.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCloudClientInterface.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCryptographyInterface.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCustomAttributesInterface.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCWSHelperInterface.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpExchangeWebServices.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpHelperInterface.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpNewtonsoft.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpOnvifInterface.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpPro.exe
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpProgrammingInterfaces.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpReflectionInterface.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpSQLHelperInterface.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpTimerEventInterface.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.DeviceDrivers.API.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\RADProTransports.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.DeviceDrivers.Core.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\CrestronCertifiedDriverResourcesLibrary.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.AudioDistribution.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.CrestronConnected.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.DM.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.EthernetCommunications.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Fusion.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Gateways.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.GeneralIO.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Keypads.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Lighting.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Media.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Remotes.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Shades.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Thermostats.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.ThreeSeriesCards.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.UC.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.UI.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\RADCommon.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\RADDisplay.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpAutoUpdateInterface.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCloudClientInterface.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCryptographyInterface.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCustomAttributesInterface.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCWSHelperInterface.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpExchangeWebServices.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpHelperInterface.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpNewtonsoft.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpOnvifInterface.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpPro.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpProgrammingInterfaces.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpReflectionInterface.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpSQLHelperInterface.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpTimerEventInterface.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.DeviceDrivers.API.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\RADProTransports.xml
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\obj\Debug\M24DriversDemo.csproj.AssemblyReference.cache
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\obj\Debug\M24DriversDemo.csproj.CoreCompileInputs.cache
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\obj\Debug\M24Drive.BF7A0CB9.Up2Date
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\obj\Debug\M24DriversDemo.dll
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\obj\Debug\M24DriversDemo.pdb
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\UserInterface\SGD Files\M24DriverDemo.sgd
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Drivers\FlatPanelDisplay_Samsung_ED75E_IP.pkg
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Drivers\CableBox_DirecTV_DirecTV-4K-Genie_IP.pkg
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Drivers\FlatPanelDisplay_SunBriteTV_SB-V-43-4KHDR-BL_IP.pkg
+X:\Programming Projects\Masters 2024\M24DriversDemo\M24DriversDemo\bin\Debug\Drivers\FlatPanelDisplay_ViewSonic_IFP5550_IP.pkg
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Drivers\FlatPanelDisplay_Samsung_ED75E_IP.pkg
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Drivers\CableBox_DirecTV_DirecTV-4K-Genie_IP.pkg
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Drivers\FlatPanelDisplay_SunBriteTV_SB-V-43-4KHDR-BL_IP.pkg
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Drivers\FlatPanelDisplay_ViewSonic_IFP5550_IP.pkg
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Drivers\AvReceiver_Denon_AVR-X3600H_IR.pkg
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\UserInterface\SGD Files\M24DriverDemo.sgd
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\M24DriversDemo.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\M24DriversDemo.pdb
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.AudioDistribution.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.CrestronConnected.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.DM.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.EthernetCommunications.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Fusion.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Gateways.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.GeneralIO.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Keypads.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Lighting.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Media.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Remotes.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Shades.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Thermostats.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.ThreeSeriesCards.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.UC.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.UI.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpAutoUpdateInterface.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCloudClientInterface.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCryptographyInterface.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCustomAttributesInterface.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCWSHelperInterface.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpExchangeWebServices.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpHelperInterface.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpNewtonsoft.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpOnvifInterface.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpPro.exe
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpProgrammingInterfaces.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpReflectionInterface.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpSQLHelperInterface.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpTimerEventInterface.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\RADProTransports.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.DeviceDrivers.Core.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\CrestronCertifiedDriverResourcesLibrary.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.DeviceDrivers.API.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.AudioDistribution.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.CrestronConnected.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.DM.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.EthernetCommunications.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Fusion.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Gateways.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.GeneralIO.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Keypads.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Lighting.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Media.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Remotes.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Shades.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.Thermostats.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.ThreeSeriesCards.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.UC.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\Crestron.SimplSharpPro.UI.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\RADCommon.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\RADDisplay.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpAutoUpdateInterface.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCloudClientInterface.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCryptographyInterface.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCustomAttributesInterface.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpCWSHelperInterface.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpExchangeWebServices.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpHelperInterface.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpNewtonsoft.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpOnvifInterface.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpPro.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpProgrammingInterfaces.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpReflectionInterface.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpSQLHelperInterface.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\SimplSharpTimerEventInterface.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\bin\Debug\RADProTransports.xml
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\obj\Debug\M24DriversDemo.csprojAssemblyReference.cache
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\obj\Debug\M24DriversDemo.csproj.CoreCompileInputs.cache
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\obj\Debug\M24DriversDemo.csproj.CopyComplete
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\obj\Debug\M24DriversDemo.dll
+X:\Programming Projects\Masters 2024\MSS-521 Drivers\M24DriversDemo\M24DriversDemo\obj\Debug\M24DriversDemo.pdb

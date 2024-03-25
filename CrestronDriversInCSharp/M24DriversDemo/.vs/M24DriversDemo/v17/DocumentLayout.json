@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "X:\\Programming Projects\\Masters 2024\\M24DriversDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7921E14F-84CC-4B61-AA0D-9B681684B4FA}|M24DriversDemo\\M24DriversDemo.csproj|x:\\programming projects\\masters 2024\\m24driversdemo\\m24driversdemo\\controlsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7921E14F-84CC-4B61-AA0D-9B681684B4FA}|M24DriversDemo\\M24DriversDemo.csproj|solutionrelative:m24driversdemo\\controlsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7921E14F-84CC-4B61-AA0D-9B681684B4FA}|M24DriversDemo\\M24DriversDemo.csproj|x:\\programming projects\\masters 2024\\m24driversdemo\\m24driversdemo\\createdisplaydrivers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7921E14F-84CC-4B61-AA0D-9B681684B4FA}|M24DriversDemo\\M24DriversDemo.csproj|solutionrelative:m24driversdemo\\createdisplaydrivers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7921E14F-84CC-4B61-AA0D-9B681684B4FA}|M24DriversDemo\\M24DriversDemo.csproj|x:\\programming projects\\masters 2024\\m24driversdemo\\m24driversdemo\\console\\console.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7921E14F-84CC-4B61-AA0D-9B681684B4FA}|M24DriversDemo\\M24DriversDemo.csproj|solutionrelative:m24driversdemo\\console\\console.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7921E14F-84CC-4B61-AA0D-9B681684B4FA}|M24DriversDemo\\M24DriversDemo.csproj|x:\\programming projects\\masters 2024\\m24driversdemo\\m24driversdemo\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7921E14F-84CC-4B61-AA0D-9B681684B4FA}|M24DriversDemo\\M24DriversDemo.csproj|solutionrelative:m24driversdemo\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7921E14F-84CC-4B61-AA0D-9B681684B4FA}|M24DriversDemo\\M24DriversDemo.csproj|x:\\programming projects\\masters 2024\\m24driversdemo\\m24driversdemo\\getdriverassembly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7921E14F-84CC-4B61-AA0D-9B681684B4FA}|M24DriversDemo\\M24DriversDemo.csproj|solutionrelative:m24driversdemo\\getdriverassembly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Console.cs",
+              "DocumentMoniker": "X:\\Programming Projects\\Masters 2024\\M24DriversDemo\\M24DriversDemo\\Console\\Console.cs",
+              "RelativeDocumentMoniker": "M24DriversDemo\\Console\\Console.cs",
+              "ToolTip": "X:\\Programming Projects\\Masters 2024\\M24DriversDemo\\M24DriversDemo\\Console\\Console.cs",
+              "RelativeToolTip": "M24DriversDemo\\Console\\Console.cs",
+              "ViewState": "AQIAAGQAAAAAy8zMzAwnwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T12:42:05.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Global.cs",
+              "DocumentMoniker": "X:\\Programming Projects\\Masters 2024\\M24DriversDemo\\M24DriversDemo\\Global.cs",
+              "RelativeDocumentMoniker": "M24DriversDemo\\Global.cs",
+              "ToolTip": "X:\\Programming Projects\\Masters 2024\\M24DriversDemo\\M24DriversDemo\\Global.cs",
+              "RelativeToolTip": "M24DriversDemo\\Global.cs",
+              "ViewState": "AQIAABkAAADAZmZmZmYiwCsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T12:38:35.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ControlSystem.cs",
+              "DocumentMoniker": "X:\\Programming Projects\\Masters 2024\\M24DriversDemo\\M24DriversDemo\\ControlSystem.cs",
+              "RelativeDocumentMoniker": "M24DriversDemo\\ControlSystem.cs",
+              "ToolTip": "X:\\Programming Projects\\Masters 2024\\M24DriversDemo\\M24DriversDemo\\ControlSystem.cs",
+              "RelativeToolTip": "M24DriversDemo\\ControlSystem.cs",
+              "ViewState": "AQIAAAkAAADAnpmZmRkWwB0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T14:55:02.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateDisplayDrivers.cs",
+              "DocumentMoniker": "X:\\Programming Projects\\Masters 2024\\M24DriversDemo\\M24DriversDemo\\CreateDisplayDrivers.cs",
+              "RelativeDocumentMoniker": "M24DriversDemo\\CreateDisplayDrivers.cs",
+              "ToolTip": "X:\\Programming Projects\\Masters 2024\\M24DriversDemo\\M24DriversDemo\\CreateDisplayDrivers.cs",
+              "RelativeToolTip": "M24DriversDemo\\CreateDisplayDrivers.cs",
+              "ViewState": "AQIAAAoAAAAANDMzM/MmwBoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T14:58:28.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetDriverAssembly.cs",
+              "DocumentMoniker": "X:\\Programming Projects\\Masters 2024\\M24DriversDemo\\M24DriversDemo\\GetDriverAssembly.cs",
+              "RelativeDocumentMoniker": "M24DriversDemo\\GetDriverAssembly.cs",
+              "ToolTip": "X:\\Programming Projects\\Masters 2024\\M24DriversDemo\\M24DriversDemo\\GetDriverAssembly.cs",
+              "RelativeToolTip": "M24DriversDemo\\GetDriverAssembly.cs",
+              "ViewState": "AQIAAAMAAADAZWZmZuYswB4AAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T14:59:30.666Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

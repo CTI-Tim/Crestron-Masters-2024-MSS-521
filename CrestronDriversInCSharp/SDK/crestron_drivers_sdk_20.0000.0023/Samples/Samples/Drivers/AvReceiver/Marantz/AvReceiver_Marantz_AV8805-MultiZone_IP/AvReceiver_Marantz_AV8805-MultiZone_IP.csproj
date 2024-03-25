@@ -1,0 +1,137 @@
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{745737E2-3815-4869-87CE-71E12E3A4E18}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AvReceiver_Marantz_AV8805_MultiZone_IP</RootNamespace>
+    <AssemblyName>AvReceiver_Marantz_AV8805-MultiZone_IP</AssemblyName>
+    <ProjectTypeGuids>{0B4745B0-194B-4BB6-8E21-E9057CA92300};{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>SmartDeviceProject1</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json.Compact, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\ProgramData\Crestron\SDK\Newtonsoft.Json.Compact.dll</HintPath>
+    </Reference>
+    <Reference Include="RADAVReceiver, Version=1.0.0.24329, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\RADAVReceiver\lib\RADAVReceiver.dll</HintPath>
+    </Reference>
+    <Reference Include="RADCommon, Version=2.1.3.16, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\RADCommon\lib\RADCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpCustomAttributesInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpCustomAttributesInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpHelperInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpHelperInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpPro, Version=1.5.3.17, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpPro.exe</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="Crestron.DeviceDrivers.API">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\Crestron.DeviceDrivers.API\lib\Crestron.DeviceDrivers.API.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\DriverExtensionLibrary\DriverExtensionLibrary\Helpers\ActionSequence.cs">
+      <Link>ActionSequence.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\DriverExtensionLibrary\DriverExtensionLibrary\Helpers\MathFunctions.cs">
+      <Link>MathFunctions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\DriverExtensionLibrary\DriverExtensionLibrary\Helpers\ScheduledEventTimer.cs">
+      <Link>ScheduledEventTimer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\DriverExtensionLibrary\GenericComponents\GenericComponents\Scaling\IntegerLevel.cs">
+      <Link>Scaling\IntegerLevel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\DriverExtensionLibrary\GenericComponents\GenericComponents\Scaling\LevelRamper.cs">
+      <Link>Scaling\LevelRamper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\DriverExtensionLibrary\GenericComponents\GenericComponents\Scaling\PercentUshortLevelTranslator.cs">
+      <Link>Scaling\PercentUshortLevelTranslator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\DriverExtensionLibrary\GenericComponents\GenericComponents\Scaling\Scale.cs">
+      <Link>Scaling\Scale.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\DriverExtensionLibrary\GenericComponents\GenericComponents\Scaling\ScalingInterfaces.cs">
+      <Link>Scaling\ScalingInterfaces.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\DriverExtensionLibrary\GenericComponents\GenericComponents\Scaling\ScalingLevelTranslator.cs">
+      <Link>Scaling\ScalingLevelTranslator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\DriverExtensionLibrary\GenericComponents\GenericComponents\Timers\ITimedEvent.cs">
+      <Link>Scaling\ITimedEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SoundUnited-Common\SoundUnitedAvrProtocol.cs">
+      <Link>SoundUnitedAvrProtocol.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SoundUnited-Common\SoundUnitedAvrResponseValidator.cs">
+      <Link>SoundUnitedAvrResponseValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SoundUnited-Common\SoundUnitedCommandQueueingOverrides.cs">
+      <Link>SoundUnitedCommandQueueingOverrides.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SoundUnited-Common\SoundUnitedMuteVolController.cs">
+      <Link>SoundUnitedMuteVolController.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SoundUnited-Common\SoundUnitedVolumeController.cs">
+      <Link>SoundUnitedVolumeController.cs</Link>
+    </Compile>
+    <Compile Include="MarantzAv8805MultiZoneTcp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MarantzAv8805MultiZone.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\ControlSystem.cfg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+</Project>

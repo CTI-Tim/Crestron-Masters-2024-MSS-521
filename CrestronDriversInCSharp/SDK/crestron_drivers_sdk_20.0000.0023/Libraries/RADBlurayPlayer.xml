@@ -1,0 +1,871 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RADBlurayPlayer</name>
+    </assembly>
+    <members>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsEnergyStarFeedback">
+            <summary>
+            Property indicating that Power Feedback is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.EnergyStarIsOn">
+            <summary>
+            Gets the current EnergyStar state.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsDiscreteEnergyStar">
+            <summary>
+            Property indicating that Discrete EnergyStar is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.EnergyStarOn">
+            <summary>
+            Method to turn EnergyStar on.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.EnergyStarOff">
+            <summary>
+            Method to turn EnergyStar off.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsToggleEnergyStar">
+            <summary>
+            Property indicating that Toggle EnergyStar is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.EnergyStarToggle">
+            <summary>
+            Method to toggle EnergyStar state.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsPowerFeedback">
+            <summary>
+            Property indicating that Power Feedback is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.PowerIsOn">
+            <summary>
+            Gets the current Power state.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsDiscretePower">
+            <summary>
+            Property indicating that Discrete Power is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.PowerOn">
+            <summary>
+            Method to turn the Device on.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.PowerOff">
+            <summary>
+            Method to turn the Device off.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsTogglePower">
+            <summary>
+            Property indicating that Toggle Power is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.PowerToggle">
+            <summary>
+            Method to turn the Device off.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsLocalWarmupTimer">
+            <summary>
+            Supports using a timer for warmup period
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsLocalCooldownTimer">
+            <summary>
+            Supports using a timer for cool down period
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsWarmUpTime">
+            <summary>
+            Property indicating that setting Warm Up Time is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.WarmUpTime">
+            <summary>
+            Property to set the Warm Up Time.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsCoolDownTime">
+            <summary>
+            Property indicating that setting Cool Down Time is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.CoolDownTime">
+            <summary>
+            Property to set the Cool Down Time.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.WarmingUp">
+            <summary>
+            Property indicating that the device is Warming Up.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.CoolingDown">
+            <summary>
+            Property indicating that the device is Cooling Down.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsForwardScan">
+            <summary>
+            Property indicating that the Forward Scan command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.ForwardScan">
+            <summary>
+            Method to send the forward scan command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsReverseScan">
+            <summary>
+            Property indicating that the Reverse Scan command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.ReverseScan">
+            <summary>
+            Method to send the reverse scan command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsPlay">
+            <summary>
+            Property indicating that the Play command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Play">
+            <summary>
+            Method to send the play command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsPause">
+            <summary>
+            Property indicating that the Pause command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Pause">
+            <summary>
+            Method to send the pause command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsStop">
+            <summary>
+            Property indicating that the Stop command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Stop">
+            <summary>
+            Method to send the stop command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsForwardSkip">
+            <summary>
+            Property indicating that the Forward Skip command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.ForwardSkip">
+            <summary>
+            Method to send the forward skip command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsReverseSkip">
+            <summary>
+            Property indicating that the Reverse Skip command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.ReverseSkip">
+            <summary>
+            Method to send the reverse skip command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsRepeat">
+            <summary>
+            Property indicating that the Repeat command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Repeat">
+            <summary>
+            Method to send the repeat command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsReturn">
+            <summary>
+            Property indicating that the Return command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Return">
+            <summary>
+            Method to send the return command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsBack">
+            <summary>
+            Property indicating that the Back command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Back">
+            <summary>
+            Method to send the back command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsArrowKeys">
+            <summary>
+            Property indicating that the ArrowKey command is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.ArrowKeysSupported">
+            <summary>
+            Property indicating which Arrow Keys are supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.ArrowKey(Crestron.RAD.Common.Enums.ArrowDirections,Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method to send a arrow key to the Device.
+            </summary>
+            <param name="direction">Direction of arrow to be send to the device.</param>
+            <param name="action">Indicates if command should be pressed, held, or released.</param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsEnter">
+            <summary>
+            Property indicating that the Enter command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Enter">
+            <summary>
+            Method to send the enter command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsClear">
+            <summary>
+            Property indicating that the Clear command is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsSelect">
+            <summary>
+            Property indicating that the Select command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Clear">
+            <summary>
+            Method to send the clear command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Select">
+            <summary>
+            Method to send the select command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsExit">
+            <summary>
+            Property indicating that the Exit command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Exit">
+            <summary>
+            Method to send the exit command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsHome">
+            <summary>
+            Property indicating that the Home command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Home">
+            <summary>
+            Method to send the home command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsMenu">
+            <summary>
+            Property indicating that the Menu command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Menu">
+            <summary>
+            Method to send the menu command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsKeypadNumber">
+            <summary>
+            Property indicating that the KeypadNumber command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.KeypadNumber(System.UInt32)">
+            <summary>
+            Sends a keypard number to the device.
+            </summary>
+            <param name="number">Number to be sent to the device.</param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsPound">
+            <summary>
+            Property indicating that the Keypad Pound command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Pound">
+            <summary>
+            Method to send a Keypad "#" to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsAsterisk">
+            <summary>
+            Property indicating that the Keypad Asterisk command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Asterisk">
+            <summary>
+            Method to send a Keypad "*" to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsKeypadBackSpace">
+            <summary>
+            Property indicating that the Keypad Back Space command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.KeypadBackSpace">
+            <summary>
+            Method to send a Back Space to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsPlayBackStatusFeedback">
+            <summary>
+            Property indicating that the Play Back Status Feedback is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.PlayBackStatus">
+            <summary>
+            Property indicating the Play Back Status.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsTrackFeedback">
+            <summary>
+            Property indicating that the Track Feedback is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.TrackFeedback">
+            <summary>
+            Property indicating the Track Feedback.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsChapterFeedback">
+            <summary>
+            Property indicating that the Chapter Feedback is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.ChapterFeedback">
+            <summary>
+            Property indicating the Chapter Feedback.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsTrackElapsedTimeFeedback">
+            <summary>
+            Property indicating that the Track Elapsed Time is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.TrackElapsedTime">
+            <summary>
+            Property indicating the Track Elapsed Time.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsTrackRemainingTimeFeedback">
+            <summary>
+            Property indicating that the Track Remaining Time is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.TrackRemainingTime">
+            <summary>
+            Property indicating the Track Remaining Time.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsChapterElapsedTimeFeedback">
+            <summary>
+            Property indicating that the Chapter Elapsed Time is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.ChapterElapsedTime">
+            <summary>
+            Property indicating the Chapter Elapsed Time.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsChapterRemainingTimeFeedback">
+            <summary>
+            Property indicating that the Chapter Remaining Time is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.ChapterRemainingTime">
+            <summary>
+            Property indicating the Chapter Remaining Time.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsTotalElapsedTimeFeedback">
+            <summary>
+            Property indicating that the Total Elapsed Time is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.TotalElapsedTime">
+            <summary>
+            Property indicating the Total Elapsed Time.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsTotalRemainingTimeFeedback">
+            <summary>
+            Property indicating that the Total Remaining Time is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.TotalRemainingTime">
+            <summary>
+            Property indicating the Total Remaining Time.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsAudio">
+            <summary>
+            Property indicating that the Audio command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Audio">
+            <summary>
+            Method to send the audio command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsColorButtons">
+            <summary>
+            Indicates whether color buttons are supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.ColorButtonsSupported">
+            <summary>
+            Property indicating which Color Buttons are supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.ColorButton(Crestron.RAD.Common.Enums.ColorButtons)">
+            <summary>
+            Method to send a color to the device.
+            </summary>
+            <param name="color">The color to send to the device.</param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsDisplay">
+            <summary>
+            Property indicating that the Display command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Display">
+            <summary>
+            Method to send the display command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsEject">
+            <summary>
+            Property indicating that the Eject command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Eject">
+            <summary>
+            Method to send the eject command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsPopUpMenu">
+            <summary>
+            Property indicating that the Pop Up Menu command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.PopUpMenu">
+            <summary>
+            Method to send the pop up menu command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsTopMenu">
+            <summary>
+            Property indicating that the Top Menu command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.TopMenu">
+            <summary>
+            Method to send the top menu command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsOptions">
+            <summary>
+            Property indicating that the Options command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Options">
+            <summary>
+            Method to send the options command to the device.
+            </summary>
+            <returns>True if command was sent successfully.</returns>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsSubtitle">
+            <summary>
+            Property indicating that the Subtitle command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.Subtitle">
+            <summary>
+            Method to send the subtitle command to the device.
+            </summary>
+            <returns>True if command was sent successfully.</returns>
+        </member>
+        <member name="E:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.StateChangeEvent">
+            <summary>
+            Provides notifications of changes in states.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.StateChange(Crestron.RAD.Common.Enums.BlurayPlayerStateObjects,System.Object)">
+            <summary>
+            Invoked by the framework and by drivers to signal a change in the device's states.
+            </summary>
+            <param name="blurayPlayerStateObject">The state that changed</param>
+            <param name="changeObject"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SendStateChangeEvent(Crestron.RAD.Common.Enums.BlurayPlayerStateObjects)">
+            <summary>
+            Sends a StateChange event without checking for changes first.
+            </summary>
+            <param name="blurayPlayerStateObjects">The state change that will be advertised</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.FakeFeedbackForStandardCommand(Crestron.RAD.Common.Enums.StandardCommandsEnum,Crestron.RAD.Common.Enums.CommonCommandGroupType)">
+            <summary>
+            Invoked by the feedback controller in ABasicDriver when feedback should be faked for a particular command/command group.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.SupportsPlayPause">
+            <summary>
+            Property indicating that Play/Pause is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABasicBlurayPlayer.PlayPause">
+            <summary>
+            Method to send the Play/Pause command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.SupportsLocalWarmupTimer">
+            <summary>
+            Supports using a timer for warmup period
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.SupportsLocalCooldownTimer">
+            <summary>
+            Supports using a timer for cool down period
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.FireEvent(Crestron.RAD.Common.Enums.BlurayPlayerStateObjects,System.Object)">
+            <summary>
+            Method to send a state change event.
+            </summary>
+            <param name="type">State Change type.</param>
+            <param name="obj">State Change object.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.ColorButton(Crestron.RAD.Common.Enums.ColorButtons)">
+            <summary>
+            Method to send a color to the device.
+            </summary>
+            <param name="color">The color to send to the device.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.PlayBackStatusPoll">
+            <summary>
+            Method to send the Play Back Status Poll command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.TrackPoll">
+            <summary>
+            Method to send the Track Poll command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.ChapterPoll">
+            <summary>
+            Method to send the Chapter command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.TrackElapsedTimePoll">
+            <summary>
+            Method to send the Track Elapsed Time Poll command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.TrackRemainingTimePoll">
+            <summary>
+            Method to send the Track Remaining Time Poll command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.ChapterElapsedTimePoll">
+            <summary>
+            Method to send the Chapter Elapsed Time Poll command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.ChapterRemainingTimePoll">
+            <summary>
+            Method to send the Chapter Remaining Time Poll command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.TotalElapsedTimePoll">
+            <summary>
+            Method to send the Total Elapsed Time Poll command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.TotalRemainingTimePoll">
+            <summary>
+            Method to send the Total Remaining Time Poll command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.KeypadAsterisk">
+            <summary>
+            Method to send a Keypad "*" to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.KeypadPound">
+            <summary>
+            Method to send a Keypad "#" to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.KeypadBackSpace">
+            <summary>
+            Method to send a Keypad Back Space to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.Dash">
+            <summary>
+            Method to send a "-" to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.Period">
+            <summary>
+            Method to send a "." to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.Select">
+            <summary>
+             Method to send the Select command to the device
+             </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.Enter">
+            <summary>
+            Method to send the Enter command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.Clear">
+            <summary>
+            Method to send the Clear command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.Exit">
+            <summary>
+            Method to send the Exit command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.Home">
+            <summary>
+            Method to send the Home command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.Menu">
+            <summary>
+            Method to send the Menu command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.ArrowKey(Crestron.RAD.Common.Enums.ArrowDirections)">
+            <summary>
+            Method to send an Arrow Key command to the Device.
+            </summary>
+            <param name="direction">Direction of the arrow key</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.KeypadNumber(System.UInt32)">
+            <summary>
+            Sends a keypard number to the Device.
+            </summary>
+            <param name="num">Number to be sent to the device.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.GetKeypadNumberCommand(System.UInt32)">
+            <summary>
+            Get commandset for keypad number if number is single digit
+            </summary>
+            <param name="num"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.SendCommandSetCollection(System.Collections.Generic.IEnumerable{Crestron.RAD.Common.BasicDriver.CommandSet})">
+            <summary>
+            Send collection of command sets if 
+            </summary>
+            <param name="commandsToSend"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.SendKeypadString(System.String)">
+            <summary>
+            Method to send a series of keypad characters to the device.
+            </summary>
+            <param name="keys">Maximum of 20 keys</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.UpdatePowerChangeStates(Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.PowerChangeStates)">
+            <summary>
+            Updates <see cref="F:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol._previousPowerChangeState"/> and <see cref="F:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol._currentPowerChangeState"/> based on the new power state being entered.
+            This is used to aid in the determination of WarmUp/CoolDown starting a warmup/cooldown period.
+            </summary>
+            <param name="newState">The new power state.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.PowerToggleCallback">
+            <summary>
+            Invoked when PowerToggle is sent to transport. 
+            Determines if we should cool down or warm up.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.ForwardScan">
+            <summary>
+            Method to send the Forward Scan command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.ReverseScan">
+            <summary>
+            Method to send the Reverse Scan command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.Play">
+            <summary>
+            Method to send the Play command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.Pause">
+            <summary>
+            Method to send the Pause command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.Stop">
+            <summary>
+            Method to send the Stop command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.ForwardSkip">
+            <summary>
+            Method to send the Forward Skip command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.ReverseSkip">
+            <summary>
+            Method to send the Reverse Skip command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.Repeat">
+            <summary>
+            Method to send the Repeat command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.Replay">
+            <summary>
+            Method to send the Replay command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.Return">
+            <summary>
+            Method to send the Return command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.Back">
+            <summary>
+            Method to send the Back command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.PlayPause">
+            <summary>
+            Method to send the Play/Pause command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.DeConstructChapterElapsedTime(System.String)">
+            <summary>
+            Method to handle a Chapter Elapased Time response.
+            </summary>
+            <param name="response">Message sent from the device.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.DeConstructChapterFeedback(System.String)">
+            <summary>
+            Method to handle a Chapter Feedback response.
+            </summary>
+            <param name="response">Message sent from the device.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.DeConstructChapterRemainingTime(System.String)">
+            <summary>
+            Method to handle a Chapter Remaining Time response.
+            </summary>
+            <param name="response">Message sent from the device.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.DeConstructPlayBackStatus(System.String)">
+            <summary>
+            Method to handle a Play Back Status response.
+            </summary>
+            <param name="response">Message sent from the device.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.DeConstructPower(System.String)">
+            <summary>
+            Method to handle a Power response.
+            </summary>
+            <param name="response">Message sent from the device.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.DeConstructTotalElapsedTime(System.String)">
+            <summary>
+            Method to handle a Total Elapased Time response.
+            </summary>
+            <param name="response">Message sent from the device.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.DeConstructTotalRemainingTime(System.String)">
+            <summary>
+            Method to handle a Total Remaining Time response.
+            </summary>
+            <param name="response">Message sent from the device.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.DeConstructTrackElapsedTime(System.String)">
+            <summary>
+            Method to handle a Track Elapased Time response.
+            </summary>
+            <param name="response">Message sent from the device.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.DeConstructTrackFeedback(System.String)">
+            <summary>
+            Method to handle a Track Feedback response.
+            </summary>
+            <param name="response">Message sent from the device.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.BlurayPlayer.ABlurayPlayerProtocol.DeConstructTrackRemainingTime(System.String)">
+            <summary>
+            Method to handle a Track Remaining Time response.
+            </summary>
+            <param name="response">Message sent from the device.</param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.Feedback.MinimumResponseTime">
+            <summary>
+            The minimum amount of time in ms an application would need to wait before expecting
+            the driver to report true feedback after an operation.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.Feedback.MaximumResponseTime">
+            <summary>
+            The maximum amount of time in ms an application would need to wait before expecting
+            the driver to report true feedback after an operation.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.Feedback.SupportsUnsolicitedFeedback">
+            <summary>
+            Lets a driver define if the API supports providing updates without polling.
+            If this is enabled, then the driver's polling sequence will only be sent until each 
+            individual poll command receives a response. The driver will poll again like this
+            if the connection state goes from false to true.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Crestron.RAD.DeviceTypes.BlurayPlayer.Feedback.ConnectedStatePollCommand" -->
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.SimplBlurayPlayer.SimplArrowDirectionsSupported">
+            <summary>
+            [0] Up
+            [1] Down
+            [2] Left
+            [3] Right
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.BlurayPlayer.SimplBlurayPlayer.SimplColorsSupported">
+            <summary>
+            [0] Blue
+            [1] Green
+            [2] Red
+            [3] Yellow
+            </summary>
+        </member>
+    </members>
+</doc>

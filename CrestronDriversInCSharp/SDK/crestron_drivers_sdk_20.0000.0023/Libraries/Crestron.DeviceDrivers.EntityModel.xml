@@ -1,0 +1,2441 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Crestron.DeviceDrivers.EntityModel</name>
+    </assembly>
+    <members>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationResult.#ctor(System.Collections.Generic.ICollection{Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem},System.Collections.Generic.ICollection{System.String},System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Creates a new instance of <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationResult" />
+            </summary>
+            <param name="remainingConfigurationItemsToSet">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationResult.RemainingConfigurationItemsToSet" />
+            </param>
+            <param name="invalidConfigurationItemIdsReceived">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationResult.InvalidConfigurationItemIdsReceived" />
+            </param>
+            <param name="configurationErrorsByItemId">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationResult.ConfigurationErrorsByItemId" />
+            </param>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationResult.ConfigurationErrorsByItemId">
+            <summary>
+            Collection of user-friendly error messages keyed by <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.Id" />.
+            Items in this dictionary were not applied because their values were invalid.
+            </summary>
+            <remarks>
+            Implementors should always populate it with non-null, non-empty error messages.
+            Callers, however, should not assume the values are non-null or non-empty.
+            </remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationResult.InvalidConfigurationItemIdsReceived">
+            <summary>
+            Collection of invalid <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.Id" /> which were received as part of the
+            call to <see cref="M:Crestron.DeviceDrivers.EntityModel.DriverController.ApplyConfiguration(System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationResult.RemainingConfigurationItemsToSet">
+            <summary>
+            Collection of <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem" />s which still have not been set.  This will include both required
+            and optional <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem" />s.
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationResult.Create(System.Collections.Generic.IEnumerable{Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
+            <summary>
+            Creates a new instance of <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationResult" />
+            </summary>
+            <param name="remainingConfigurationItemsToSet">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationResult.RemainingConfigurationItemsToSet" />
+            </param>
+            <param name="invalidConfigurationItemIdsReceived">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationResult.InvalidConfigurationItemIdsReceived" />
+            </param>
+            <param name="configurationErrorsByItemId">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationResult.ConfigurationErrorsByItemId" />
+            </param>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationStepResult.#ctor(Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationStep,System.Collections.Generic.ICollection{System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.String)">
+            <summary>
+            Initializes required properties
+            </summary>
+            <param name="nextConfigurationStep">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationStepResult.NextConfigurationStep" />
+            </param>
+            <param name="invalidConfigurationItemIdsReceived">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationStepResult.InvalidConfigurationItemIdsReceived" />
+            </param>
+            <param name="configurationErrorsByItemId">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationStepResult.ConfigurationErrorsByItemId" />
+            </param>
+            <param name="errorMessage">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationStepResult.ErrorMessage"/>
+            </param>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationStepResult.ConfigurationErrorsByItemId">
+            <summary>
+            Collection of user-friendly error messages keyed by <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.Id" />.
+            Items in this dictionary were not applied because their values were invalid.
+            </summary>
+            <remarks>
+            Implementors should always populate it with non-null, non-empty error messages.
+            Callers, however, should not assume the values are non-null or non-empty.
+            </remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationStepResult.InvalidConfigurationItemIdsReceived">
+            <summary>
+            Collection of invalid <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.Id" /> which were received as part of the configuration settings
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationStepResult.ErrorMessage">
+            <summary>
+            Error message that applies to the entire configuration step, not a particular item
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationStepResult.ConfigurationErrorsByItemId"/> lists an error, it is not necessary to list
+            that error here as well.
+            </para>
+            <para>
+            This error message should be used when the error spans multiple items, is not tied to a specific item,
+            or it related to an item that does not have a title or description and is likely not visible on the UI.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationStepResult.NextConfigurationStep">
+            <summary>
+            Contains the next <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationStep" /> that needs to be configured or <c>null</c> when there are no other
+            steps to configure (or if there was an error)
+            </summary>
+            <seealso cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationStepResult.ConfigurationErrorsByItemId" />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationStepResult.Create(Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationStep,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.String)">
+            <summary>
+            Initializes required properties
+            </summary>
+            <param name="nextConfigurationStep">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationStepResult.NextConfigurationStep" />
+            </param>
+            <param name="invalidConfigurationItemIdsReceived">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationStepResult.InvalidConfigurationItemIdsReceived" />
+            </param>
+            <param name="configurationErrorsByItemId">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationStepResult.ConfigurationErrorsByItemId" />
+            </param>
+             <param name="errorMessage">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ApplyConfigurationStepResult.ErrorMessage"/>
+            </param>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem">
+            <summary>
+            This class represents the data structure for a configuration item.  A configuration item is used by a driver to
+            indicate what information
+            it needs from the consuming application in order to run.  This may include settings for the transport (IP Address,
+            port), authentication,
+            instructions for pairing a device, license keys, or other specific settings for the driver to operate.
+            <seealso cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationStep" />
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.Description">
+            <summary>
+            Provides additional details about this item.
+            </summary>
+            <para>
+            For example, a <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem" /> for a MAC Address, could have a title of "MAC Address" and a
+            description of "Enter the MAC Address of the
+            driver device using the following format XX:XX:XX:XX:XX:XX"
+            </para>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.Id">
+            <summary>
+            The unique Id of this configuration item.  All <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.Id" /> must be unique for a given driver device.
+            This Id must persist across reboots in order for the driver to associate the correct settings on a reboot.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.Required">
+            <summary>
+            Specifies where or not this item is required or optional.
+            For example, Username and password may be optional while IP Address is required.
+            <para>
+            If the item does not have a value (like a message box) or is read-only,
+            this flag has no meaning and can be ignored.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.Title">
+            <summary>
+            A user visible heading for this item.  The value should be concise and direct (eg. MAC Address, Registration Code).
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.UsageContext">
+            <summary>
+            Provides information about the usage of the configuration item.
+            The value must be set to a predefined value from the documentation or
+            library, (usually in a static class named ConfigurationItemContext)
+            For example, if the configuration item is for a RS-232 port, the
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.UsageContext"/> of "Com.ChannelId" provides the consumer of this
+            <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem" /> with contextual information about this item's intended usage.
+            This information will also be used to determine whether or not a
+            <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem" /> will be displayed or handled internally.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.UsageContextGroupId">
+            <summary>
+            Optional group id that creates an association between various configuration items and their usage context.
+            For example, a device with multiple relay ports would use this <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.UsageContextGroupId" /> to associate the
+            <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem" /> with the port that it is for.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.Value">
+            <summary>
+            Optional field for a <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem" /> who's usage depends on the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.UsageContext" />.
+            This field typically provides a way for a user to input information to a driver device
+            (like for a "Generic.Prompt" usage context) or
+            it could also be used for the driver device to provide display a read-only value (such as default port settings) or a
+            url to the user for "Generic.Url"
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.ValueType">
+            <summary>
+            Indicates the data type of the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.Value" />. See <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValueType" /> for valid options.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.Availability">
+            <summary>
+            Indicates when the configuration item should be available.
+            See <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemAvailability" /> for valid options.
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemAvailability">
+            <summary>
+            Options indicating when a <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem" /> would be available.
+            <seealso cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.Availability" />
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemAvailability.FirstTimeConfiguration">
+            <summary>
+            Indicates that this <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem" /> should only be shown when configuring the driver device for the
+            first time.
+            To persist the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValue" /> and receive it when the driver starts, use the
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.Persistent" /> flag.
+            </summary>
+            <para>
+            This option is useful for cases where the driver has configuration settings and/or instructions that only apply when
+            first configuring (or re-configuring)
+            the device.  For example, the driver may require a registration code which expires after a certain amount of time.  The
+            registration code is only used
+            during initial pairing and is not used again.  Another example would be a driver providing instructions for the initial
+            pairing ("Press the menu button on the device
+            for 5 seconds to enter pairing mode.")
+            </para>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemAvailability.Always">
+            <summary>
+            Indicates that this <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem" /> should be always be available.  These items will remain available
+            after the
+            initial configuration is complete.
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue">
+            <summary>
+            Information about the value of a <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem" />.
+            <seealso cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.Value" />
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.AvailableValues">
+            <summary>
+            The list of valid values that can be applied to the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValue" />.  This field is optional and may be
+            null.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValue">
+            <summary>
+            Indicates what the value of the <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem" /> is currently set to.  A value of null indicates that
+            there has not been any value assigned.
+            An empty string indicates that a value was assigned (which was the empty string).  This can be useful in scenarios
+            where an empty string is the desired value
+            for a configuration item (Ex. Credentials with a username and a blank password)
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValueDisplayOverride">
+            <summary>
+            A value that will be displayed instead of the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValue" />.  For
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.UsageContext" /> of "Generic.Url",
+            this value could be used to show a user friendly hyperlink name in lieu of the URL.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.DefaultValue">
+            <summary>
+            Indicates what the default value of the <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem" /> should be.  A value of null indicates that
+            there is no default value.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.HasRange">
+            <summary>
+            Indicates that the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValue" /> has a <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.MinValue" /> and a <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.MaxValue" />.  When this
+            field is set to true, both the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.MinValue" /> and <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.MaxValue" />
+            must be defined.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.Masked">
+            <summary>
+            Indicates that the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.DefaultValue" /> and <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValue" /> contain sensitive information and should
+            not be displayed (Ex. A password field)
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.MaxValue">
+            <summary>
+            Indicates what the maximum value is for the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValue" />.  For numeric values (
+            <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValueType.Number" />, <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValueType.Hex" />) this is an upper bound
+            on the value of the number.
+            For string values <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValueType.String" /> this field represents the maximum number of
+            characters allowed in the string.
+            <seealso cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.HasRange" />
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.MinValue">
+            <summary>
+            Indicates what the minimum value is for the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValue" />.  For numeric values (
+            <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValueType.Number" />, <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValueType.Hex" />) this is a lower bound
+            on the value of the number.
+            For string values <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValueType.String" /> this field represents the minimum number of
+            characters required in the string.
+            <seealso cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.HasRange" />
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.Persistent">
+            <summary>
+            Indicates that the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValue" /> must be stored by the consuming application and sent to the driver on
+            initialization.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.ReadOnly">
+            <summary>
+            Indicates that the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValue" /> can not be assigned a different value.
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValueType">
+            <summary>
+            Provides options indicating what type information is for the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.Value" />
+            This value applies to the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValue" />,
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.DefaultValue" />,
+            and <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.AvailableValues" />
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValueType.None">
+            <summary>
+            Indicates that there is no value associated with the <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem" />
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValueType.String">
+            <summary>
+            Indicates that the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValue" /> is a string.  This also applies to the
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.DefaultValue" /> and <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.AvailableValues" />
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValueType.Number">
+            <summary>
+            Indicates that the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValue" /> is a number.  This also applies to the
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.DefaultValue" /> and <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.AvailableValues" />
+            The valid range is from 0 - 65535.
+            <seealso cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.HasRange" />
+            <seealso cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.MinValue" />
+            <seealso cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.MaxValue" />
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValueType.Boolean">
+            <summary>
+            Indicates that the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValue" /> is a boolean.  This also applies to the
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.DefaultValue" /> and <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.AvailableValues" />
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValueType.Hex">
+            <summary>
+            Indicates that the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValue" /> is a hexadecimal.  This also applies to the
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.DefaultValue" /> and <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.AvailableValues" />
+            The valid range is from 0x0000 - 0xFFFF.
+            <seealso cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.HasRange" />
+            <seealso cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.MinValue" />
+            <seealso cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.MaxValue" />
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationStep">
+            <summary>
+            Defines a single configuration step containing a collection of <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem" />
+            whose values may need to be populated by the user;
+            <seealso cref="T:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem" />
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationStep.#ctor(System.String,System.Collections.Generic.IEnumerable{Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem})">
+            <summary>
+            Constructs this instance with all required properties.
+            </summary>
+            <param name="id">
+            <inheritdoc cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationStep.Id" />
+            </param>
+            <param name="configurationItems">
+            <inheritdoc cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationStep.ConfigurationItems" />
+            </param>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationStep.ConfigurationItems">
+            <summary>
+            Defines the items to be configured during this step of the device driver's configuration.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationStep.Id">
+            <summary>
+            ID of this configuration step; Unique within the containing device driver.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationValueCollection.ConfigurationSettings">
+            <summary>
+            Dictionary of key = <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItem.Id" /> and value =
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DeviceConfiguration.ConfigurationItemValue.CurrentValue" />
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverControllerStatusChanged">
+            <summary>
+            Describes a change in the controller's status
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverControllerStatusChanged.#ctor(Crestron.DeviceDrivers.EntityModel.Data.DriverControllerStatus)">
+            <summary>
+            Initializes a new DriverControllerStatusChanged
+            </summary>
+            <param name="status"><see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverControllerStatusChanged.Status" /></param>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverControllerStatusChanged.Status">
+            <summary>
+            The updated status of the device controller
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue">
+            <summary>
+            Defines an available value for a property which must be one of
+            some predefined list of values
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue.#ctor(System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityLocalizedString,System.Boolean)">
+            <summary>
+            Initialize with required properties
+            </summary>
+            <param name="value"><see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue.Value"/></param>
+            <param name="label"><see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue.Label"/></param>
+            <param name="isUnavailable"><see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue.IsUnavailable"/></param>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue.Value">
+            <summary>
+            The actual value associated with this entry
+            <para>
+            Other items here describe how to present the option, but this is the value used in the APIs
+            </para>
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue.IsUnavailable">
+            <summary>
+            If true, the value is not presently available and should not be selected.
+            <para>
+            Can be used to "grey out" the selection in user interfaces.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue.Label">
+            <summary>
+            The user-facing text description of the value
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValueBuilder.Value">
+            <inheritdoc cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue.Value"/>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValueBuilder.Label">
+            <inheritdoc cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue.Label"/>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValueBuilder.IsUnavailable">
+            <inheritdoc cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue.IsUnavailable"/>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandDefinition">
+            <summary>
+            Describes the metadata about a device command, as returned in the values of a dictionary
+            returned for <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.Commands" />.
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandDefinition.#ctor(System.Collections.Generic.IDictionary{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition},Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition,System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityLocalizedString)">
+            <summary>
+            Initialize required properties
+            </summary>
+            <param name="parameters">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandDefinition.Parameters" />
+            </param>
+            <param name="typeDef">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandDefinition.TypeDef" />
+            </param>
+            <param name="typeRef">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandDefinition.TypeRef" />
+            </param>
+            <param name="friendlyName">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandDefinition.FriendlyName" />
+            </param>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandDefinition.FriendlyName">
+            <summary>
+            The friendly name for this command
+            </summary>
+            <remarks>Members inside this may be null</remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandDefinition.Parameters">
+            <summary>
+            The parameters to the command
+            </summary>
+            <remarks>
+            May be null. This dictionary is immutable and will throw an <see cref="T:System.InvalidOperationException" /> if you
+            try to modify it
+            </remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandDefinition.TypeDef">
+            <summary>
+            Type of the return data
+            </summary>
+            <remarks>Will be null for commands with no return value. Mutually exclusive with <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandDefinition.TypeRef" /></remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandDefinition.TypeRef">
+            <summary>
+            Referenced type of the return data
+            </summary>
+            <remarks>Will be null for commands with no return value. Mutually exclusive with <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandDefinition.TypeDef" /></remarks>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandMetadata">
+            <summary>
+            Describes the information about a command that is customized for this specific driver.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandMetadata.Programmable">
+            <summary>
+            True when this command should be exposed to custom programming.
+            <para>
+            Setting this to true or false does not guarantee that the application will respect this hint.
+            This is NOT a security feature.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandMetadata.AdministrationCommand">
+            <summary>
+            True when this command should be exposed as a console command or through a similar
+            interface for installers, developers, and testers.
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition">
+            <summary>
+            Defines the commands, properties, and types supported by the controller
+            <para>
+            Information is split into definition and metadata.
+            The definitions provide the information needed to consume the item.
+            The metadata provides additional information about the item that can provide hints to certain
+            system features about how the item should be used but does not affect the operation of the item itself.
+            </para>
+            <para>
+            For a Crestron-defined command, event, property, or type, the definition is constant and a driver may not
+            change it. However, a driver may specify its own metadata. This is why the collections are separate.
+            </para>
+            <para>
+            For example, a driver may implement the standard Crestron property for "is online" but also want to refer
+            to that property in its extension UI. It would not be able to modify the definition of that property since it
+            is a standard one. However, since the flag for extension properties is part of the metadata, the driver would
+            be able to specify it.
+            </para>
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.#ctor(System.Collections.Generic.IDictionary{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandDefinition},System.Collections.Generic.IDictionary{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandMetadata},System.Collections.Generic.IDictionary{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition},System.Collections.Generic.IDictionary{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyMetadata},System.Collections.Generic.IDictionary{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEventDefinition},System.Collections.Generic.IDictionary{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEventMetadata},System.Collections.Generic.IDictionary{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition})">
+            <summary>
+            Initialize with required properties
+            </summary>
+            <param name="commands"><see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.Commands"/></param>
+            <param name="commandMetadata"><see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.CommandMetadata"/></param>
+            <param name="properties"><see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.Properties"/></param>
+            <param name="propertyMetadata"><see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.PropertyMetadata"/></param>
+            <param name="events"><see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.Events"/></param>
+            <param name="eventMetadata"><see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.EventMetadata"/></param>
+            <param name="types"><see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.Types"/></param>
+            <remarks>This will make a copy of the dictionaries before returning</remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.Commands">
+            <summary>
+            Mapping of command names to definitions.
+            Command names must be alphanumeric and start with a letter.
+            Consumers should not assume that, though, since internally we may use reserved
+            characters like $ to implement special commands.
+            </summary>
+            <remarks>
+            This dictionary is immutable (we won't change it) and read-only (will throw
+            <see cref="T:System.NotSupportedException" /> if you try to change it)
+            </remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.CommandMetadata">
+            <summary>
+            Driver-specific metadata about commands in the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.Commands"/> collection.
+            Not all commands will have metadata.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.Events">
+            <summary>
+            Mapping of event names to definitions.
+            Event names must be alphanumeric and start with a letter.
+            Consumers should not assume that, though, since internally we may use reserved
+            characters like $ to implement special events.
+            </summary>
+            <remarks>
+            This dictionary is immutable (we won't change it) and read-only (will throw
+            <see cref="T:System.NotSupportedException" /> if you try to change it)
+            </remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.EventMetadata">
+            <summary>
+            Driver-specific metadata about events in the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.Events"/> collection.
+            Not all events will have metadata.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.Properties">
+            <summary>
+            Mapping of top-level names to definitions.
+            Property names must be alphanumeric and start with a letter.
+            Consumers should not assume that, though, since internally we may use reserved
+            characters like $ to implement special properties.
+            </summary>
+            <remarks>
+            This dictionary is immutable (we won't change it) and read-only (will throw
+            <see cref="T:System.NotSupportedException" /> if you try to change it)
+            </remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.PropertyMetadata">
+            <summary>
+            Driver-specific metadata about properties in the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.Properties"/> collection.
+            Not all properties will have metadata.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.Types">
+            <summary>
+            Lookup for type definitions referred to by <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition" />s.
+            Type names must be alphanumeric and start with a letter.
+            Consumers should not assume that, though, since internally we may use reserved
+            characters like $ to implement special types.
+            </summary>
+            <para>
+            This is necessary to support the required metadata for the extension device UI.
+            </para>
+            <remarks>
+            This dictionary is immutable (we won't change it) and read-only (will throw
+            <see cref="T:System.NotSupportedException" /> if you try to change it)
+            </remarks>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.Create(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandDefinition}},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandMetadata}},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition}},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyMetadata}},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEventDefinition}},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEventMetadata}},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition}})">
+            <summary>
+            Helper to create an instance based on enumerable collections
+            </summary>
+            <remarks>This will enumerate and copy to dictionaries before returning</remarks>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEvent">
+            <summary>
+            Describes an event notification from a device that is not a state change
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEvent.#ctor(System.String,System.Nullable{Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue})">
+            <summary>
+            Constructor providing all required property values
+            </summary>
+            <param name="eventId"></param>
+            <param name="eventValue"></param>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEvent.EventId">
+            <summary>
+            Unique identifier for the event that triggered
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEvent.EventValue">
+            <summary>
+            Value associated with the event
+            </summary>
+            <remarks>May be null</remarks>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEventDefinition">
+            <summary>
+            Describes the data associated with a particular event
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEventDefinition.#ctor(System.Collections.Generic.IDictionary{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition},Crestron.DeviceDrivers.EntityModel.Data.DriverEntityLocalizedString)">
+            <summary>
+            Initialize required properties
+            </summary>
+            <param name="properties">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEventDefinition.Properties" />
+            </param>
+            <param name="friendlyName">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEventDefinition.FriendlyName" />
+            </param>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEventDefinition.FriendlyName">
+            <summary>
+            The friendly name for this event
+            </summary>
+            <remarks>Members inside this may be null</remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEventDefinition.Properties">
+            <summary>
+            The properties associated with the event data
+            </summary>
+            <remarks>
+            May be null. This dictionary is immutable and will throw an <see cref="T:System.InvalidOperationException" /> if you
+            try to modify it
+            </remarks>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEventMetadata">
+            <summary>
+            Describes the information about an event that is customized for this specific driver.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEventMetadata.Programmable">
+            <summary>
+            True when this event should be exposed to custom programming.
+            <para>
+            Setting this to true or false does not guarantee that the application will respect this hint.
+            This is NOT a security feature.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityEventMetadata.TriggeredByCommands">
+            <summary>
+            Collection of ids of commands that trigger this event.
+            <para>
+            For example, this is used to help warn users when their custom programming associated with
+            this event might result in an infinite loop.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition">
+            <summary>
+            Describes the type information for a parameter in <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityCommandDefinition.Parameters" />
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.#ctor(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityLocalizedString,System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Nullable{Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue})">
+            <summary>
+            Initialize with required properties
+            </summary>
+            <param name="friendlyName">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.FriendlyName" />
+            </param>
+            <param name="typeRef">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.TypeRef" />
+            </param>
+            <param name="typeDef">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.TypeDef" />
+            </param>
+            <param name="rangeProperty">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.RangeProperty" />
+            </param>
+            /// <param name="relativeRangeProperty">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.RelativeRangeProperty" />
+            </param>
+            <param name="unitsProperty">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.UnitsProperty" />
+            </param>
+            <param name="availableValuesProperty">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.AvailableValuesProperty" />
+            </param>
+            <param name="optionalFeature">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.OptionalFeature" />
+            </param>
+            <param name="optionalParameter">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.OptionalParameter" />
+            </param>
+            <param name="defaultValue">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.Default" />
+            </param>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.AvailableValuesProperty">
+            <summary>
+            The name of a top-level property that defines the
+            device-specific available values for this parameter.
+            <para>
+            That property's <see cref="T:System.Type" />  must be a <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Array" />
+            and <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> must be
+            <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.AvailableValue" />.
+            and the value may change at runtime.
+            </para>
+            </summary>
+            <remarks>May be null</remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.FriendlyName">
+            <summary>
+            The friendly name for this parameter
+            </summary>
+            <remarks>Members inside this may be null</remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.OptionalFeature">
+            <summary>
+            If true, the parameter is optional and devices are not required to
+            include it.
+            <para>
+            This is more meaningful when reading definitions than at runtime
+            since a driver which does not support the parameter would not
+            include it at all.
+            However, when a parameter is an optional feature, drivers should
+            report <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.OptionalFeature"/> consistent with the definition
+            for the sake of consistency.
+            When reading definitions in documentation and
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.OptionalFeature"/> is true, applications should check
+            the definitions of a driver's command to see if it includes the
+            parameter or not.
+            </para>
+            <para>
+            The value of this property has no bearing on whether or not the
+            application is required to send it.
+            The <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.OptionalParameter"/> property is what indicates whether
+            or not the application is required to provide it when calling the
+            command.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.OptionalParameter">
+            <summary>
+            If true, the parameter is optional for applications to provide when
+            calling the command.
+            <para>
+            Drivers must handle the case where the parameter is not present as
+            defined in the description of the command (or, according to their
+            own design if it is a custom command).
+            This may mean using a default value, or having some specific
+            meaning when the parameter is not present (i.e. not taking an
+            action for that parameter).
+            </para>
+            <para>
+            When documentation specifies that <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.OptionalParameter"/> is
+            true, and <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.OptionalFeature"/> is false (or omitted),
+            the driver is still required to implement the parameter and
+            tolerate the application omitting it in calls.
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.OptionalFeature"/> is the flag which determines whether
+            or not the parameter itself may be omitted by a driver implementing
+            the command.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.Default">
+            <summary>
+            The default value for this parameter
+            <para>
+            If <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.OptionalParameter"/> is false, callers are still required to pass this parameter in
+            even if they use the default value.
+            If <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.OptionalParameter"/> is true and <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.Default"/> is specified by the driver,
+            calling with the argument not specified or with it specified as the default value should
+            result in the same behavior.
+            </para>
+            </summary>
+            <remarks>Will be null if there is no default value for the parameter</remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.RangeProperty">
+            <summary>
+            The name of a top-level property that defines the
+            device-specific range for this parameter.
+            <para>
+            That property's <see cref="T:System.Type" /> must be a <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.NumericRange" />
+            and the value may change at runtime.
+            </para>
+            </summary>
+            <remarks>May be null</remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.RelativeRangeProperty">
+            <summary>
+            The name of a top-level property that defines the
+            device-specific relative range for this parameter.
+            <para>
+            That property's <see cref="T:System.Type" /> must be a <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.RelativeRange" />
+            and the value may change at runtime.
+            </para>
+            </summary>
+            <remarks>May be null</remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.TypeDef">
+            <summary>
+            Information about the type of this parameter
+            <para>
+            Mutually exclusive with <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.TypeRef" />. One and only one should be set.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.TypeRef">
+            <summary>
+            Name of the <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition" /> to reference from <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.Types" />
+            for <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.TypeDef" />
+            <para>
+            Mutually exclusive with <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.TypeDef" />. One and only one should be set.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityParameterDefinition.UnitsProperty">
+            <summary>
+            The name of a top-level property that defines the
+            device-specific units for this parameter.
+            <para>
+            That property's <see cref="T:System.Type" /> must be a <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.String" />
+            and the value may change at runtime.
+            </para>
+            </summary>
+            <remarks>May be null</remarks>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition">
+            <summary>
+            Describes a device property's type metadata, constraints, and relationships
+            to other properties.
+            <para>
+            Some properties, commands, etc. will be defined by Crestron and contain a ':' in the name.
+            In these cases, the definition is static and will always be the same
+            for a given version of that property's definition. This means that if
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Range" />
+            is defined, it describes the API of that property (i.e. 0 - 100 for a percentage) and is
+            *NOT* to be used by devices to describe the actual physical property range on the device.
+            If the range would vary per device, <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.RangeProperty" /> must be used, and the
+            device may specify the value of that property to advertise its range.
+            The same goes for other <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition" /> members.
+            </para>
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.#ctor(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityLocalizedString,System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition,System.String,System.String,System.String,System.String)">
+            <summary>
+            Initialize with required properties
+            </summary>
+            <param name="friendlyName">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.FriendlyName" />
+            </param>
+            <param name="typeRef">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.TypeRef" />
+            </param>
+            <param name="typeDef">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.TypeDef" />
+            </param>
+            <param name="rangeProperty">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.RangeProperty" />
+            </param>
+            <param name="relativeRangeProperty">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.RelativeRangeProperty" />
+            </param>
+            <param name="unitsProperty">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.UnitsProperty" />
+            </param>
+            <param name="availableValuesProperty">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.AvailableValuesProperty" />
+            </param>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.AvailableValuesProperty">
+            <summary>
+            The name of a neighboring or top-level property that defines the
+            device-specific available values for this property.
+            <para>
+            That property's <see cref="T:System.Type" />  must be a <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Array" />
+            and <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> must be
+            <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.AvailableValue" />.
+            and the value may change at runtime.
+            If a neighboring property with this name exists, it is used.
+            If it does not exist, it must be a top-level property.
+            </para>
+            </summary>
+            <remarks>May be null</remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.FriendlyName">
+            <summary>
+            The friendly name for this property
+            </summary>
+            <remarks>Members inside this may be null</remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.RangeProperty">
+            <summary>
+            The name of a neighboring or top-level property that defines the
+            device-specific range for this property.
+            <para>
+            That property's <see cref="T:System.Type" /> must be a <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.NumericRange" />
+            and the value may change at runtime.
+            If a neighboring property with this name exists, it is used.
+            If it does not exist, it must be a top-level property.
+            </para>
+            </summary>
+            <remarks>May be null</remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.RelativeRangeProperty">
+            <summary>
+            The name of a neighboring or top-level property that defines the
+            device-specific range for this property.
+            <para>
+            That property's <see cref="T:System.Type" /> must be a <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.RelativeRange" />
+            and the value may change at runtime.
+            If a neighboring property with this name exists, it is used.
+            If it does not exist, it must be a top-level property.
+            </para>
+            </summary>
+            <remarks>May be null</remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.TypeDef">
+            <summary>
+            Information about the type of this property
+            <para>
+            Mutually exclusive with <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.TypeRef" />. One and only one should be set.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.TypeRef">
+            <summary>
+            Name of the <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition" /> to reference from <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.Types" />
+            for <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.TypeDef" />
+            <para>
+            Mutually exclusive with <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.TypeDef" />. One and only one should be set.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.UnitsProperty">
+            <summary>
+            The name of a neighboring or top-level property that defines the
+            device-specific units for this property.
+            <para>
+            That property's <see cref="T:System.Type" /> must be a <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.String" />
+            and the value may change at runtime.
+            If a neighboring property with this name exists, it is used.
+            If it does not exist, it must be a top-level property.
+            </para>
+            </summary>
+            <remarks>May be null</remarks>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition.Create(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType,System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityLocalizedString,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange,System.String,System.Collections.Generic.IEnumerable{Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue},System.String,System.String,System.String)">
+            <summary>
+            Create with an in-line definition
+            </summary>
+            <param name="name"></param>
+            <param name="type"></param>
+            <param name="itemType"></param>
+            <param name="objectType"></param>
+            <param name="range"></param>
+            <param name="units"></param>
+            <param name="availableValues"></param>
+            <param name="rangeProperty"></param>
+            <param name="unitsProperty"></param>
+            <param name="availableValuesProperty"></param>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyMetadata">
+            <summary>
+            Describes the information about a property that is customized for this specific driver.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyMetadata.Programmable">
+            <summary>
+            True when this property should be exposed to custom programming.
+            <para>
+            Setting this to true or false does not guarantee that the application will respect this hint.
+            This is NOT a security feature.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyMetadata.ExtensionUiProperty">
+            <summary>
+            True when this property might be used in an Extension UI and should be sent to a device
+            presenting a UI that is backed by the property collection.
+            <para>
+            The application may choose to send all properties anyway.
+            This is NOT a security feature.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyMetadata.ProgrammableValueRequiresRefresh">
+            <summary>
+            Driver authors should usually never set this.
+            <para>
+            Used to indicate properties where <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyMetadata.Programmable"/> is true
+            but properties will not change unless specifically refreshed.
+            </para>
+            <para>
+            This tells systems that they should not expect this value to asynchronously
+            change to trigger things like automation unless they specifically
+            refresh it.
+            It is used when wrapping some existing class that does not provide a change
+            event and should be avoided if possible.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyUpdate">
+            <summary>
+            Data structure for a property update message from a driver device controller
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyUpdate.#ctor(System.Collections.Generic.IDictionary{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue})">
+            <summary>
+            Constructor specifying all required properties
+            </summary>
+            <param name="updates">Value for <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyUpdate.Updates" /></param>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyUpdate.Updates">
+            <summary>
+            Set of property updates. Keys are paths to properties and values are
+            specific to the property types.
+            <para>
+            Property paths are in JSONPointer format and will not have a leading "#/"
+            </para>
+            </summary>
+            <remarks>
+            This dictionary is immutable (we won't change it) and read-only (will throw
+            <see cref="T:System.NotSupportedException" /> if you try to change it)
+            </remarks>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyUpdate.Create(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue}})">
+            <summary>
+            Constructor specifying all required properties
+            </summary>
+            <param name="updates">Value for <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyUpdate.Updates" /></param>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityState">
+            <summary>
+            Defines a snapshot of the entire device controller state to be used in acquiring an
+            initial picture of everything before listening for change events.
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityState.#ctor(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition,System.Collections.Generic.IDictionary{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue})">
+            <summary>
+            Initialize with required properties
+            </summary>
+            <param name="definition"></param>
+            <param name="propertyValues"></param>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityState.Definition">
+            <summary>
+            The present definition of properties, commands, etc.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityState.PropertyValues">
+            <summary>
+            The present values of all properties. Keys are the root property names.
+            Values can be any json-serializable object that matches what is described
+            in the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityState.Definition" /> for that property.
+            </summary>
+            <remarks>
+            This dictionary is immutable (we won't change it) and read-only (will throw
+            <see cref="T:System.NotSupportedException" /> if you try to change it)
+            </remarks>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityState.Create(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue}})">
+            <summary>
+            Initialize with required properties
+            </summary>
+            <param name="definition"></param>
+            <param name="propertyValues"></param>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition">
+            <summary>
+            Describes the type information for a property.
+            This type information may be reused by multiple properties
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.#ctor(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType,System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange,System.String,System.Collections.Generic.ICollection{Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue},System.Collections.Generic.IDictionary{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityPropertyDefinition})">
+            <summary>
+            Initialize with required properties
+            </summary>
+            <param name="type">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" />
+            </param>
+            <param name="itemType">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" />
+            </param>
+            <param name="itemTypeRef">><see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemTypeRef" /></param>
+            <param name="range">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Range" />
+            </param>
+            <param name="units">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Units" />
+            </param>
+            <param name="availableValues">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.AvailableValues" />
+            </param>
+            <param name="properties">
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Properties" />
+            </param>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.AvailableValues">
+            <summary>
+            The collection of available values that the property may be set to.
+            Note that the existence of this property does not necessarily mean
+            the property is directly settable - it could still be read-only.
+            The keys of this collection are the actual values that apply.
+            </summary>
+            <remarks>
+            May be null. This collection is immutable and will throw an <see cref="T:System.InvalidOperationException" /> if you
+            try to modify it
+            </remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType">
+            <summary>
+            For <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Array" />s, specifies the type of the collection members.
+            </summary>
+            <remarks>
+            Arrays of arrays are not directly supported. Instead, they must be modeled as an array of
+            objects which have a property which is an array.
+            </remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemTypeRef">
+            <summary>
+            For <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Object" />, or
+            <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Array" />s of those, this specifies the name of the type in use.
+            This name can be used as a key in <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityDefinition.Types" /> to retrieve the
+            definitions of the sub-properties.
+            In some cases, this may be null if the type of object is something like a dictionary.
+            </summary>
+            <remarks>May be null</remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Properties">
+            <summary>
+            Sub-properties of this type
+            <para>
+            Applies only to <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Object" />s, either in
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> or <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" />
+            </para>
+            </summary>
+            <remarks>
+            May be null. This dictionary is immutable and will throw an <see cref="T:System.InvalidOperationException" /> if you
+            try to modify it
+            </remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Range">
+            <summary>
+            Defines the numeric range of the property.
+            <para>
+            For strings, the range values may be cast to integers and treated as the
+            constraints on the length of the string.
+            </para>
+            </summary>
+            <remarks>May be null</remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type">
+            <summary>
+            Specifies the type for the value of this property
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Units">
+            <summary>
+            The units of the property. May be null.
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue">
+            <summary>
+            Represents a deserializable driver device value.
+            The caller is expected to know the type of the value beforehand from context.
+            </summary>
+            <remarks>
+            This is a pure abstract class with an internal constructor.
+            Think of it like an interface that other assemblies can consume but not implement.
+            </remarks>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Object)">
+            <summary>
+            Creates a new instance with the specified value
+            </summary>
+            <param name="value">The associated value</param>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.UInt64)">
+            <summary>
+            Casts the value to a <see cref="T:System.Int64"/> and uses that value.
+            <para>
+            DO NOT USE. This only exists to avoid silently falling into
+            the <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Double)"/> overload which can
+            lead to unexpected and hard-to-debug errors.
+            It is marked obsolete to help developers find inadvertent usages.
+            </para>
+            <para>
+            Use <see cref="T:System.Int64"/> if possible, or, if you really need a value
+            greater than 2^53, use <see cref="T:System.String"/> to avoid losing precision
+            when interacting with platforms that do not support 64-bit integers
+            (like Javascript at the time of writing).
+            </para>
+            </summary>
+            <param name="value">The associated value</param>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Double)">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueList)">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueDictionary)">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange)">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRelativeRange)">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue)">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue})">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue}})">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue}[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{System.Boolean})">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Boolean[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{System.Int64})">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Int64[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{System.UInt64})">
+            <summary>
+            Casts the values to <see cref="T:System.Int64"/> and uses those.
+            <para>
+            DO NOT USE. This only exists to avoid silently falling into
+            the <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{System.Double})"/> overload which can
+            lead to unexpected and hard-to-debug errors.
+            It is marked obsolete to help developers find inadvertent usages.
+            </para>
+            <para>
+            Use <see cref="T:System.Int64"/> if possible, or, if you really need a value
+            greater than 2^53, use <see cref="T:System.String"/> to avoid losing precision
+            when interacting with platforms that do not support 64-bit integers
+            (like Javascript at the time of writing).
+            </para>
+            </summary>
+            <param name="value">The associated value</param>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.UInt64[])">
+            <summary>
+            Casts the values to <see cref="T:System.Int64"/> and uses those.
+            <para>
+            DO NOT USE. This only exists to avoid silently falling into
+            the <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Double[])"/> overload which can
+            lead to unexpected and hard-to-debug errors.
+            It is marked obsolete to help developers find inadvertent usages.
+            </para>
+            <para>
+            Use <see cref="T:System.Int64"/> if possible, or, if you really need a value
+            greater than 2^53, use <see cref="T:System.String"/> to avoid losing precision
+            when interacting with platforms that do not support 64-bit integers
+            (like Javascript at the time of writing).
+            </para>
+            </summary>
+            <param name="value">The associated value</param>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{System.Double})">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Double[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.String[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange})">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRelativeRange})">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRelativeRange[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue})">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Boolean}})">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.KeyValuePair{System.String,System.Boolean}[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Int64}})">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.KeyValuePair{System.String,System.Int64}[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.UInt64}})">
+            <summary>
+            Casts the values to <see cref="T:System.Int64"/> and uses those.
+            <para>
+            DO NOT USE. This only exists to avoid silently falling into
+            the <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Double}})"/> overload which can
+            lead to unexpected and hard-to-debug errors.
+            It is marked obsolete to help developers find inadvertent usages.
+            </para>
+            <para>
+            Use <see cref="T:System.Int64"/> if possible, or, if you really need a value
+            greater than 2^53, use <see cref="T:System.String"/> to avoid losing precision
+            when interacting with platforms that do not support 64-bit integers
+            (like Javascript at the time of writing).
+            </para>
+            </summary>
+            <param name="value">The associated value</param>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.KeyValuePair{System.String,System.UInt64}[])">
+            <summary>
+            Casts the values to <see cref="T:System.Int64"/> and uses those.
+            <para>
+            DO NOT USE. This only exists to avoid silently falling into
+            the <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.KeyValuePair{System.String,System.Double}[])"/> overload which can
+            lead to unexpected and hard-to-debug errors.
+            It is marked obsolete to help developers find inadvertent usages.
+            </para>
+            <para>
+            Use <see cref="T:System.Int64"/> if possible, or, if you really need a value
+            greater than 2^53, use <see cref="T:System.String"/> to avoid losing precision
+            when interacting with platforms that do not support 64-bit integers
+            (like Javascript at the time of writing).
+            </para>
+            </summary>
+            <param name="value">The associated value</param>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Double}})">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.KeyValuePair{System.String,System.Double}[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.KeyValuePair{System.String,System.String}[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange}})">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange}[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRelativeRange}})">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRelativeRange}[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue}})">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.#ctor(System.Collections.Generic.KeyValuePair{System.String,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue}[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetValue``1">
+            <summary>
+            Gets the current value as the correct type.
+            Will throw an <see cref="T:System.InvalidCastException" /> if the incorrect <typeparamref name="TValue" /> is given.
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Boolean" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.Boolean" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Integer" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.Int64" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Number" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.Double" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.String" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.String" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Device" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.String" /> and its value is the ID of a Driver Controller Id.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Entity" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.String" /> and its value is the ID of an entity.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Object" />
+            <typeparamref name="TValue" /> must be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueDictionary" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Array" />,
+            <typeparamref name="TValue" /> must be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueList" />
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.AvailableValue" />
+            <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.NumericRange" />, or <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.RelativeRange"/>,
+            generally you want to call <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetValueAs``1" />
+            instead.
+            However, calling this method with <typeparamref name="TValue" /> of <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueDictionary" /> also is
+            allowed
+            as they are internally represented as such.
+            </para>
+            <para>
+            Calling with <typeparamref name="TValue" /> as <see cref="T:System.Object" />, the raw value will be returned.
+            Note that in case of <see cref="T:System.Double" /> types, this might return <see cref="T:System.Int64" /> in certain cases,
+            like when the value is deserialized and was stored in a way that looks like an integer.
+            Callers should only use this when attempting to generically serialize or display a value
+            and should not depend on a distinction between <see cref="T:System.Double" /> and <see cref="T:System.Int64" />.
+            </para>
+            <para>
+            For <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Array" /> or <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Object" /> when
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" />
+            is specified, <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetValueAsList``1" /> and <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetValueAsDictionary``1" /> can be used with
+            types
+            as specified above for <typeparamref name="TValue" />
+            </para>
+            </summary>
+            <typeparam name="TValue">Return type</typeparam>
+            <returns>
+            The present value, in an immutable form.
+            Attempting to modify a collection returned here will result in an exception being thrown.
+            For reference types, the present value may be null and returned as such.
+            </returns>
+            <remarks>
+            Multiple calls must always return the same value (although it is not necessarily the exact same object instance)
+            </remarks>
+            <exception cref="T:System.InvalidCastException" />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.TryGetValue``1(``0@)">
+            <summary>
+            Gets the current value as the correct type.
+            Returns false if the incorrect <typeparamref name="TValue" /> is given.
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Boolean" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.Boolean" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Integer" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.Int64" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Number" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.Double" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.String" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.String" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Device" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.String" /> and its value is the ID of a Driver Controller Id.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Entity" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.String" /> and its value is the ID of an entity.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Object" />
+            <typeparamref name="TValue" /> must be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueDictionary" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Array" />,
+            <typeparamref name="TValue" /> must be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueList" />
+            </para>
+            <para>
+            <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.NumericRange" />, or <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.RelativeRange"/>,
+            generally you want to call <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.TryGetValueAs``1(``0@)" /> instead.
+            However, calling this method with <typeparamref name="TValue" /> of <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueDictionary" /> also is
+            allowed
+            as they are internally represented as such.
+            </para>
+            <para>
+            Calling with <typeparamref name="TValue" /> as <see cref="T:System.Object" />, the raw value will be returned.
+            Note that in case of <see cref="T:System.Double" /> types, this might return <see cref="T:System.Int64" /> in certain cases,
+            like when the value is deserialized and was stored in a way that looks like an integer.
+            Callers should only use this when attempting to generically serialize or display a value
+            and should not depend on a distinction between <see cref="T:System.Double" /> and <see cref="T:System.Int64" />.
+            </para>
+            <para>
+            For <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Array" /> or <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Object" /> when
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" />
+            is specified, <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetValueAsList``1" /> and <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetValueAsDictionary``1" /> can be used with
+            types
+            as specified above for <typeparamref name="TValue" />
+            </para>
+            </summary>
+            <typeparam name="TValue">Return type</typeparam>
+            <param name="value">
+            Result, in an immutable form, valid when this returns true
+            Attempting to modify a collection returned here will result in an exception being thrown.
+            For reference types, the present value may be null and returned as such.
+            </param>
+            <returns>
+            True if the value was the correct type
+            </returns>
+            <remarks>
+            Multiple calls must always return the same value (although it is not necessarily the exact same object instance)
+            </remarks>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetValueAs``1">
+            <summary>
+            Converts the present value (which must be a <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueDictionary" /> internally)
+            to a supported complex type.
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.AvailableValue" />
+            <typeparamref name="TValue" /> should be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.NumericRange" />
+            <typeparamref name="TValue" /> should be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.RelativeRange" />
+            <typeparamref name="TValue" /> should be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRelativeRange" />.
+            </para>
+            <para>
+            Will throw an <see cref="T:System.InvalidCastException" /> when any other type is used or when the underlying
+            value cannot be converted to that type.
+            </para>
+            </summary>
+            <typeparam name="TValue">The type to convert to</typeparam>
+            <returns>Converted value, or null when the underlying value is null</returns>
+            <remarks>Do NOT call with <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueDataStructure" /> directly</remarks>
+            <exception cref="T:System.InvalidCastException"></exception>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.TryGetValueAs``1(``0@)">
+            <summary>
+            Converts the present value (which must be a <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueDictionary" /> internally)
+            to a supported complex type.
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.AvailableValue" />
+            <typeparamref name="TValue" /> should be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.NumericRange" />
+            <typeparamref name="TValue" /> should be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange" />.
+            </para>
+            <para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.RelativeRange" />
+            <typeparamref name="TValue" /> should be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRelativeRange" />.
+            </para>
+            Will throw an <see cref="T:System.InvalidCastException" /> when any other type is used or when the underlying
+            value cannot be converted to that type.
+            </para>
+            </summary>
+            <typeparam name="TValue">The type to convert to</typeparam>
+            <param name="result">Converted value, or null when the underlying value is null</param>
+            <returns>True if conversion was successful</returns>
+            <remarks>Do NOT call with <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueDataStructure" /> directly</remarks>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.TryGetValueAsImpl``1(``0@)">
+            <inheritdoc cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.TryGetValueAsImpl``1(``0@)" />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetValueAsList``1">
+            <summary>
+            Converts a <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueList" /> to a new list of converted values.
+            This works for lists of values of types from <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetValue``1" /> and <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetValueAs``1" />.
+            <para>
+            The <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> must be <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Array" />
+            and <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> must be set.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Boolean" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.Boolean" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Integer" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.Int64" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Number" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.Double" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.String" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.String" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Device" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.String" /> and its value is the ID of a Driver Controller Id.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Entity" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.String" /> and its value is the ID of an entity.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Array" />
+            <typeparamref name="TValue" /> must be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueList" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Object" />
+            <typeparamref name="TValue" /> must be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueDictionary" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.AvailableValue" />
+            <typeparamref name="TValue" /> should be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.NumericRange" />
+            <typeparamref name="TValue" /> should be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.RelativeRange" />
+            <typeparamref name="TValue" /> should be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRelativeRange" />.
+            </para>
+            <para>
+            Will throw an <see cref="T:System.InvalidCastException" /> when any other type is used or when the underlying
+            value cannot be converted to that type.
+            </para>
+            </summary>
+            <typeparam name="TValue">Type of all list values</typeparam>
+            <returns>A new list of converted values. This list is mutable and the caller may modify it however it wants.</returns>
+            <exception cref="T:System.InvalidCastException"></exception>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.TryGetValueAsList``1(System.Collections.Generic.List{``0}@)">
+            <summary>
+            Converts a <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueList" /> to a new list of converted values.
+            This works for lists of values of types from <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetValue``1" /> and <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetValueAs``1" />.
+            <para>
+            The <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> must be <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Array" />
+            and <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> must be set.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Boolean" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.Boolean" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Integer" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.Int64" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Number" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.Double" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.String" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.String" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Device" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.String" /> and its value is the ID of a Driver Controller Id.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Entity" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.String" /> and its value is the ID of an entity.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Array" />
+            <typeparamref name="TValue" /> must be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueList" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Object" />
+            <typeparamref name="TValue" /> must be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueDictionary" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.AvailableValue" />
+            <typeparamref name="TValue" /> should be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.NumericRange" />
+            <typeparamref name="TValue" /> should be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.RelativeRange" />
+            <typeparamref name="TValue" /> should be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRelativeRange" />.
+            </para>
+            </summary>
+            <typeparam name="TValue">Type of all list values</typeparam>
+            <param name="values">A new list of converted values. This list is mutable and the caller may modify it however it wants.</param>
+            <returns>
+            False when any other type is used or when the underlying value cannot be converted to that type.
+            </returns>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetValueAsDictionary``1">
+            <summary>
+            Converts a <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueDictionary" /> to a new dictionary of converted values.
+            This works for lists of values of types from <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetValue``1" /> and <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetValueAs``1" />.
+            <para>
+            The <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Type" /> must be <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Object" />
+            and <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> must be set.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Boolean" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.Boolean" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Integer" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.Int64" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Number" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.Double" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.String" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.String" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Device" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.String" /> and its value is the ID of a Driver Controller Id.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Entity" />,
+            <typeparamref name="TValue" /> must be <see cref="T:System.String" /> and its value is the ID of an entity.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Array" />
+            <typeparamref name="TValue" /> must be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueList" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Object" />
+            <typeparamref name="TValue" /> must be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueDictionary" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.AvailableValue" />
+            <typeparamref name="TValue" /> should be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.NumericRange" />
+            <typeparamref name="TValue" /> should be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange" />.
+            </para>
+            <para>
+            When <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" /> is <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.RelativeRange" />
+            <typeparamref name="TValue" /> should be <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRelativeRange" />.
+            </para>
+            <para>
+            Will throw an <see cref="T:System.InvalidCastException" /> when any other type is used or when the underlying
+            value cannot be converted to that type.
+            </para>
+            </summary>
+            <typeparam name="TValue">Type of all dictionary values. Keys are always strings.</typeparam>
+            <returns>A new list of converted values. This list is mutable and the caller may modify it however it wants.</returns>
+            <exception cref="T:System.InvalidCastException"></exception>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.Equals(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue)">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.op_Equality(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue)">
+            <summary>
+            Implementation of equals operator for two <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue" />s
+            </summary>
+            <param name="left">Left side vale</param>
+            <param name="right">Right side value</param>
+            <returns>True if the values are equal</returns>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.op_Inequality(Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue,Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue)">
+            <summary>
+            Implementation of not equal operator for two <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue" />s
+            </summary>
+            <param name="left">Left side vale</param>
+            <param name="right">Right side value</param>
+            <returns>True if the values are not equal</returns>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueDataStructure">
+            <summary>
+            Base class to "tag" valid types for <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue.GetValueAs``1"/>
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueList.#ctor(System.Collections.Generic.IList{Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue})">
+            <summary>
+            Creates a new list implementation based on the underlying collection.
+            Intentionally private to force usage of <see cref="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueList.Create(System.Collections.Generic.IEnumerable{Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue})" />
+            </summary>
+            <param name="items">Underlying immutable collection</param>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange">
+            <summary>
+            Describes the possible range of values for a numeric property
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange.#ctor(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double})">
+            <summary>
+            Constructs an immutable range object
+            </summary>
+            <param name="minimum"></param>
+            <param name="maximum"></param>
+            <param name="stepSize"></param>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange.Maximum">
+            <summary>
+            The maximum value (inclusive), or null if no maximum applies
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange.Minimum">
+            <summary>
+            The minimum value (inclusive), or null if no minimum applies
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange.StepSize">
+            <summary>
+            The smallest step size that applies to the value, like 1 for integers,
+            or 0.5 or 0.01 for some other values.
+            Will be null if no step size applies.
+            <para>
+            Note that this is the recommended minimum step size, and the actual step
+            size may vary.
+            The values between <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange.Minimum"/> and <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange.Maximum"/> may be
+            spread in a non-linear fashion with more steps on one end than the other.
+            Application should not assume they can calculate the real set-points of
+            the device by adding multiples of the step size to the minimum value.
+            Rather, this is more an indicator of the recommended precision of values
+            to send to the driver.
+            </para>
+            <para>
+            When the units are known, applications may (and are encouraged to) have
+            their own opinions on what the useful step size is and may skip some
+            driver values or even apply a nonlinear scaling to what is presented
+            to the user.
+            </para>
+            <para>
+            Drivers should expect to be given values that do not precisely line up
+            with the advertised step size and should choose the closest valid value
+            when this occurs.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRelativeRange">
+            <summary>
+            Describes the properties of a "relative" range, typically over a 0.0 - 1.0 scale
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRelativeRange.#ctor(System.Nullable{System.Double})">
+            <summary>
+            Constructs an immutable relative range object
+            </summary>
+            <param name="stepSize"></param>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRelativeRange.StepSize">
+            <summary>
+            The smallest step size that applies to the range.
+            <para>
+            <para>
+            For example, this would be 0.01 for a percentage.
+            </para>
+            Note that this is the recommended minimum step size, and the actual step
+            size may vary.
+            The values may be spread in a non-linear fashion with more steps on one
+            end than the other.
+            Application should not assume they can calculate the real set-points of
+            the device by using multiples of the step size.
+            Rather, this is more an indicator of the recommended precision of values
+            to send to the driver.
+            </para>
+            <para>
+            When the units are known, applications may (and are encouraged to) have
+            their own opinions on what the useful step size is and may skip some
+            driver values or even apply a nonlinear scaling to what is presented
+            to the user.
+            </para>
+            <para>
+            Drivers should expect to be given values that do not precisely line up
+            with the advertised step size and should choose the closest valid value
+            when this occurs.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType">
+            <summary>
+            Describes the type of a particular driver state value
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Uninitialized">
+            <summary>
+            Default uninitialized value
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Boolean">
+            <summary>
+            The value is <see cref="T:System.Boolean" />
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Number">
+            <summary>
+            The value is a floating point value, represented by a <see cref="T:System.Double" />
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Integer">
+            <summary>
+            The value is an integer number, represented by a <see cref="T:System.Int64" />.
+            <para>
+            IMPORTANT NOTE: Some platforms (like Javascript) treat all numbers
+            as <see cref="T:System.Double"/> and cannot represent integers greater than 2^53
+            without losing some precision.
+            There is no provision in these data structures for <see cref="T:System.UInt64"/>,
+            and drivers/applications are discouraged from using <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Integer"/>
+            for any values that may exceed 2^53.
+            Instead, if precise, large values are needed, <see cref="T:System.String"/> should
+            be used to avoid losing any precision.
+            </para>
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.String">
+            <summary>
+            The value is <see cref="T:System.String" />.
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Array">
+            <summary>
+            The value is a homogenous collection of other states.
+            The types of those instances must be specified in the <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType" />.
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Object">
+            <summary>
+            The state is an object containing other states.
+            If <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.Properties"/> are defined, it can be thought of as a "class".
+            Otherwise, the object is a dictionary where keys are strings and value types are specified by one of
+            <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemType"/> or <see cref="P:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityTypeDefinition.ItemTypeRef"/>,
+            whichever of those two are set (they are mutually exclusive).
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Entity">
+            <summary>
+            The value is a <see cref="T:System.String" /> ID that is for another entity with its own supported
+            states, and commands. This is primarily used for sub-components of a device, like a PDU bank
+            or the controls associated with a media endpoint.
+            </summary>
+            <remarks>
+            This entity will NOT support configuration. The <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Device" /> type describes an entity
+            which may be configured.
+            </remarks>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Device">
+            <summary>
+            The value is a <see cref="T:System.String" /> ID that is for another device controller which is comprised
+            of an entity and a configuration. This is primarily used for sub-devices like children on a platform
+            device or a single compound device like a switch with four lights.
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.LocalizedString">
+            <summary>
+            The value is <see cref="T:System.String" /> but it is a localization key to be used with the
+            translation dictionary.
+            </summary>
+            <para>Required by Extension devices</para>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.NumericRange">
+            <summary>
+            The value is a <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRange" />.
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.RelativeRange">
+            <summary>
+            The value is a <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueRelativeRange" />.
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.AvailableValue">
+            <summary>
+            The value is a <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityAvailableValue" />.
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValueType.Any">
+            <summary>
+            The value is a generic <see cref="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityValue" /> whose type depends
+            on run-time context
+            <para>
+            This is primarily used in generic commands like a "set value" command that might
+            have different typed data for different values
+            </para>
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverControllerStatus">
+            <summary>
+            Describes the life cycle of a driver controller running on the platform
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverControllerStatus.Unknown">
+            <summary>
+            Default value when the status has not been set yet
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverControllerStatus.NotStarted">
+            <summary>
+            Controller has not been started or is not running
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverControllerStatus.NotConfigured">
+            <summary>
+            It is running, but not configured.  Only configuration APIs are valid at this point.
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverControllerStatus.Running">
+            <summary>
+            Controller is running and has been configured.
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityLocalizedString">
+            <summary>
+            Represents a string that a driver may choose to localize using its
+            translation dictionary.
+            </summary>
+            <seealso cref="M:Crestron.DeviceDrivers.EntityModel.DriverController.GetLanguageTranslations(System.String)" />
+            <seealso cref="P:Crestron.DeviceDrivers.EntityModel.DriverController.SupportedCultures" />
+            <seealso cref="E:Crestron.DeviceDrivers.EntityModel.DriverController.LanguageTranslationsChanged" />
+            <seealso cref="E:Crestron.DeviceDrivers.EntityModel.DriverController.SupportedCulturesChanged" />
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityLocalizedString.Text">
+            <summary>
+            The untranslated default text, typically in en-US language/culture.
+            This is primarily intended for cases where the value is retrieved
+            from the device at run-time and thus cannot be localized.
+            Ideally, any labels known ahead of time would be localized.
+            <para>
+            Not all applications will support localization, so it is best practice for
+            a driver developer to populate the label even when localization is in use.
+            </para>
+            <para>
+            Applications which support localization should prefer the localized value if available.
+            If <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityLocalizedString.LocalizationKey" /> is null, the only option left is to use this value.
+            Both may be null in cases where, if this were a single string, that would be null too.
+            </para>
+            <para>
+            May be null, although drivers should avoid using null here.
+            </para>
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityLocalizedString.LocalizationKey">
+            <summary>
+            The key that can be used to look up the localized value of this string in
+            <see cref="M:Crestron.DeviceDrivers.EntityModel.DriverController.GetLanguageTranslations(System.String)" />
+            <para>
+            May be null, even if other values in the driver are translated.
+            </para>
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityLocalizedString.#ctor(System.String,System.String)">
+            <summary>
+            Initialize with all required fields
+            </summary>
+            <param name="text">
+            <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityLocalizedString.Text" />
+            </param>
+            <param name="localizationKey">
+            <see cref="F:Crestron.DeviceDrivers.EntityModel.Data.DriverEntityLocalizedString.LocalizationKey" />
+            </param>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.DevicePropertyChangeEventArgs">
+            <summary>
+            Describes an atomic set of state changes
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.DevicePropertyChangeEventArgs.Changes">
+            <summary>
+            New values for states which changed
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.DevicePropertyChangeEventArgs.ControllerId">
+            <summary>
+            The Id of the controller whose states changed
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.DriverAssemblyEntryPoint">
+            <summary>
+            Class which must be implemented in a driver assembly and referenced
+            by a assembly-level <see cref="T:Crestron.DeviceDrivers.EntityModel.DriverAssemblyEntryPointAttribute"/>.
+            It MUST have a default constructor that takes no parameters.
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.DriverAssemblyEntryPoint.CreateDriverControllerInstance(Crestron.DeviceDrivers.EntityModel.DriverControllerCreationArgs)">
+            <summary>
+            Function that is called to create a new instance of the driver defined in this assembly.
+            </summary>
+            <param name="args">Arguments to construct the driver</param>
+            <returns>A new driver instance</returns>
+            <remarks>Arguments are wrapped in an object to make it easier to maintain and add more as needed in the future</remarks>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.DriverAssemblyEntryPointAttribute">
+            <summary>
+            Specifies the entry point class for the driver assembly
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.DriverAssemblyEntryPointAttribute.DriverAssemblyEntryPointType">
+            <summary>
+            Type defined in this assembly which implements <see cref="T:Crestron.DeviceDrivers.EntityModel.DriverAssemblyEntryPoint"/> and has a
+            default constructor.
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.DriverAssemblyEntryPointAttribute.#ctor(System.Type)">
+            <summary>
+            Initialize with required properties
+            </summary>
+            <param name="driverAssemblyEntryPointType"><see cref="P:Crestron.DeviceDrivers.EntityModel.DriverAssemblyEntryPointAttribute.DriverAssemblyEntryPointType"/></param>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.DriverController.SupportedCultures">
+            <summary>
+            Retrieves all cultures supported by this device.
+            <para>
+            The format of the returned strings are "languagecode2-country/regioncode2" as defined by
+            the ISO 639-1 standard and the ISO 3166 standard.
+            </para>
+            <para>
+            For example, "en-US" for English in the United States.
+            </para>
+            </summary>
+            <returns>A list of cultures.</returns>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.DriverController.GetLanguageTranslations(System.String)">
+            <summary>
+            Retrieves all the translated strings used by this device for the provided culture.
+            </summary>
+            <param name="culture">
+            Specifies the language code and country region code to be retrieved.
+            The string must formatted as the "languagecode2" as defined by the ISO 639-1 standard,
+            followed by a hyphen and then the "country/regioncode2" as defined by the ISO 3166 standard.
+            <para>
+            For example, "en-US" for English in the United States.
+            </para>
+            <para>
+            If the specified culture is not supported, this will return English, and if English is not supported then
+            this will return the first language that is found in the driver. If there are no language translations
+            then this will return null.
+            </para>
+            </param>
+        </member>
+        <member name="E:Crestron.DeviceDrivers.EntityModel.DriverController.SupportedCulturesChanged">
+            <summary>
+            Raised when a supported culture is added or removed. See <see cref="P:Crestron.DeviceDrivers.EntityModel.DriverController.SupportedCultures"/>.
+            </summary>
+        </member>
+        <member name="E:Crestron.DeviceDrivers.EntityModel.DriverController.LanguageTranslationsChanged">
+            <summary>
+            Raised when any language translation is modified, added, or removed. See <see cref="M:Crestron.DeviceDrivers.EntityModel.DriverController.GetLanguageTranslations(System.String)"/>.
+            </summary>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.DriverController.TransportRx(System.String,System.String)">
+            <summary>
+            Handler for messages received from the device going to the driver
+            </summary>
+            <param name="channelId">Id of the channel the data is coming in on (provided during configuration)</param>
+            <param name="data">The content received from the device</param>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.DriverControllerCreationArgs">
+            <summary>
+            Driver creation data. Applications MUST NOT modify this object after passing it to
+            <see cref="M:Crestron.DeviceDrivers.EntityModel.DriverAssemblyEntryPoint.CreateDriverControllerInstance(Crestron.DeviceDrivers.EntityModel.DriverControllerCreationArgs)"/>.
+            Drivers MUST NOT modify this object at all
+            Any public setters / mutable properties are there for convenience.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.DriverControllerCreationArgs.DriverId">
+            <summary>
+            Unique identifier assigned to this driver instance by the hosting application
+            <para>
+            This will not change across restarts of the hosting application
+            and is intended to be used by the driver as an ID guaranteed to be unique across
+            all other device drivers in the same system.
+            </para>
+            <para>
+            Some capabilities also involve relationships with other devices (i.e. driver instances)
+            in the same family of devices.
+            This ID is to be used in those capabilities in order for the hosting application to be
+            able to refer to another device driver.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.DriverControllerCreationArgs.Logger">
+            <summary>
+            Logger for the driver controller to use
+            </summary>
+            <remarks>This is required and must not be null</remarks>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.DriverControllerCreationArgs.DeviceModel">
+            <summary>
+            The name of the device model that the user selected when adding this
+            driver to the system. May be null or empty if no distinction was made
+            and the driver must handle that "default" case.
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.DriverControllerCreationArgs.DriverDataDirectoryPath">
+            <summary>
+            Path to the directory containing the driver and its data
+            </summary>
+        </member>
+        <member name="P:Crestron.DeviceDrivers.EntityModel.DriverControllerCreationArgs.TransportTx">
+            <summary>
+            Delegate for the driver to send data through hardware resources
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.DriverEntityEventArgs">
+            <summary>
+            Describes an event notification from a device that is not a state change
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Logging.DriverControllerLogger">
+            <summary>
+            Instance of a logger provided by the program to a driver which organizes
+            its log messages on a per-controller basis.
+            </summary>
+            <remarks>
+            This pure abstract class is designed to be consumed by drivers like an interface and should
+            only be implemented by the hosting application. A class is used so that members may be added
+            in a backwards-compatible way in the SDK with default implementations.
+            </remarks>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Logging.DriverControllerLogger.IsEnabled(System.String,Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel)">
+            <summary>
+            Checks if the current logging level will allow a
+            log entry at the specified <paramref name="level" /> to be logged.
+            <para>
+            This method should be used to prevent unnecessary execution of logging code.
+            For example, code that requires computations in the message arguments,
+            passing of value types (because they will be boxed)
+            or a loop that does nothing but log information.
+            </para>
+            </summary>
+            <param name="controllerId">Id of the controller that the log message originated from</param>
+            <param name="level">Log entry level to check.</param>
+            <returns>True if the specified level will allow the entry to be logged.</returns>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Logging.DriverControllerLogger.Exception(System.String,System.Exception,System.String,System.Object[])">
+            <summary>
+            Writes an exception to the hosting app/program's log.
+            <para>
+            It is recommended that calls made to this exception-logging-method are not guarded by checks of
+            the current logging level so that any exceptions that occur are always logged.
+            </para>
+            </summary>
+            <param name="controllerId">Id of the controller that the log message originated from</param>
+            <param name="ex">The exception that occurred</param>
+            <param name="message">Additional message format string to log along with the exception</param>
+            <param name="args">Format args for <paramref name="message"/></param>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Logging.DriverControllerLogger.GetCurrentLevel(System.String)">
+            <summary>
+            Gets the current logging level
+            </summary>
+            <param name="controllerId">Id of the controller that the log message originated from</param>
+            <remarks><see cref="M:Crestron.DeviceDrivers.EntityModel.Logging.DriverControllerLogger.IsEnabled(System.String,Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel)"/> should be used to check if logging is enabled at a particular level.</remarks>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Logging.DriverControllerLogger.Log(System.String,Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel,System.String)">
+            <summary>
+            Writes a log entry/message to the hosting app/program's log
+            </summary>
+            <param name="controllerId">Id of the controller that the log message originated from</param>
+            <param name="level">Log entry level associated with this message</param>
+            <param name="message">The string to write to the log</param>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Logging.DriverControllerLogger.Log(System.String,Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel,System.String,System.Object[])">
+            <summary>
+            Writes a log entry/message to the hosting app/program's log
+            </summary>
+            <param name="controllerId">Id of the controller that the log message originated from</param>
+            <param name="level">Log entry level associated with this message</param>
+            <param name="message">The format string to write to the log</param>
+            <param name="args">Format args for <paramref name="message"/></param>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Logging.DriverControllerLogger.Log``1(System.String,Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel,System.String,``0)">
+            <summary>
+            Overload of the method <see cref="M:Crestron.DeviceDrivers.EntityModel.Logging.DriverControllerLogger.Log(System.String,Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel,System.String,System.Object[])"/>
+            provided to match .NET's various string formatting overloads to avoid unnecessarily
+            creating an object array when there is only 1 message format argument.
+            See that Log method for more details.
+            </summary>
+            <param name="controllerId">Id of the controller that the log message originated from</param>
+            <param name="level">Log entry level associated with this message</param>
+            <param name="message">The format string to write to the log</param>
+            <param name="arg1">First format arg for <paramref name="message"/></param>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Logging.DriverControllerLogger.Log``2(System.String,Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel,System.String,``0,``1)">
+            <summary>
+            Overload of the method <see cref="M:Crestron.DeviceDrivers.EntityModel.Logging.DriverControllerLogger.Log(System.String,Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel,System.String,System.Object[])"/>
+            provided to match .NET's various string formatting overloads to avoid unnecessarily
+            creating an object array when there are exactly 2 message format arguments.
+            See that Log method for more details.
+            </summary>
+            <param name="controllerId">Id of the controller that the log message originated from</param>
+            <param name="level">Log entry level associated with this message</param>
+            <param name="message">The format string to write to the log</param>
+            <param name="arg1">First format arg for <paramref name="message"/></param>
+            <param name="arg2">Second format arg for <paramref name="message"/></param>
+        </member>
+        <member name="M:Crestron.DeviceDrivers.EntityModel.Logging.DriverControllerLogger.Log``3(System.String,Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel,System.String,``0,``1,``2)">
+            <summary>
+            Overload of the method <see cref="M:Crestron.DeviceDrivers.EntityModel.Logging.DriverControllerLogger.Log(System.String,Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel,System.String,System.Object[])"/>
+            provided to match .NET's various string formatting overloads to avoid unnecessarily
+            creating an object array when there are exactly 3 message format arguments.
+            See that Log method for more details.
+            </summary>
+            <param name="controllerId">Id of the controller that the log message originated from</param>
+            <param name="level">Log entry level associated with this message</param>
+            <param name="message">The format string to write to the log</param>
+            <param name="arg1">First format arg for <paramref name="message"/></param>
+            <param name="arg2">Second format arg for <paramref name="message"/></param>
+            <param name="arg3">Third format arg for <paramref name="message"/></param>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel">
+            <summary>
+            Defines different logging levels.
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel.Off">
+            <summary>
+            Turns off all logging (including warnings and errors).
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel.Trace">
+            <summary>
+            Trace logging level is intended to output excessive debug messages,
+            such as logging in a loop or every packet/message sent/received from a device.
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel.Debug">
+            <summary>
+            Debug logging level is intended to show the execution path of the code,
+            without excessive verbosity (such as what is described in <see cref="F:Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel.Trace"/>).
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel.Info">
+            <summary>
+            Information logging level is for significant events that occurred,
+            such as end-user actions, as well as any other information typically needed to identify what may have occurred.
+            Technically, these are typically public methods being called or events being received from an external entity,
+            such as device (as long as they are not too verbose).
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel.Warning">
+            <summary>
+            Warning logging level is for problems that occur, but the app/program can still function.
+            </summary>
+        </member>
+        <member name="F:Crestron.DeviceDrivers.EntityModel.Logging.LogEntryLevel.Error">
+            <summary>
+            Error logging level is for problems that may cause the app/program to no longer be functional.
+            These may result in loss of functionality or may trigger recovery scenarios such as restarting processes/components
+            or even a full restart of the app/program or a reboot of the device running that app/program.
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.StatusChangedEventArgs">
+            <summary>
+            Describes a change in status for a particular controller
+            </summary>
+        </member>
+        <member name="T:Crestron.DeviceDrivers.EntityModel.TransportTx">
+            <summary>
+            Delegate that a driver can use to access transport channels provided during
+            configuration
+            <para>
+            These transport channels typically access some hardware resource like a com port
+            or CEC port.
+            </para>
+            </summary>
+            <param name="channelId">Id of the channel (provided by the application during configuration)</param>
+            <param name="data">The data to send through the channel</param>
+        </member>
+    </members>
+</doc>

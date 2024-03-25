@@ -1,0 +1,1420 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RADAVReceiver</name>
+    </assembly>
+    <members>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.WarmUpCoolDownProcessed">
+            <summary>
+            Overridden method used to force WarmUpCoolDown processing in
+            the driver when zones are powered on
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.UpdatePollingSequence">
+            <summary>
+            Overridden method updating the polling sequence by adding zone polling commands for each zone in the driver.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.FireEvent(Crestron.RAD.Common.Enums.AvrStateObjects,System.Object)">
+            <summary>
+            Method to send a state change event.
+            </summary>
+            <param name="type">State Change type.</param>
+            <param name="obj">State Change object.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.UpdateRootObject(Crestron.RAD.DeviceTypes.RADAVReceiver.AvrRootObject)">
+            <summary>
+            Method used to update the root object if zone data exists
+            </summary>
+            <param name="rootObject">Current Avr Root Object</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.SendCommandToDevice(Crestron.RAD.Common.BasicDriver.CommandSet)">
+            <summary>
+            Method used to send zone commands to the driver transport after sending to PrepareThenSend
+            </summary>
+            <param name="command">This is the unformatted command to be sent to the device.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.CreateZones">
+            <summary>
+            Method that looks at the AvrData to see if zones are included, if so
+            creates an instance of each zone specified in the driver json and populates fields in the zone.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.LogZoneMessage(System.String)">
+            <summary>
+            Method that allows the developer to log zone messages in the driver along with the main driver.
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.GetZoneIndex(Crestron.RAD.Common.Enums.CommonCommandGroupType)">
+            <summary>
+            Method to return the index of the current zone.
+            </summary>
+            <param name="cmdGroup">Value passed must be CommonCommandGroupType.AvrZone1 - .AvrZone5</param>
+            <returns>Current Index number as int</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.CanQueueCommand(Crestron.RAD.Common.BasicDriver.CommandSet,System.Boolean)">
+            <summary>
+            Method to determine if the commandSet can be added to the queue for a specific zone
+            commandSet.CommandGroup used to determinewhich zone is used before calling the zone method
+            </summary>
+            <param name="commandSet">commandSet used to determine the zone before being sent to the zone method.</param>
+            <returns>true if successful</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.CanSendCommand(Crestron.RAD.Common.BasicDriver.CommandSet)">
+            <summary>
+            Method to determine if the commandSet can be send to transport for a specific zone
+            commandSet.CommandGroup used to determinewhich zone is used before calling the zone method
+            </summary>
+            <param name="commandSet">commandSet used to determine the zone before being sent to the zone method.</param>
+            <returns>true if successful</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.CanRemoveNonPollingCommandOverride(Crestron.RAD.Common.BasicDriver.CommandSet,System.Boolean)">
+            <summary>
+            Method used to determine if a c=queued command can be safely removed from the zone after transmission to transport.
+            </summary>
+            <param name="commandSet">commandSet used to determine which zone to flag</param>
+            <param name="powerOnCommandExistsInQueue">bool used to determi if power on already exists in the queuene</param>
+            <returns>true is successful</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.OverrideZonePowerOn(Crestron.RAD.Common.Enums.CommonCommandGroupType)">
+            <summary>
+            Method that allows driver dev to override zone power on from protocol
+            </summary>
+            <param name="zone">The current zone being overridden</param>
+            <returns>true if overridden</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.OverrideZonePowerOff(Crestron.RAD.Common.Enums.CommonCommandGroupType)">
+            <summary>
+            Method that allows driver dev to override zone power off from protocol
+            </summary>
+            <param name="zone">The current zone being overridden</param>
+            <returns>true if overridden</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.OverrideZonePowerToggle(Crestron.RAD.Common.Enums.CommonCommandGroupType)">
+            <summary>
+            Method that allows driver dev to override zone power toggle from protocol
+            </summary>
+            <param name="zone">The current zone being overridden</param>
+            <returns>true if overridden</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.OverrideDeconstructZonePower(Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone,System.String)">
+            <summary>
+            Method that allows driver dev to override zone deconstruct powern from protocol
+            </summary>
+            <param name="zone">The current zone being overridden</param>
+            <returns>true if overridden</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.OverrideZoneMuteOn(Crestron.RAD.Common.Enums.CommonCommandGroupType)">
+            <summary>
+            Method that allows driver dev to override zone mute on from protocol
+            </summary>
+            <param name="zone">The current zone being overridden</param>
+            <returns>true if overridden</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.OverrideZoneMuteOff(Crestron.RAD.Common.Enums.CommonCommandGroupType)">
+            <summary>
+            Method that allows driver dev to override zone mute off from protocol
+            </summary>
+            <param name="zone">The current zone being overridden</param>
+            <returns>true if overridden</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.OverrideZoneMute(Crestron.RAD.Common.Enums.CommonCommandGroupType)">
+            <summary>
+            Method that allows driver dev to override zone mute toggle from protocol
+            </summary>
+            <param name="zone">The current zone being overridden</param>
+            <returns>true if overridden</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.OverrideDeconstructZoneMute(Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone,System.String)">
+            <summary>
+            Method that allows driver dev to override zone deconstruct mute from protocol
+            </summary>
+            <param name="zone">The current zone being overridden</param>
+            <returns>true if overridden</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.OverrideZoneSetVolume(Crestron.RAD.Common.Enums.CommonCommandGroupType,System.UInt32)">
+            <summary>
+            Method that allows the driver dev to override zone set volume from protocol
+            </summary>
+            <param name="zone">Zone id to be overridden</param>
+            <param name="volume">Volume level to override and send</param>
+            <returns>true if overridden</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.OverrideZoneVolumeUp(Crestron.RAD.Common.Enums.CommonCommandGroupType,Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method that allows driver dev to override zone volume up from protocol
+            </summary>
+            <param name="zone">The current zone being overridden</param>
+            <param name="action">The command action being used</param>
+            <returns>true if overridden</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.OverrideZoneVolumeDown(Crestron.RAD.Common.Enums.CommonCommandGroupType,Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method that allows driver dev to override zone volume down from protocol
+            </summary>
+            <param name="zone">The current zone being overridden</param>
+            <param name="action">The command action being used</param>
+            <returns>true if overridden</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.OverrideZoneIncrementVolume(Crestron.RAD.Common.Enums.CommonCommandGroupType)">
+            <summary>
+            Method used to override zone press volume up
+            </summary>
+            <param name="zone">Current zone being overridden</param>
+            <returns>true if overridden</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.OverrideZoneDecrementVolume(Crestron.RAD.Common.Enums.CommonCommandGroupType)">
+            <summary>
+            Method used to override zone press volume down
+            </summary>
+            <param name="zone">Current zone being overridden</param>
+            <returns>true if overridden</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.OverrideDeconstructZoneVolume(Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone,System.String)">
+            <summary>
+            Method that allows the driver dev to override deconstruct volume for the selected zone
+            </summary>
+            <param name="zone"></param>
+            <param name="response"></param>
+            <returns>true is overridden</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.OverrideDeconstructZoneInput(Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone,System.String)">
+            <summary>
+            Method that allows the driver dev to override deconstruct input for the selected zone
+            </summary>
+            <param name="zone"></param>
+            <param name="response"></param>
+            <returns>true is overridden</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.OverrideDeconstructZoneAudioInput(Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone,System.String)">
+            <summary>
+            Method that allows the driver dev to override deconstruct audio input for the selected zone
+            </summary>
+            <param name="zone"></param>
+            <param name="response"></param>
+            <returns>true is overridden</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.Sirius">
+            <summary>
+            Method to send a Sirius Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.Xm">
+            <summary>
+            Method to send an XM Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.SiriusXm">
+            <summary>
+            Method to send a SiriusXm Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.HdRadio">
+            <summary>
+            Method to send an HD Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.InternetRadio">
+            <summary>
+            Method to send an Internet Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.LastFm">
+            <summary>
+            Method to send a LastFm Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.PandoraRadio">
+            <summary>
+            Method to send a Pandora Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.RhapsodyRadio">
+            <summary>
+            Method to send a Rhapsody Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.Spotify">
+            <summary>
+            Method to send a Spotify Radio command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.YouTube">
+            <summary>
+            Method to send a YouTube command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.YouTubeTv">
+            <summary>
+            Method to send a YouTubeTv command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.Netflix">
+            <summary>
+            Method to send a Netflix command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.Hulu">
+            <summary>
+            Method to send a Hulu command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.DirecTvNow">
+            <summary>
+            Method to send a DirectvNow command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.AmazonVideo">
+            <summary>
+            Method to send an Amazon Video command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.PlaystationVue">
+            <summary>
+            Method to send a Playstation Vue command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.SlingTv">
+            <summary>
+            Method to send a Sling Tv command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.Airplay">
+            <summary>
+            Method to send an Airplay command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.GoogleCast">
+            <summary>
+            Method to send a GoogleCast command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.Dlna">
+            <summary>
+            Method to send a DLNA command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.Tidal">
+            <summary>
+            Method to send a Tidal command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.Deezer">
+            <summary>
+            Method to send a Deezer command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.Crackle">
+            <summary>
+            Method to send a Crackle command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.GooglePlay">
+            <summary>
+            Method to send a Google Play command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.ArrowKey(Crestron.RAD.Common.Enums.ArrowDirections)">
+            <summary>
+            Method to send an Arrow Key command to the Device.
+            </summary>
+            <param name="direction">Direction of the arrow key</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.Select">
+            <summary>
+            Method to send the Select command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.Search">
+            <summary>
+            Method to send the Search command to the device
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.Clear">
+            <summary>
+            Method to send the Clear command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.Exit">
+            <summary>
+            Method to send the Exit command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.Home">
+            <summary>
+            Method to send the Home command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.Menu">
+            <summary>
+            Method to send the Menu command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.UpdatePowerChangeStates(Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.PowerChangeStates)">
+            <summary>
+            Updates <see cref="F:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol._previousPowerChangeState"/> and <see cref="F:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol._currentPowerChangeState"/> based on the new power state being entered.
+            This is used to aid in the determination of WarmUp/CoolDown starting a warmup/cooldown period.
+            </summary>
+            <param name="newState">The new power state.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.PowerToggleCallback">
+            <summary>
+            Invoked when PowerToggle is sent to transport. 
+            Determines if we should cool down or warm up.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.SetVolume(System.UInt32)">
+            <summary>
+            Sets the volume on the device
+            </summary>
+            <param name="volume">Volume in percent</param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol.VolumeIs">
+            <summary>
+            Returns the Volume level as a percent (0-100)
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.#ctor">
+            <summary>
+            SIMPL+ can only execute the default constructor. If you have variables that require initialization, please
+            use an Initialize method
+            </summary>
+        </member>
+        <member name="E:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.StateChangedEvent">
+            <summary>
+            Provides notifications of changes in states.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.StateChange(Crestron.RAD.Common.Enums.AvrStateObjects,System.Object)">
+            <summary>
+            Invoked by the framework and by drivers to signal a change in the device's states.
+            </summary>
+            <param name="avrStateObject">The state that changed</param>
+            <param name="changeObject"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SendStateChangeEvent(Crestron.RAD.Common.Enums.AvrStateObjects)">
+            <summary>
+            Sends a StateChange event without checking for changes first.
+            If this is an Input event, this will also send VideoInput and AudioInput events.
+            </summary>
+            <param name="avrStateObject">The state change that will be advertised</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.FakeFeedbackForStandardCommand(Crestron.RAD.Common.Enums.StandardCommandsEnum,Crestron.RAD.Common.Enums.CommonCommandGroupType)">
+            <summary>
+            Invoked by the feedback controller in ABasicDriver when feedback should be faked for a particular command/command group.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.PowerOn">
+            <summary>
+            Method used to send the power on command to the device
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.PowerOff">
+            <summary>
+            Method used to send the power off command to the device
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.PowerToggle">
+            <summary>
+            Method used to send the power toggle command to the device
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsPowerFeedback">
+            <summary>
+            Property used to indicate that the device supports power feedback
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.PowerIsOn">
+            <summary>
+            Propertry used to indicate that the device is powered on
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsDiscretePower">
+            <summary>
+            Property used to indicate that the device supports discrete power
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsTogglePower">
+            <summary>
+            Property used to indicate that the device supports toggle power
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsLocalWarmupTimer">
+            <summary>
+            Supports using a timer for warmup period
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsLocalCooldownTimer">
+            <summary>
+            Supports using a timer for cool down period
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsVolumePercentFeedback">
+            <summary>
+            Property used to indocate that the device supports volume percent feedback
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.VolumePercent">
+            <summary>
+            Property used to indicate the volume percent level
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsMuteFeedback">
+            <summary>
+            Property used to indicate that the device supports mute feedback
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsDiscreteMute">
+            <summary>
+            Property used to indicate that the device supports discrete mute
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.MuteOn">
+            <summary>
+            Method usd to send the mute on command to the device
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.MuteOff">
+            <summary>
+            Method used to send the mute off command to the device
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsMute">
+            <summary>
+            Property used to indicate that mute toggle is supported
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.Mute">
+            <summary>
+            Method used to send the toggle mute command to the device
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsSetVolume">
+            <summary>
+            Property used to indicate that the device supports set volume
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SetVolume(System.UInt32)">
+            <summary>
+            Method used to send the set volume command to the device
+            </summary>
+            <param name="volume"></param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsChangeVolume">
+            <summary>
+            Property used to indicate that the device supports change volume
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.VolumeUp(Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method used to send the change volume command up based on action
+            </summary>
+            <param name="action"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.VolumeDown(Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method used to send the change volume command down based on action
+            </summary>
+            <param name="action"></param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsArrowKeys">
+            <summary>
+            Property indicating that the ArrowKey command is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.ArrowKeysSupported">
+            <summary>
+            Property indicating which Arrow Keys are supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.ArrowKey(Crestron.RAD.Common.Enums.ArrowDirections,Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method to send a arrow key to the Device.
+            </summary>
+            <param name="direction">Direction of arrow to be send to the device.</param>
+            <param name="action">Indicates if command should be pressed, held, or released.</param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsSelect">
+            <summary>
+            Property indicating that the Select command is supported
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.Select">
+            <summary>
+            Method used to send the select command to the device
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsClear">
+            <summary>
+            Propertyt indicating that the clear method is supported
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.Clear">
+            <summary>
+            Method used to send the clear command to the device
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsExit">
+            <summary>
+            Property used to indicate that the exit command is supported
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.Exit">
+            <summary>
+            Method used to send the exit command to the device
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsHome">
+            <summary>
+            Property indicating that the home command is supported
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.Home">
+            <summary>
+            Method used to send the home command to the device
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.ABasicAVReceiver.SupportsMenu">
+            <summary>
+            Property used to indicate that the menu command is supported
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.Uid">
+            <summary>
+            Field used to hold the Unique ID of the Zone.  This is assigned in json but can be overwritten using SimplWindows
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.FriendlyName">
+            <summary>
+            Field used to hold the Friendly Name of the Zone.  This is assigned in json but can be overwritten using SimplWindows
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SupportedFeature">
+            <summary>
+            Dictionary of the Supported Features of the zone
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.StandardCommands">
+            <summary>
+            Dictionary of the supported Standard Commands for the zone
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.ZoneFeedback">
+            <summary>
+            Zone Feedback object that is used fo finding and processing thre responses for the zone
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.AudioInOut">
+            <summary>
+            AudioInOut allocation for the Audio Inputs/Outputs defined for the zone.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.VideoInOut">
+            <summary>
+            VideoInOut allocation for the Video Inputs/Outputs defined for the zone
+            </summary>
+        </member>
+        <member name="F:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.WarmupStartTick">
+            <summary>
+            This is set internally when a warmup period begins.
+            </summary>
+        </member>
+        <member name="F:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.CooldownStartTick">
+            <summary>
+            This is set internally when a cooldown period begins.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.WarmingUp">
+            <summary>
+            Returns true if the device is warming up.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.CoolingDown">
+            <summary>
+            Returns true if the device is cooling down.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.WarmUpTime">
+            <summary>
+            The minimum amount of time it takes the device to warm up after a power on command.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.CoolDownTime">
+            <summary>
+            The minimum amount of time it takes the device to cool down after a power off command.
+            </summary>
+        </member>
+        <member name="F:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone._warmUpTime">
+            <summary>
+            Private field used by the zone to hold and return the current warmup time value
+            </summary>
+        </member>
+        <member name="F:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone._coolDownTime">
+            <summary>
+             Private field used by the zone to hold and return the current cooldown time value
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.IsHandledFeedback(System.String)">
+            <summary>
+            Method used to check is the feedback has handling in the framework for processing the response
+            </summary>
+            <param name="response"></param>
+            <returns>true is response has matching feedback handling</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.WarmUp">
+            <summary>
+            Method used to start the zone warmup period
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.CoolDown">
+            <summary>
+            Method used by the zone to start the cooldown period
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.ProcessWarmUpCoolDown">
+            <summary>
+            Method used by the zone to calculate and manage the warmup/cooldown periods
+            </summary>
+        </member>
+        <member name="F:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone._commonCommandGroup">
+            <summary>
+            Private field used by the zone to hold the zone common command group type.  
+            AvrZone1 through AvrZone5
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.CommonCommandGroup">
+            <summary>
+            Command group to be set by the framework to a specific zone.  
+            Chosen by position in the json and can handle up to 5 zones per driver.  
+            AvrZone 1 - AvrZone5
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.ProcessFeedback(System.String,Crestron.RAD.Common.BasicDriver.ValidatedRxData)">
+            <summary>
+            Method used to process the response and prepare the validated data prior ro chosing the deconstruct
+            method needed to update the device feedback
+            </summary>
+            <param name="response"></param>
+            <param name="validatedData"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SetProtocol(Crestron.RAD.DeviceTypes.RADAVReceiver.AAVReceiverProtocol,System.UInt32)">
+            <summary>
+            Method used to set the protocol for the zone.  This is typically the driver protocol definition
+            </summary>
+            <param name="protocol"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SetZoneSupportProperties">
+            <summary>
+            Method used to update the supported properties for the zone that are available to use
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.BuildCommand(Crestron.RAD.Common.Enums.StandardCommandsEnum,Crestron.RAD.Common.BasicDriver.CommandPriority,Crestron.RAD.Common.Enums.CommonCommandGroupType,System.String,Crestron.RAD.Common.Enums.CommonCommandGroupType)">
+            <summary>
+            Command used to build command set for the zones
+            </summary>
+            <param name="standardCommand"></param>
+            <param name="priority"></param>
+            <param name="group"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SupportsPowerFeedback">
+            <summary>
+            Property to indicate if Zone Power Feedback is supported
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.PowerIsOn">
+            <summary>
+            Property used to indicate if the zone power is on
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SupportsDiscretePower">
+            <summary>
+            Property to indicate if Zone discrete Power is supported
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SupportsTogglePower">
+            <summary>
+            Property to indicate if Zone Toggle Power is supported
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.PowerOn">
+            <summary>
+            Method used to send the Power On command to the connected zone
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.PowerOff">
+            <summary>
+            Methos used to send the Power Off command to the connected zone. 
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.PowerToggle">
+            <summary>
+            Method used to send the Power Toggle command to the connected zone.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SupportsVideoInputFeedback">
+            <summary>
+            Property to indicate if Zone Video Input Feedback is supported
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.VideoInputSource">
+            <summary>
+            Property to indicate which Zone Video Input Source is selected
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SupportsSetVideoInputSource">
+            <summary>
+            Property to indicate if Zone Set Video Input Source is supported
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SupportsAudioInputFeedback">
+            <summary>
+            Property to indicate if Zone Audio Input Feedback is supported
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.AudioInputSource">
+            <summary>
+            Property used to indicate which Zone Audio Input Source is selected
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SupportsSetAudioInputSource">
+            <summary>
+            Property used to indicate that Set Audio Input Sorce is supported
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SetVideoInputSource(Crestron.RAD.Common.Enums.VideoConnections)">
+            <summary>
+            Method used to switch the video input on the connected zone
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.GetUsableVideoInputs">
+            <summary>
+            Method used to return the usable video inputs from the zone.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SetAudioInputSource(Crestron.RAD.Common.Enums.AudioConnections)">
+            <summary>
+            Method used to switch the audio input on the connected zone
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.GetUsableAudioInputs">
+            <summary>
+            Method used to return the usable audio inputs from the zone
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.AudioInputIs">
+            <summary>
+            Property used to indicate which Audio Input is selected
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.VideoInputIs">
+            <summary>
+            Property used to indicate which Video Input is Selected
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SupportsMuteFeedback">
+            <summary>
+            Property used to indicate that the Zone Supports Mute Feedback
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SupportsDiscreteMute">
+            <summary>
+            Property used to indicate that the Zone Supports Discrete Mute
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SupportsMute">
+            <summary>
+            Property used to indicate that the Zone supports Mute Toggle
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.MuteOn">
+            <summary>
+            Method used to send the Mute On command to the connected Zone
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.MuteOff">
+            <summary>
+            Method used to send the Mute Off command to the connected Zone.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.Mute">
+            <summary>
+            Method used to send the Mute Toggle command to the connected zone
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.IsMuted">
+            <summary>
+            Property used to indicate the mute state of the zone
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SupportsVolumePercentFeedback">
+            <summary>
+            Property used to indicate that the zone Supports Volume Percent Feedback.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SupportsSetVolume">
+            <summary>
+            Property used to indicate if the zone supports set volume
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SupportsChangeVolume">
+            <summary>
+            Property used to indicate if the zone supports change volume
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.SetVolume(System.UInt32)">
+            <summary>
+            Method used to send the set volume command to the connected zone
+            </summary>
+            <param name="volume"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.VolumeUp(Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method used to send the Volume Up command to the connected zone
+            </summary>
+            <param name="action"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.VolumeDown(Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method used to send the Volule Down Command to the connected zone
+            </summary>
+            <param name="action"></param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.VolumePercent">
+            <summary>
+            Property used to indicate the currebt Volume Percentage of the zone
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.ZonesExist">
+            <summary>
+            Property used to indicate that the driver has zones included in the driver json.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.DeconstructPower(System.String)">
+            <summary>
+            Method used to deconstruct the response from the device for a Power Feedback response
+            </summary>
+            <param name="response"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.DeconstructMute(System.String)">
+            <summary>
+            Method used to deconstruct the response from the device for a Mute Feedback response
+            </summary>
+            <param name="response"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.DeconstructVideoInput(System.String)">
+            <summary>
+            Method used to deconstruct the response from the device for a Video Input Feedback response
+            </summary>
+            <param name="response"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.DeconstructAudioInput(System.String)">
+            <summary>
+            Method used to deconstruct the response from the device for a Audio Input Feedback response
+            </summary>
+            <param name="response"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.DeconstructVolume(System.String)">
+            <summary>
+            Method used to deconstruct the response from the device for a Volume Feedback response
+            </summary>
+            <param name="response"></param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.ZoneVolumeIs">
+            <summary>
+            Method used to convert values to the 0 - 100 percent range for the volume gauge
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.InitializeEventWrappers">
+            <summary>
+            Create event wrappers as part of initialization.
+            <para>
+            This must be called from a singular, thread-safe place that does NOT get called in the constructor
+            code path and instead is called from when the zone is initialized. This allows code running on a
+            PC to deserialize the zone data structures.
+            </para>
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.OnVideoInputIsChanged(Crestron.RAD.Common.Events.ValueEventArgs{Crestron.RAD.Common.Enums.VideoConnections})">
+            <summary>
+            Event Handler used to update the status of VideoInputIs
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.OnAudioInputIsChanged(Crestron.RAD.Common.Events.ValueEventArgs{Crestron.RAD.Common.Enums.AudioConnections})">
+            <summary>
+            Event Handler used to update the status of AudioInputIs
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.OnVolumePercentChanged(Crestron.RAD.Common.Events.ValueEventArgs{System.UInt32})">
+            <summary>
+            Event Handler used to update the status of VolumePercent
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.OnIsMutedChanged(Crestron.RAD.Common.Events.ValueEventArgs{System.Boolean})">
+            <summary>
+            Event Handler used to update the status if Is Muted
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.OnPowerIsOnChanged(Crestron.RAD.Common.Events.ValueEventArgs{System.Boolean})">
+            <summary>
+            Event Handler used to update the status of PowerIsOn
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.OnWarmingUpChanged(Crestron.RAD.Common.Events.ValueEventArgs{System.Boolean})">
+            <summary>
+            Event Handler used to update the status of Warming Up
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.OnCoolingDownChanged(Crestron.RAD.Common.Events.ValueEventArgs{System.Boolean})">
+            <summary>
+            Event Handler used to update the status of Cooling Down
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.CanRemoveCommand(Crestron.RAD.Common.BasicDriver.CommandSet,System.Boolean)">
+            <summary>
+            Method called by Common override to support command queue removal logic
+            </summary>
+            <param name="commandSet">commandSet to process</param>
+            <param name="powerOnCommandExistsInQueue">Check to see if power on command exists in queue</param>
+            <returns>true if successful</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.CanSendCommand(Crestron.RAD.Common.BasicDriver.CommandSet)">
+            <summary>
+            Method called by Common override to support command sending logic
+            </summary>
+            <param name="commandSet">commandSet to process</param>
+            <returns>true if successful</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.AAvrZone.CanQueueCommand(Crestron.RAD.Common.BasicDriver.CommandSet,System.Boolean)">
+            <summary>
+            Method called by Common override to support command queuing logic
+            </summary>
+            <param name="commandSet">commandSet to process</param>
+            <returns>true if successful</returns>
+        </member>
+        <member name="T:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneData">
+            <summary>
+            AvrData Object from json to allow programmer to place multiple zones in the driver json
+            using Avr Zone list
+            The main driver master id can be established here and can be overwritten using Simpl
+            </summary>
+        </member>
+        <member name="T:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneInterfaceData">
+            <summary>
+            A version of <see cref="T:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneData"/> using the IAvrZone interface instead of using AvrZone
+            directly.
+            </summary>
+            <para>
+            Created so that drivers that do not use the AvrZone class may work with the Simpl class.
+            </para>
+        </member>
+        <member name="T:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneEnum">
+            <summary>
+            enum used to force select a zone number when indexing through available zones
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneDataValidation.CommandsDictionary">
+            <summary>
+            Dictionary used to hold the zone commands for comparison
+            </summary>
+        </member>
+        <member name="F:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneDataValidation._zoneFeedback">
+            <summary>
+            Provate field used to hold the zone feedback definitions 
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneDataValidation.ZoneFeedback">
+            <summary>
+            Public object to assign/provide the current zones feedback definitions
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneDataValidation.ZonePowerFeedback">
+            <summary>
+            Getter for the current zones feedback definitions for Power
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneDataValidation.ZoneMuteFeedback">
+            <summary>
+            Getter for the current zones feedback definitions for Mute
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneDataValidation.ZoneAudioInputFeedback">
+            <summary>
+            Getter for the current zones feedback definitions for Audio Input
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneDataValidation.ZoneInputFeedback">
+            <summary>
+            Getter for the current zones feedback definitions for Video Input
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneDataValidation.ZoneVolumeFeedback">
+            <summary>
+            Getter for the current zones feedback definitions for Zone Volume Feedback
+            </summary>
+        </member>
+        <member name="F:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneDataValidation.PowerOnPollingSequence">
+            <summary>
+            Zone Power On Polling Sequence
+            </summary>
+        </member>
+        <member name="F:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneDataValidation.PowerOffPollingSequence">
+            <summary>
+            Zone Power Off Polling Sequence
+            </summary>
+        </member>
+        <member name="F:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneDataValidation.PowerOnAutoPollingSupported">
+            <summary>
+            Zone Power On Auto Polling Supported
+            </summary>
+        </member>
+        <member name="F:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneDataValidation.PowerOffAutoPollingSupported">
+            <summary>
+            Zone Power Off Auto Polling Supported
+            </summary>
+        </member>
+        <member name="T:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneSupportsDelegate">
+            <summary>
+            Delegate used to update the simpl+ module with supported features for the zone
+            </summary>
+            <param name="zoneUniqueId">Must match the zone unique id in the simpl + module before processing</param>
+            <param name="supportsDiscretePower">Bool type return supporting discrete power</param>
+            <param name="supportsTogglePower">Bool type return supporting toggle power</param>
+            <param name="supportsSetInput">Bool type return supporting set video input</param>
+            <param name="supportsSetAudioInput">Bool type return supporting set audio input</param>
+            <param name="supportsSetVolume">Bool type return supporting set volume</param>
+            <param name="supportsChangeVolume">Bool type return supporting change volume</param>
+            <param name="supportsToggleMute">Bool type return supporting toggle mute</param>
+            <param name="supportsDiscreteMute">Bool type return supporting discrete mute</param>
+        </member>
+        <member name="T:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneSupportsFeedbackDelegate">
+            <summary>
+            Delegate used to update the simpl+ module with supported feedback
+            </summary>
+            <param name="zoneUniqueId">Must match the zone unique id in the simpl + module before processing</param>
+            <param name="supportsPowerFeedback">Bool type return supporting power feedback</param>
+            <param name="supportsVideoInputFeedback">Bool type return supporting video input feedback</param>
+            <param name="supportsAudioInputFeedback">Bool type return supporting audio input feedback</param>
+            <param name="supportsVolumePercentFeedback">Bool type return supporting volume percent feedback</param>
+            <param name="supportsMuteFeedback">Bool type return supporting mute feedback</param>
+        </member>
+        <member name="T:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneStatusDelegate">
+            <summary>
+            Delegate used to update the simpl+ module with feedback status for supported elements
+            </summary>
+            <param name="masterId">Master id of the main module</param>
+            <param name="powerStatus">Bool type return indicating the power status of the zone</param>
+            <param name="volumeStatus">Value indicating the current volume level of the zone</param>
+            <param name="muteStatus">Bool type return indicating the mute status of the zone</param>
+            <param name="warmingUp">Bool type return indicating that the zone is warming up</param>
+            <param name="coolineDown">Bool type return indicating that the zone is cooling down</param>
+            <param name="isRegistered">Bool type return indicating that the zone is registered</param>
+        </member>
+        <member name="T:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneAudioInputStatusDelegate">
+            <summary>
+            Delegate used to update the simpl+ module if the audio input current status
+            </summary>
+            <param name="audioInputType">Value used to indicate the input type used with set audio input to recall the correct command</param>
+            <param name="audioInputConnector">String value indicating the connector type for the current audio input</param>
+            <param name="audioInputDescription">String value indicating the current audio input description</param>
+            <param name="audioInputFriendlyName">String value indicating the current audio input friendly name</param>
+        </member>
+        <member name="T:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneInputStatusDelegate">
+            <summary>
+            Delegate used to update the simpl+ module if the input current status
+            </summary>
+            <param name="inputType">Value used to indicate the input type used with set audio input to recall the correct command</param>
+            <param name="inputConnector">String value indicating the connector type for the current audio input</param>
+            <param name="inputDescription">String value indicating the current audio input description</param>
+            <param name="nputFriendlyName">String value indicating the current audio input friendly name</param>
+        </member>
+        <member name="T:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneVideoInputDetailsDelegate">
+            <summary>
+            Delegate used to update all of the zone video inputs available to the UI
+            </summary>
+        </member>
+        <member name="T:Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneAudioInputDetailsDelegate">
+            <summary>
+            Delegate used to update all of the zone audio inputs available to the UI
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.Initialize(System.UInt16,Crestron.SimplSharp.SimplSharpString)">
+            <summary>
+            This must be called before the AVR zone S+ module can do anything with this object.
+            </summary>
+            <param name="id">The unique ID of the AVR zone module</param>
+            <param name="parentId">The unique ID of the main AVR module</param>
+            <param name="zoneIndex">The zone number the AVR zone module is for. 1 is Zone1, 2 is Zone2, ..., n is Zone[n]</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.GetZoneIndexName(System.UInt16)">
+            <summary>
+            Method used to return a string version of the zone for registration purposes
+            </summary>
+            <param name="id">Index of the zone</param>
+            <returns>String version of the zone name</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.SimplPowerOn(System.String)">
+            <summary>
+            Called by the individual S+ AVR zone modules
+            </summary>
+            <param name="action">Action to perform: "Press" or "Release"</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.SimplPowerOff(System.String)">
+            <summary>
+            Called by the individual S+ AVR zone modules
+            </summary>
+            <param name="action">Action to perform: "Press" or "Release"</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.SimplPowerToggle(System.String)">
+            <summary>
+            Called by the individual S+ AVR zone modules
+            </summary>
+            <param name="action">Action to perform: "Press" or "Release"</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.SimplSetVideoInputSource(System.UInt32)">
+            <summary>
+            Method to select an video input source. VideoConnections is a superset of all
+            possible inputs. For finding available inputs per device use
+            GetUsableInput.
+            </summary>
+            <param name="input">Type value used as index in the command dictionary</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.SimplSetAudioInputSource(System.UInt32)">
+            <summary>
+            Method to select an video input source. VideoConnections is a superset of all
+            possible inputs. For finding available inputs per device use
+            GetUsableInput.
+            </summary>
+            <param name="input">Type value used as index in the command dictionary</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.SimplSetVolume(System.UInt32)">
+            <summary>
+            Method used to call the zone set volume command
+            </summary>
+            <param name="volume">Value of the level intended to be set</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.SimplVolumeUp(System.String)">
+            <summary>
+            Method used to call the zone volume up command
+            </summary>
+            <param name="action">Action to perform: "Press" or "Release"</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.SimplVolumeDown(System.String)">
+            <summary>
+            Method used to call the zone volume down command
+            </summary>
+            <param name="action">Action to perform: "Press" or "Release"</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.SimplMuteOn(System.String)">
+            <summary>
+            Method used to call the zone mute on command
+            </summary>
+            <param name="action">Action to perform: "Press" or "Release"</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.SimplMuteOff(System.String)">
+            <summary>
+            Method used to call the zone mute off command
+            </summary>
+            <param name="action">Action to perform: "Press" or "Release"</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.SimplMute(System.String)">
+            <summary>
+            Method used to call the zone mute command
+            </summary>
+            <param name="action">Action to perform: "Press" or "Release"</param>
+        </member>
+        <member name="F:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.ZoneIsRegisteredEvent">
+            <summary>
+            Event handler used when registering the zone with the main driver
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.OnZoneIsRegisteredEvent(Crestron.RAD.Common.Events.ValueEventArgs{System.Boolean})">
+            <summary>
+            Event processing when registering with main driver
+            </summary>
+            <param name="e">ValueEventArg type bool</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.SetEventSubscriptions">
+            <summary>
+            Method used to set all event subscriptions for the zone
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.CurrentZone_WarmingUpChanged(System.Object,Crestron.RAD.Common.Events.ValueEventArgs{System.Boolean})">
+            <summary>
+            Warming up event handler calls AvrZoneStatus delegate to update the zone module
+            </summary>
+            <param name="sender"></param>
+            <param name="e">ValueEventArgs type bool</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.CurrentZone_CoolingDownChanged(System.Object,Crestron.RAD.Common.Events.ValueEventArgs{System.Boolean})">
+            <summary>
+            Cooling down event handler calls AvrZoneStatus delegate to update the zone module
+            </summary>
+            <param name="sender"></param>
+            <param name="e">ValueEventArgs type bool</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.CurrentZone_VolumePercentChanged(System.Object,Crestron.RAD.Common.Events.ValueEventArgs{System.UInt32})">
+            <summary>
+            Volume level changed event handler that updates the zone module with the current volume level
+            </summary>
+            <param name="sender"></param>
+            <param name="e">ValueEventArgs type uint</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.CurrentZone_VideoInputIsChanged(System.Object,Crestron.RAD.Common.Events.ValueEventArgs{Crestron.RAD.Common.Enums.VideoConnections})">
+            <summary>
+            Video Input feedback event handler that updates the zone module with the current video input feedback
+            </summary>
+            <param name="sender"></param>
+            <param name="e">ValueEventArgs type VideoConnections</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.CurrentZone_AudioInputIsChanged(System.Object,Crestron.RAD.Common.Events.ValueEventArgs{Crestron.RAD.Common.Enums.AudioConnections})">
+            <summary>
+            Audio Input feedback event handler that updates the zone module with the current audio input feedback
+            </summary>
+            <param name="sender"></param>
+            <param name="e">ValueEventArgs type AudioConnections</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.CurrentZone_IsMutedChanged(System.Object,Crestron.RAD.Common.Events.ValueEventArgs{System.Boolean})">
+            <summary>
+            Mute status event handler that updates the zone module with the current mute status
+            </summary>
+            <param name="sender"></param>
+            <param name="e">ValueEventArgs type bool</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.CurrentZone_PowerIsOnChanged(System.Object,Crestron.RAD.Common.Events.ValueEventArgs{System.Boolean})">
+            <summary>
+            Power status event handler that updates the zone module with the current power status
+            </summary>
+            <param name="sender"></param>
+            <param name="e">ValueEventArgs type bool</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.UpdateZoneSupports">
+            <summary>
+            Method used to call all delegate updates at startup
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.SetZoneFeedbackSupports">
+            <summary>
+            Method used to update the zone feedback supports
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.SetZoneSupports">
+            <summary>
+            Method used to update the zone supported features
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.SetZoneVideoInputDetails">
+            <summary>
+            Method used to populate the zone video input selections
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZone.SetZoneAudioInputDetails">
+            <summary>
+            Methosdused to populate the zone audio input selections
+            </summary>
+        </member>
+        <member name="F:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZoneController._zoneDriverCriticalSection">
+            <summary>
+            Critical section used to prevent multiple modules from stepping in while another is registerring
+            </summary>
+        </member>
+        <member name="F:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZoneController._parentAvrDrivers">
+            <summary>
+            Collection key'd by the unique ID of the main AVR modules. 
+            Value is the driver instance they represent.
+            This is used in conjuction with <see cref="!:_parentAvrZones"/>.
+            </summary>
+        </member>
+        <member name="F:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZoneController._avrZones">
+            <summary>
+            Collection key'd by the unique ID of the main AVR modules.
+            Value is a list of AVR zones that are linked to the main module.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZoneController.RegisterMainAvrModule(System.String,Crestron.RAD.DeviceTypes.RADAVReceiver.AvrZoneInterfaceData)">
+            <summary>
+            This is what the main AVR module will call to register with this controller.
+            This can be called before/after/during AVR zone module registration.
+            </summary>
+            <param name="avrModuleUniqueId">The unique ID of the main AVR module</param>
+            <returns>False if the unique ID is already in-use</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZoneController.GetMainAvrModule(System.String)">
+            <summary>
+            This is what the zone module will call to confirm that there is either a zone registered
+            or if the master exists.
+            </summary>
+            <param name="avrModuleUniqueId">id of the master</param>
+            <returns>true if there is a zone object</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZoneController.RegisterAvrZone(System.String,System.String,System.UInt16)">
+            <summary>
+            This is what the individual AVR-zone S+ modules will call to get linked with the main AVR module.
+            </summary>
+            <param name="avrZoneUniqueId">The unique ID of the AVR zone module</param>
+            <param name="avrModuleUniqueId">The unique ID of the main AVR module</param>
+            <param name="zoneIndex">The zone number the AVR zone module is for. 1 is Zone1, 2 is Zone2, ..., n is Zone[n]</param>
+            <returns>False if the AVR zone module has already been registered or the main module has not been registered yet</returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAvrZoneController.GetAvrZone(System.String,System.String)">
+            <summary>
+            Used internally to get a driver instance
+            </summary>
+            <param name="parentId"></param>
+            <returns>zone object</returns>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.Feedback.MinimumResponseTime">
+            <summary>
+            The minimum amount of time in ms an application would need to wait before expecting
+            the driver to report true feedback after an operation.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.Feedback.MaximumResponseTime">
+            <summary>
+            The maximum amount of time in ms an application would need to wait before expecting
+            the driver to report true feedback after an operation.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.Feedback.SupportsUnsolicitedFeedback">
+            <summary>
+            Lets a driver define if the API supports providing updates without polling.
+            If this is enabled, then the driver's polling sequence will only be sent until each 
+            individual poll command receives a response. The driver will poll again like this
+            if the connection state goes from false to true.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Crestron.RAD.DeviceTypes.RADAVReceiver.Feedback.ConnectedStatePollCommand" -->
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAVReceiver.SimplArrowDirectionsSupported">
+            <summary>
+            [0] Up
+            [1] Down
+            [2] Left
+            [3] Right
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAVReceiver.MasterIsRegistered">
+            <summary>
+            Field used to report to master module registration state
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.RADAVReceiver.SimplAVReceiver.SimplSetMasterUniqueId(Crestron.SimplSharp.SimplSharpString)">
+            <summary>
+            Method used to assign the Unique ID of the associated master module
+            </summary>
+            <param name="masterId">Unique Master ID assigned in the Simpl Module</param>
+        </member>
+    </members>
+</doc>

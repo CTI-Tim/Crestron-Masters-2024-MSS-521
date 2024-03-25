@@ -1,0 +1,924 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RADCableBox</name>
+    </assembly>
+    <members>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsEnergyStarFeedback">
+            <summary>
+            Property indicating that Power Feedback is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.EnergyStarIsOn">
+            <summary>
+            Gets the current EnergyStar state.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsDiscreteEnergyStar">
+            <summary>
+            Property indicating that Discrete EnergyStar is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.EnergyStarOn">
+            <summary>
+            Method to turn EnergyStar on.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.EnergyStarOff">
+            <summary>
+            Method to turn EnergyStar off.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsToggleEnergyStar">
+            <summary>
+            Property indicating that Toggle EnergyStar is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.EnergyStarToggle">
+            <summary>
+            Method to toggle EnergyStar state.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsPowerFeedback">
+            <summary>
+            Property indicating that Power Feedback is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.PowerIsOn">
+            <summary>
+            Gets the current Power state.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsDiscretePower">
+            <summary>
+            Property indicating that Discrete Power is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.PowerOn">
+            <summary>
+            Method to turn the Device on.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.PowerOff">
+            <summary>
+            Method to turn the Device off.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsTogglePower">
+            <summary>
+            Property indicating that Toggle Power is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.PowerToggle">
+            <summary>
+            Method to turn the Device off.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsLocalWarmupTimer">
+            <summary>
+            Supports using a timer for warmup period
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsLocalCooldownTimer">
+            <summary>
+            Supports using a timer for cool down period
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsWarmUpTime">
+            <summary>
+            Property indicating that setting Warm Up Time is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.WarmUpTime">
+            <summary>
+            Property to set the Warm Up Time.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsCoolDownTime">
+            <summary>
+            Property indicating that setting Cool Down Time is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.CoolDownTime">
+            <summary>
+            Property to set the Cool Down Time.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.WarmingUp">
+            <summary>
+            Property indicating that the device is Warming Up.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.CoolingDown">
+            <summary>
+            Property indicating that the device is Cooling Down.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsArrowKeys">
+            <summary>
+            Property indicating that the ArrowKey command is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.ArrowKeysSupported">
+            <summary>
+            Property indicating which Arrow Keys are supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.ArrowKey(Crestron.RAD.Common.Enums.ArrowDirections,Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method to send a arrow key to the Device.
+            </summary>
+            <param name="direction">Direction of arrow to be send to the device.</param>
+            <param name="action">Indicates if command should be pressed, held, or released.</param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsSelect">
+            <summary>
+            Property indicating that the Select command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Select">
+            <summary>
+            Method to send the select command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsClear">
+            <summary>
+            Property indicating that the Clear command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Clear">
+            <summary>
+            Method to send the clear command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsExit">
+            <summary>
+            Property indicating that the Exit command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Exit">
+            <summary>
+            Method to send the exit command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsHome">
+            <summary>
+            Property indicating that the Home command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Home">
+            <summary>
+            Method to send the home command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsMenu">
+            <summary>
+            Property indicating that the Menu command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Menu">
+            <summary>
+            Method to send the menu command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsKeypadNumber">
+            <summary>
+            Property indicating that the KeypadNumber command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.KeypadNumber(System.UInt32)">
+            <summary>
+            Sends a keypard number to the device.
+            </summary>
+            <param name="number">Number to be sent to the device.</param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsEnter">
+            <summary>
+            Property indicating that the Enter command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Enter">
+            <summary>
+            Method to send the enter command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsPound">
+            <summary>
+            Property indicating that the Keypad Pound command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Pound">
+            <summary>
+            Method to send a Keypad "#" to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsAsterisk">
+            <summary>
+            Property indicating that the Keypad Asterisk command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Asterisk">
+            <summary>
+            Method to send a Keypad "*" to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SendKeypadString(System.String)">
+            <summary>
+            Method to send a series of keypad characters to the device.
+            </summary>
+            <param name="keys"></param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsKeypadBackSpace">
+            <summary>
+            Property indicating that the Keypad Back Space command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.KeypadBackSpace">
+            <summary>
+            Method to send a Back Space to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsDvrCommand">
+            <summary>
+            Property indicating that the DVR command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.DvrCommand">
+            <summary>
+            Method to send the DVR command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsLive">
+            <summary>
+            Property indicating that the Live command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Live">
+            <summary>
+            Method to send the Live command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsRecord">
+            <summary>
+            Property indicating that the Record command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Record">
+            <summary>
+            Method to send the Record command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsSpeedSlow">
+            <summary>
+            Property indicating that the Speed Slow command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SpeedSlow">
+            <summary>
+            Method to send the Speed Slow command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsForwardScan">
+            <summary>
+            Property indicating that the Forward Scan command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.ForwardScan">
+            <summary>
+            Method to send the forward scan command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsReverseScan">
+            <summary>
+            Property indicating that the Reverse Scan command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.ReverseScan">
+            <summary>
+            Method to send the reverse scan command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsPlay">
+            <summary>
+            Property indicating that the Play command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Play">
+            <summary>
+            Method to send the play command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsPause">
+            <summary>
+            Property indicating that the Pause command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Pause">
+            <summary>
+            Method to send the pause command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsStop">
+            <summary>
+            Property indicating that the Stop command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Stop">
+            <summary>
+            Method to send the stop command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsForwardSkip">
+            <summary>
+            Property indicating that the Forward Skip command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.ForwardSkip">
+            <summary>
+            Method to send the forward skip command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsReverseSkip">
+            <summary>
+            Property indicating that the Reverse Skip command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.ReverseSkip">
+            <summary>
+            Method to send the reverse skip command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsRepeat">
+            <summary>
+            Property indicating that the Repeat command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Repeat">
+            <summary>
+            Method to send the repeat command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsReturn">
+            <summary>
+            Property indicating that the Return command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Return">
+            <summary>
+            Method to send the return command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsBack">
+            <summary>
+            Property indicating that the Back command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Back">
+            <summary>
+            Method to send the back command to the Device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsChannelFeedback">
+            <summary>
+            Property indicating that the Channel Feedback is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Channel">
+            <summary>
+            Gets the Device's channel.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsChangeChannel">
+            <summary>
+            Property indicating that the change channel command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.ChannelDown(Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method to send the Channel Down command to the Device.
+            </summary>
+            <param name="action">Indicates if command should be pressed, held, or released</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.ChannelUp(Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method to send the Channel Up command to the Device.
+            </summary>
+            <param name="action">Indicates if command should be pressed, held, or released</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SetChannel(System.String)">
+            <summary>
+            Method to turn the Device volume to a given channel number.
+            </summary>
+            <param name="value">The channel number to set.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Guide">
+            <summary>
+            Method to send the Guide command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.PageDown(Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method to send the Page Down command to the Device.
+            </summary>
+            <param name="action">Indicates if command should be pressed, held, or released</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.PageUp(Crestron.RAD.Common.Enums.CommandAction)">
+            <summary>
+            Method to send the Page Up command to the Device.
+            </summary>
+            <param name="action">Indicates if command should be pressed, held, or released</param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsLetterKeys">
+            <summary>
+            Property indicating that the Letter Keys command is supported.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.LetterButtonsSupported">
+            <summary>
+            Property indicating which Letter Buttons are supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.LetterKeys(Crestron.RAD.Common.Enums.LetterButtons)">
+            <summary>
+            Method to send a letter key to the device.
+            </summary>
+            <param name="letterKeys">Letter to be sent.</param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsFavorite">
+            <summary>
+            Property indicating that the Favorite command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Favorite">
+            <summary>
+            Method to send the Favorite command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsInfo">
+            <summary>
+            Property indicating that the Info command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Info">
+            <summary>
+            Method to send the Info command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsLast">
+            <summary>
+            Property indicating that the Last command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Last">
+            <summary>
+            Method to send the Last command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsReplay">
+            <summary>
+            Property indicating that the Replay command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.Replay">
+            <summary>
+            Method to send the Replay command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsThumbsUp">
+            <summary>
+            Property indicating that the Thumbs Up command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.ThumbsUp">
+            <summary>
+            Method to send the Thumbs Up command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsThumbsDown">
+            <summary>
+            Property indicating that the Thumbs Down command is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.ThumbsDown">
+            <summary>
+            Method to send the Thumbs Down command to the device.
+            </summary>
+        </member>
+        <member name="E:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.StateChangeEvent">
+            <summary>
+            Provides notifications of changes in states.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.StateChange(Crestron.RAD.Common.Enums.CableBoxStateObjects,System.Object)">
+            <summary>
+            Invoked by the framework and by drivers to signal a change in the device's states.
+            </summary>
+            <param name="avrStateObject">The state that changed</param>
+            <param name="changeObject"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SendStateChangeEvent(Crestron.RAD.Common.Enums.CableBoxStateObjects)">
+            <summary>
+            Sends a StateChange event without checking for changes first.
+            If this is an Input event, this will also send VideoInput and AudioInput events.
+            </summary>
+            <param name="avrStateObject">The state change that will be advertised</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.FakeFeedbackForStandardCommand(Crestron.RAD.Common.Enums.StandardCommandsEnum,Crestron.RAD.Common.Enums.CommonCommandGroupType)">
+            <summary>
+            Invoked by the feedback controller in ABasicDriver when feedback should be faked for a particular command/command group.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.SupportsPlayPause">
+            <summary>
+            Property indicating that Play/Pause is supported.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ABasicCableBox.PlayPause">
+            <summary>
+            Method to send the Play/Pause command to the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.SupportsLocalWarmupTimer">
+            <summary>
+            Supports using a timer for warmup period
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.SupportsLocalCooldownTimer">
+            <summary>
+            Supports using a timer for cool down period
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.FireEvent(Crestron.RAD.Common.Enums.CableBoxStateObjects,System.Object)">
+            <summary>
+            Method to send a state change event.
+            </summary>
+            <param name="type">State Change type.</param>
+            <param name="obj">State Change object.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.DisableArtworkOnPowerOff">
+            <summary>
+            Drivers should override this if they wish to handle sending Artwork On 
+            on their own. Otherwise this will cause PowerOff() to invoke ArtworkOn() instead.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.EnableArtworkOnPowerOff">
+            <summary>
+            Drivers should override this if they wish to handle sending Artwork On 
+            on their own. Otherwise this will cause PowerOff() to invoke ArtworkOn() instead.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.LetterKeys(Crestron.RAD.Common.Enums.LetterButtons)">
+            <summary>
+            Sends the LetterKeys command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.ColorButton(Crestron.RAD.Common.Enums.ColorButtons)">
+            <summary>
+            Sends the ColorButton command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Favorite">
+            <summary>
+            Sends the Favorite command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Info">
+            <summary>
+            Sends the Info command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Last">
+            <summary>
+            Sends the Last command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Replay">
+            <summary>
+            Sends the Replay command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.ThumbsUp">
+            <summary>
+            Sends the ThumbsUp command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.ThumbsDown">
+            <summary>
+            Sends the ThumbsDown command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.ChannelUp">
+            <summary>
+            Method to send the Channel Up command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.ChannelDown">
+            <summary>
+            Method to send the Channel Down command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.ChannelPoll">
+            <summary>
+            Method to send the Channel Poll command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Guide">
+            <summary>
+            Method to send the Guide command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.PageDown">
+            <summary>
+            Method to send the Page Down command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.PageUp">
+            <summary>
+            Method to send the Page Up command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Dvr">
+            <summary>
+            Method to send the DVR command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Live">
+            <summary>
+            Method to send the Live command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Record">
+            <summary>
+            Method to send the Record command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.SpeedSlow">
+            <summary>
+            Method to send the SpeedSlow command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.OnDemand">
+            <summary>
+            Method to send the OnDemand command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.SelectMediaService(System.String)">
+            <summary>
+            Selects a media service by ID on the device
+            </summary>
+            <param name="mediaServiceId">The ID of the media service to be selected on the device</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.KeypadAsterisk">
+            <summary>
+            Method to send a Keypad "*" to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.KeypadPound">
+            <summary>
+            Method to send a Keypad "#" to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.KeypadBackSpace">
+            <summary>
+            Method to send a Keypad Back Space to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Dash">
+            <summary>
+            Method to send a "-" to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Period">
+            <summary>
+            Method to send a "." to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Enter">
+            <summary>
+            Method to send the Enter command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Select">
+            <summary>
+            Method to send the Enter command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Clear">
+            <summary>
+            Method to send the Clear command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Exit">
+            <summary>
+            Method to send the Exit command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Home">
+            <summary>
+            Method to send the Home command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Menu">
+            <summary>
+            Method to send the Menu command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.ArrowKey(Crestron.RAD.Common.Enums.ArrowDirections)">
+            <summary>
+            Method to send an Arrow Key command to the Device.
+            </summary>
+            <param name="direction">Direction of the arrow key</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.KeypadNumber(System.UInt32)">
+            <summary>
+            Sends a keypard number to the Device.
+            </summary>
+            <param name="num">Number to be sent to the device.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.GetKeypadNumberCommand(System.UInt32)">
+            <summary>
+            Get commandset for keypad number if number is single digit
+            </summary>
+            <param name="num"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.SendCommandSetCollection(System.Collections.Generic.IEnumerable{Crestron.RAD.Common.BasicDriver.CommandSet})">
+            <summary>
+            Send collection of command sets if 
+            </summary>
+            <param name="commandsToSend"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.SendKeypadString(System.String)">
+            <summary>
+            Method to send a series of keypad characters to the device.
+            </summary>
+            <param name="keys">Maximum of 20 keys</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.UpdatePowerChangeStates(Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.PowerChangeStates)">
+            <summary>
+            Updates <see cref="F:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol._previousPowerChangeState"/> and <see cref="F:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol._currentPowerChangeState"/> based on the new power state being entered.
+            This is used to aid in the determination of WarmUp/CoolDown starting a warmup/cooldown period.
+            </summary>
+            <param name="newState">The new power state.</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.PowerToggleCallback">
+            <summary>
+            Invoked when PowerToggle is sent to transport. 
+            Determines if we should cool down or warm up.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.ForwardScan">
+            <summary>
+            Method to send the Forward Scan command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.ReverseScan">
+            <summary>
+            Method to send the Reverse Scan command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Play">
+            <summary>
+            Method to send the Play command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Pause">
+            <summary>
+            Method to send the Pause command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Stop">
+            <summary>
+            Method to send the Stop command to the Device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.ForwardSkip">
+            <summary>
+            Method to send the Forward Skip command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.ReverseSkip">
+            <summary>
+            Method to send the Reverse Skip command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Repeat">
+            <summary>
+            Method to send the Repeat command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Return">
+            <summary>
+            Method to send the Return command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.Back">
+            <summary>
+            Method to send the Back command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.PlayPause">
+            <summary>
+            Method to send the Play/Pause command to the device.
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.SetVolume(System.UInt32)">
+            <summary>
+            Sets the volume on the device
+            </summary>
+            <param name="volume">Volume in percent</param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.VolumeIs">
+            <summary>
+            Returns the Volume level as a percent (0-100)
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.DeConstructActiveMediaServiceFeedback(System.String)">
+            <summary>
+            This will set the ActiveMediaService to the one found
+            This will compare to values under MediaServiceProviderData.Feedback.ActiveServiceFeedbackData
+            </summary>
+            <param name="response">Response from device with only relevent data about the active feedback 
+            (only include data that matches the values in the dictionary)</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.DeConstructActiveMediaServicePlaybackStateFeedback(System.String)">
+            <summary>
+            This will set the ActiveMediaServicePlaybackState to the one found
+            This will compare to values under MediaServiceProviderData.Feedback.ActiveMediaServicePlaybackState
+            This will set the ActiveMediaService play state, and set the rest to Stopped
+            </summary>
+            <param name="response">Response from device with only relevent data about the playback feedback 
+            (only include data that matches the values in the dictionary)</param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.ACableBoxProtocol.DeConstructMediaServiceSubscriptionStateFeedback(System.String)">
+            <summary>
+            No base implementation
+            </summary>
+            <param name="response"></param>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.Feedback.MinimumResponseTime">
+            <summary>
+            The minimum amount of time in ms an application would need to wait before expecting
+            the driver to report true feedback after an operation.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.Feedback.MaximumResponseTime">
+            <summary>
+            The maximum amount of time in ms an application would need to wait before expecting
+            the driver to report true feedback after an operation.
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.Feedback.SupportsUnsolicitedFeedback">
+            <summary>
+            Lets a driver define if the API supports providing updates without polling.
+            If this is enabled, then the driver's polling sequence will only be sent until each 
+            individual poll command receives a response. The driver will poll again like this
+            if the connection state goes from false to true.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Crestron.RAD.DeviceTypes.CableBox.Feedback.ConnectedStatePollCommand" -->
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.SimplCableBox.SimplArrowDirectionsSupported">
+            <summary>
+            [0] Up
+            [1] Down
+            [2] Left
+            [3] Right
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.SimplCableBox.SimplLetterKeysSupported">
+            <summary>
+            [0] A
+            [1] B
+            [2] C
+            [3] D
+            </summary>
+        </member>
+        <member name="P:Crestron.RAD.DeviceTypes.CableBox.SimplCableBox.SimplColorKeysSupported">
+            <summary>
+            [0]Red
+            [1]Green
+            [2]Blue
+            [3]Yellow
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.SimplCableBox.SimplSelectMediaService(System.String)">
+            <summary>
+            Selects a media service by ID.
+            S+ will call this method with the ID instead of index so no extra processing is needed here
+            </summary>
+            <param name="mediaServiceId"></param>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.SimplCableBox.SetupMediaServices">
+            <summary>
+            Sets up all the media services for S+ to reference
+            Not used by IR drivers currently
+            </summary>
+        </member>
+        <member name="M:Crestron.RAD.DeviceTypes.CableBox.SimplCableBox.ExtractBitmapToHtmlDirectory(System.Byte[],System.String)">
+            <summary>
+            Extracts specified bitmap to HTML directory on processor
+            </summary>
+            <returns>Path to image file on file system in HTML directory</returns>
+        </member>
+    </members>
+</doc>

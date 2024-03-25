@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RADProTransports</name>
+    </assembly>
+    <members>
+        <member name="M:Crestron.RAD.ProTransports.ExtensionMethods.ExtensionMethods.TryDeviceUnregisterDispose(Crestron.SimplSharpPro.GenericDevice)">
+            <summary>
+            Call to try unregister a GenericDevice and then try to dispose.
+            </summary>
+            <param name="deviceObj">GenericDevice object used in Simpl# Pro</param>
+            <returns>Whether object exists and was able to dispose.</returns>
+        </member>
+    </members>
+</doc>

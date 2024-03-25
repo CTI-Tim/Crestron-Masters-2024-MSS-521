@@ -4,6 +4,33 @@
 
  This is a Conference room program that is written in C# for VC-4 or 4Series Appliance and leverages HTML5/CH5 user interface with Contracts for signals.   This program has an Airmedia, NVX, Apple TV, and a Crestron Connected Display  the NVX is used as a global source receiver for the buildings shared video resources.  The AppleTV could be  changed out for a HD-EXT4 to deliver a 4K capable table input if the customer desired.
 
+**After Masters Update :** Master2024 had a short lab built into this for the class to get familiar with looking around in the contract files to find what was needed to complete the subpage display code.   it is presented here as it is only 6 lines of code.    The answer to the Masters Lab is as follows and is found in the MainPage.cs file at the bottom of the MainPage Class.
+
+```c#
+    private void ShowMainSubpages(int page)
+    {
+        // Hide all the AV subpages
+        _myContract.MainPage.MediaControl.MediaControl_Visibility(false);
+        _myContract.MainPage.AirMediaInfo.AirMediaInfo_Visibility(false);
+        _myContract.MainPage.NvxInfo.NvxInfo_Visibility(false);
+
+        switch (page)
+        {
+            case 0:
+                _myContract.MainPage.MediaControl.MediaControl_Visibility(true);
+                break;
+            case 1:
+                _myContract.MainPage.AirMediaInfo.AirMediaInfo_Visibility(true);
+                break;
+            default:
+                _myContract.MainPage.NvxInfo.NvxInfo_Visibility(true);
+                break;
+        }
+    }
+```
+
+
+
  **IMPORTANT NOTE:** These are **<u>simplified</u>** classes in this program for students to use to learn concepts from.  They are not 100% complete in regards to error testing and error recovery or hardening. It is left up to the students to complete the work and finish the C# code in the classes  on their own when they progress to that level.   Do not expect this to be ready to use in a production environment. 
 
 Please take note how this program  has both documentation, and comments in the code.   These things are considered a best practice both by CTI and the programming industry in general, and should be a part of every type of code you write.    
@@ -126,6 +153,12 @@ Note:  This very simplified message broker system supports many to one communica
 #### Things to Note
 
 As mentioned at the beginning, this program is not 100% complete and ready for you to start using at customers locations. You will notice that real hardware has some real life delays.  NVX switching from HDMI1 and HDMI2 take time as the video source renegotiates the connection.  Apple TV takes time to negotiate HDCP so protected sources can take longer to switch.   NVX stream switching is very fast, but depending on the display used a high end laser projector or LCD TV comes on within 3-5 seconds, but other displays will not.  This means adding in a "please wait" type of subpage to let the customer know things are working.  Also 3rd party devices over the network or RS232 can be very sporadic and inconsistent in their data flows.   If you are using the NVX analog audio out the analog ramping is smooth as butter.  an Espon Projector's volume feedback happens when it wants to tell you. so it may be fast, it may be slow, it may not update for a half a second or more until you stop ramping.  This will make the volume feedback look strange to the customer.  this means you need to smooth it out and make it look good to the customer in your code.   The Epson laser projector I tested this code on also would miss sending feedback being unmuted when volume is ramped up or down. you will need to track it yourself and then update the actual status to true feedback later when you poll the projector.   All of these challenges you had to deal with in the SIMPL programming world, so this is not new.    It is up to you as a student to make the program complete and robust with delivering a good smooth user experience.  
+
+
+
+## How to Use Crestron Drivers in C#
+
+In this repository is a folder "CrestronDriversInCSharp" this contains all the code from the second half of the class presentation about the use of Crestron Drivers in C# as presented by Diamonds Chris MacGilfrey and Dustin Bransford.  This covers a TCP display, but this applies to  all other types of drivers except for IR.  Those you simply unzip and load the IR driver inside to the IR port you want to use.
 
 
 
