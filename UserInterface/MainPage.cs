@@ -109,12 +109,13 @@ namespace Masters_2024_MSS_521.UserInterface
              *  page will contain what was requested.
              *  Add in code to show the subpages one at a tim as they are needed.
              *  there are 3 total subpages,  one needs to be displayed for multiple sources.
+             *  the variable page above will contain a number from 0-6
+             *  0 = media page  1 = Airmedia page all the rest are the NVX global source page
              *
              *  You will need to find in the contract files the subpage classes and objects to use
              *  Hint:  MainPage is the page they are on.
              *
              */
-
         }
     }
 }
